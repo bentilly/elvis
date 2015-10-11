@@ -1,0 +1,59 @@
+html{
+    height: 100%;
+}
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #444444;
+    font-size: 14px;
+}
+
+
+
+.site{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+/*HEADER--------*/
+.site-header{
+    background-color: #0E1213;
+    display: flex;
+    justify-content: center;
+}
+.header-content{
+    background-color: grey;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.header-search-container{
+    display: flex;
+    flex-direction: row;
+}
+.header-logo{
+    background-color: #BDDC05;
+    height: 60px;
+}
+
+/*HEADER--------end*/
+
+.site-content{
+    flex: 1 0 auto;
+    background-color: #f0f0f0;
+}
+.site-footer{
+    background-color: #444444;
+    color: white;
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    
+}
