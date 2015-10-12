@@ -1,0 +1,193 @@
+/*BUTTONS--------*/
+
+button.outline{
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    height: 40px;
+    width: 150px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    font-size: 13px;
+    margin-left: 20px;
+    position: relative;
+}
+button.pink-button{
+    border-color: #EE1556;
+    color: #EE1556;
+}
+
+/*BUTTONS--------end*/
+/*HEADER--------*/
+
+
+.site-header{
+    background-color: #1f1f1f;
+    justify-content: center;
+    height: 130px;
+}
+.header-content{
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px
+}
+.header-search-container{
+
+}
+.header-logo{
+    background-image: url("/images/finda2.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-align: center;
+    padding: 40px 0px 0px 0px;
+    margin-top: 8px;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.header-search{
+
+}
+.header-search-form{
+    margin-left: 40px
+}
+.header-search-form label{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+.header-search-form input{
+    background-color: #ffffff;
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000000;
+    letter-spacing: 0.8px;
+    padding: 0px 10px 0px 10px;
+    display: block;
+    margin-top: 4px;
+    box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.50);
+}
+.header-search-form .form-pair{
+    margin-right: 30px;
+}
+.header-search-form button{
+    background-color: #26B4BC;
+    width: 100px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    background-image: url("/images/button-corner.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.header-authentication{
+    margin-top: 24px;
+}
+
+@media (max-width: 1100px) {
+/*    SHRINK THE AUTH BUTTONS -----------------------*/
+    .header-authentication button.login,
+    .header-authentication button.signup{
+        border: none;
+        width: 25px;
+        overflow: hidden;
+        padding-left: 40px;
+        margin-left: 0px;
+    }
+    .header-authentication button.login:before{
+        position: absolute;
+        top: 3;
+        left: 10px;
+        font-family: 'FontAwesome';
+        font-size: 25px;
+        content: "\f090";
+    }
+    .header-authentication button.signup:before{
+        position: absolute;
+        top: 3;
+        left: 10px;
+        font-family: 'FontAwesome';
+        font-size: 25px;
+        content: "\f006";
+    }
+    
+}
+
+@media (max-width: 840px) {
+/*   GO MOBILE HEADER -----------------------*/
+/*    containers*/
+    .site-header{
+        height: 100px;
+    }
+    .header-content{
+        width: 100%;
+    }
+    .header-content{
+        align-items: flex-start;
+        margin-t\
+    }
+/*    logo*/
+    .header-logo{
+        overflow: hidden;
+        height: 40px;
+        width: 100px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+/*    authentication area*/
+    .header-authentication{
+        margin-top: 8px;
+        margin-right: 6px;
+    }
+/*    search*/
+    .header-search{
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        width: 100%
+    }
+    .header-search-form{
+        margin-left: 12px
+    }
+    .header-search-form .form-pair{
+        margin:0px;
+    }
+    .header-search-form label{
+        display: none;
+    }
+    .header-search-form input{
+        width: 135px;
+        height: 35px;
+        font-size: 14px;
+        margin: 0px;
+        box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.50);
+    }
+    .header-search-form button{
+        width: 50px;
+        height: 35px;
+        overflow: hidden;
+        padding-left: 50px;
+        margin: 0px;
+        position: relative;
+    }
+    .header-search-form button:before{
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        font-family: 'FontAwesome';
+        font-size: 23px;
+        content: "\f002";
+    }
+}
+
+
+/*HEADER--------end*/
