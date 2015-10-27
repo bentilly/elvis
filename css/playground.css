@@ -14,6 +14,10 @@ body {
 
 header{
     background: #0f1213;
+    height: 80px;
+}
+.header-search{
+    text-align: center;
 }
 
 
@@ -24,5 +28,39 @@ button.outline{
     text-transform: uppercase;
     border: 2px solid #EE1556;
     border-radius: 20px;
-    padding: 5px 15px 5px 15px;
+    padding: 5px 20px 5px 20px;
+}
+
+
+/*HEADER SEARCH---------*/
+.header-search-form input{
+    background-color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    height: 50px;
+    margin-right: -4px;
+}
+.search-location-input{
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    padding-left: 25px
+}
+.search-context-input{
+    border-left: 2px solid #D8D8D8;
+    padding-left: 20px;
+}
+.search-button{
+    background-color: #26B4BC;
+    height: 50px;
+    width: 70px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    color: #ffffff;
+    font-size: 23px;
+    position: relative;
+    top: 2px;
+}
+.search-button i{
+    margin-bottom: 8px;
 }
