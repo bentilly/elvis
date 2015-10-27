@@ -1,0 +1,41 @@
+/*** FLEXBOX--------*/
+
+/*DIRECTION*/
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+/*ALIGNMENT OF CHILDREN*/
+.flex-centre{
+/*  column = vertical centre
+    row =  horizontal centre */
+    justify-content: center;
+}
+.flex-middle{
+/*  column = horizontal centre
+    row =  vertical centre */
+    align-items: center;
+}
+
+/*CHILD ITEMS*/
+.flex-grow{
+/*  child instructed to be as big as posible */
+    flex-grow: 1;
+}
+
+
+/*** BLADES--------*/
+
+.blade{
+    width: 100%;
+}
+.blade-content{
+    border: 1px solid #123456;
+    width: 95%;
+    max-width: 1200px
+}
