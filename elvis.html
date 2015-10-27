@@ -6,58 +6,29 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/sanitize.css">
-        <link rel="stylesheet" href="css/finda-global.css">
-        <link rel="stylesheet" href="css/finda-components.css">
+        <link rel="stylesheet" href="css/helpers.css">
+        <link rel="stylesheet" href="css/playground.css">
     </head>
-    <body class="site flex-col">
-        <header class="site-header flex-row">
-            <div class="header-content flex-row">
-                <div class="header-search-container flex-row">
-                    <div class="header-logo">
-                        Find,&nbsp;discover,&nbsp;share
-                    </div>
-                    <div class="header-search">
-                        <form class="header-search-form flex-row">
-                            <div class="form-pair">
-                                <label>Im looking for</label>
-                                <input type="text">
-                            </div>
-                            <div class="form-pair">
-                                <label>Located in</label>
-                                <input type="text">
-                            </div>
-                            <button type="submit">Find</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="header-user-container">
-                    <div class="header-authentication flex-row">
-                        <button class="outline login">Log in</button>
-                        <button class="outline pink-button signup">Sign up</button>
-                    </div>
+    
+    <body class="flex-col flex-middle">
+        <header class="blade flex-row flex-centre">
+            <div class="blade-content flex-row">
+                <div class="header-logo"><img src="images/finda2.png"></img></div>
+                <div class="header-search flex-grow">Search</div>
+                <div class="header-user">
+                    <button class="outline">Sign in</button>
                 </div>
             </div>
         </header>
-        <main class="site-content">
-            <div class="sub-nav flex-row">
-                <div class="subnav-content flex-row">
-                    <div class="subnav-unit flex-row">
-                        <div class="subnav-unit-label">view by</div>
-                        <ul class="flex-row">
-                            <li>Map</li>
-                            <li class="selected">List</li>
-                        </ul>
-                    </div>
-                    <div class="subnav-unit flex-row">
-                        <div class="subnav-unit-label">sort by</div>
-                        <ul class="flex-row">
-                            <li>Alphabetical</li>
-                            <li class="selected">Top results</li>
-                        </ul>
-                    </div>
-                </div>
+        <main class="flex-grow blade flex-row flex-centre">
+            <div class="blade-content">
+                MAIN content
             </div>
         </main>
-        <footer class="site-footer">footer</footer>
+        <footer class="blade flex-row flex-centre">
+            <div class="blade-content">
+                FOOTER content
+            </div>
+        </footer>
     </body>
 </html>

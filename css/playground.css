@@ -1,0 +1,28 @@
+html{
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #444444;
+    font-size: 14px;
+}
+
+/*HEADER---------*/
+
+header{
+    background: #0f1213;
+}
+
+
+/*BUTTONS---------*/
+button.outline{
+    font-weight: 700;
+    color: #EE1556;
+    text-transform: uppercase;
+    border: 2px solid #EE1556;
+    border-radius: 20px;
+    padding: 5px 15px 5px 15px;
+}
