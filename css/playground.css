@@ -9,61 +9,80 @@ body {
     color: #444444;
     font-size: 14px;
 }
+main{
+    width: 100%;
+}
 
 /*BUTTONS---------*/
-button.outline{
+button.pill{
+    font-size: 14px;
     font-weight: 700;
-    color: #EE1556;
     text-transform: uppercase;
-    border: 2px solid #EE1556;
     border-radius: 20px;
     padding: 5px 20px 5px 20px;
 }
 
+button.outline{
+    color: #EE1556;
+    border: 2px solid #EE1556;
+}
+button.white{
+    background-color: #ffffff;
+    color: #26B4BC;
+}
+button.text-only{
+    font-size: 12px;
+    color: #26B4BC;
+    text-transform: uppercase;
+    font-weight: 500;
+}
 
-/*NEWSLETTER SIGNUP---------*/
-.newsletter-signup{
-    padding: 40px 0px 40px 0px;
+
+/*TITLE STRIP---------*/
+
+.title-strip{
     background-color: #4A4A4A;
-    color: #BABEC1;
-
-}
-.newsletter-signup .blade-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.newsletter-signup-title{
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 32px;
     color: #ffffff;
 }
-.newsletter-signup-title .green{
+.title-strip-title h1{
+    font-weight: 400;
+    font-size: 26px;
+    margin: 10px 0px 10px 0px;
+}
+.title-strip-title h1 a{
     color: #BDDC05;
 }
-.newsletter-signup-text{
-    width: 300px;
+.title-strip-content{
+    font-size: 22px;
 }
-.newsletter-signup-form{
-
+.title-strip-content p{
+    margin-right: 10px;
 }
-.newsletter-signup-input{
-    width: 350px;
-}
-.newsletter-signup-submit{
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 700;
-    padding: 0px 20px 0px 15px;
+.change-area-small{
+    display: none;
 }
 
 @media (max-width: 800px) {
-    .newsletter-signup .blade-content{
-        flex-direction: column;
+    .title-strip-title h1{
+        font-size: 22px;
+        margin: 8px 0px 8px 0px;
+    }
+    .title-strip-content p{
+        display: none;
     }
 }
-
+@media (max-width: 600px) {
+    .title-strip-title h1{
+        font-size: 18px;
+        margin: 6px 0px 6px 0px;
+    }
+    .change-area{
+        display: none;
+    }
+    .change-area-small{
+        display: block;
+    }
+}
 
 
 

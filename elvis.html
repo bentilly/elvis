@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/sanitize.css">
         <link rel="stylesheet" href="css/helpers.css">
         <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/newsletter-signup.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/playground.css">
     </head>
@@ -30,18 +31,29 @@
                 </div>
                 
                 <div class="header-user">
-                    <button class="outline">Sign in</button>
+                    <button class="pill outline">Sign in</button>
                 </div>
             </div>
         </header>
-    
-        <main class="flex-grow blade flex-row flex-centre">
-            <div class="blade-content">
-                MAIN content
+        
+        <main class="flex-grow flex-column">
+            <div class="title-strip blade flex-row flex-centre flex-noshrink">
+                <div class="blade-content flex-row flex-space-between">
+                    <div class="title-strip-title flex-noshrink">
+                        <h1>Latest reviews from <a href="#">Blenheim</a></h1>
+                    </div>
+                    <div class="title-strip-content flex-row flex-middle">
+                        <p>Not in Blenheim?</p>
+<!--                        use js to swap button element at breakpoint-->
+                        <button class="change-area pill white">change area</button>
+                        <button class="change-area-small pill white">change area</button>
+                    </div>
+                </div>
             </div>
+            
         </main>
     
-        <div class=" newsletter-signup blade flex-row flex-centre flex-noshrink">
+        <div class="newsletter-signup blade flex-row flex-centre flex-noshrink">
             <div class="blade-content">
                 
                 <div class="newsletter-signup-content">
