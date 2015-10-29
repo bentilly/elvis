@@ -1,0 +1,85 @@
+header{
+    background: #0f1213;
+    height: 80px;
+    position: relative;
+}
+
+/*HEADER SEARCH---------*/
+.header-search{
+    text-align: center;
+}
+.header-search-form input{
+
+}
+.search-location-input{
+    
+}
+.search-context-input{
+    border-left: 2px solid #D8D8D8;
+    padding-left: 20px;
+}
+.search-button{
+    width: 70px;
+    font-size: 23px;
+    top: 1px;
+}
+.search-button i{
+    margin-bottom: 8px;
+}
+
+.mobile-search-toggle{
+    color: #ffffff; 
+    font-size: 23px;
+    text-align: right;
+    display: none;
+}
+.mobile-search-toggle-button{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px
+}
+
+/*BREAKPOINTS---------*/
+
+@media (max-width: 800px) {
+/*    shrink search fields */
+    .header-search-form input{
+        width: 135px;
+        font-size: 16px;
+    }
+    .search-location-input{
+        padding-left: 15px
+    }
+    .search-context-input{
+        padding-left: 10px
+    }
+    .search-button{
+        width: 50px;
+    }
+}
+@media (max-width: 600px) {
+/*    go mobile header */
+    .header-search-form{
+        display: none;
+    }
+    .mobile-search-toggle{
+        display: block;
+    }
+}
+
+/*DEPLOY MOBILE SEARCH---------*/
+/*Add 'm-search-open' class to header
+Animate deployment.
+*/
+header.m-search-open{
+    margin-bottom: 80px;
+    
+}
+.m-search-open .header-search{
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+

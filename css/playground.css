@@ -10,17 +10,6 @@ body {
     font-size: 14px;
 }
 
-/*HEADER---------*/
-
-header{
-    background: #0f1213;
-    height: 80px;
-}
-.header-search{
-    text-align: center;
-}
-
-
 /*BUTTONS---------*/
 button.outline{
     font-weight: 700;
@@ -32,8 +21,55 @@ button.outline{
 }
 
 
-/*HEADER SEARCH---------*/
-.header-search-form input{
+/*NEWSLETTER SIGNUP---------*/
+.newsletter-signup{
+    padding: 40px 0px 40px 0px;
+    background-color: #4A4A4A;
+    color: #BABEC1;
+
+}
+.newsletter-signup .blade-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.newsletter-signup-title{
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #ffffff;
+}
+.newsletter-signup-title .green{
+    color: #BDDC05;
+}
+.newsletter-signup-text{
+    width: 300px;
+}
+.newsletter-signup-form{
+
+}
+.newsletter-signup-input{
+    width: 350px;
+}
+.newsletter-signup-submit{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0px 20px 0px 15px;
+}
+
+@media (max-width: 800px) {
+    .newsletter-signup .blade-content{
+        flex-direction: column;
+    }
+}
+
+
+
+
+/*FORMS---------*/
+
+.big-text-input{
     background-color: #ffffff;
     font-weight: 500;
     font-size: 18px;
@@ -41,26 +77,16 @@ button.outline{
     height: 50px;
     margin-right: -4px;
 }
-.search-location-input{
+.big-left-rounded-text-input{
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
     padding-left: 25px
 }
-.search-context-input{
-    border-left: 2px solid #D8D8D8;
-    padding-left: 20px;
-}
-.search-button{
+.big-green-inline-button{
     background-color: #26B4BC;
     height: 50px;
-    width: 70px;
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
     color: #ffffff;
-    font-size: 23px;
     position: relative;
-    top: 2px;
-}
-.search-button i{
-    margin-bottom: 8px;
 }
