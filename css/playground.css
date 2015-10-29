@@ -11,6 +11,7 @@ body {
 }
 main{
     width: 100%;
+    background-color: #E2E2E2;
 }
 
 /*BUTTONS---------*/
@@ -38,50 +39,31 @@ button.text-only{
 }
 
 
-/*TITLE STRIP---------*/
-
-.title-strip{
-    background-color: #4A4A4A;
-    color: #ffffff;
+/*LISTINGS LIST---------*/
+.listings-list{
+    padding-top: 20px;
+    
 }
-.title-strip-title h1{
-    font-weight: 400;
-    font-size: 26px;
-    margin: 10px 0px 10px 0px;
-}
-.title-strip-title h1 a{
-    color: #BDDC05;
-}
-.title-strip-content{
-    font-size: 22px;
-}
-.title-strip-content p{
-    margin-right: 10px;
-}
-.change-area-small{
-    display: none;
+.listings-list-item{
+    background-color: #ffffff;
+    margin: 0px 0px 20px 0px;
 }
 
-@media (max-width: 800px) {
-    .title-strip-title h1{
-        font-size: 22px;
-        margin: 8px 0px 8px 0px;
-    }
-    .title-strip-content p{
+
+
+
+@media (max-width: 1200px) {
+    .lli-map{
         display: none;
     }
+    
 }
-@media (max-width: 600px) {
-    .title-strip-title h1{
-        font-size: 18px;
-        margin: 6px 0px 6px 0px;
+
+@media (max-width: 500px) {
+    .listings-list-item{
+        flex-direction: column-reverse;
     }
-    .change-area{
-        display: none;
-    }
-    .change-area-small{
-        display: block;
-    }
+    
 }
 
 
