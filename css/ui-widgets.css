@@ -1,0 +1,81 @@
+/*BUTTONS---------*/
+button.pill{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+}
+
+button.outline{
+    color: #EE1556;
+    border: 2px solid #EE1556;
+}
+button.white{
+    background-color: #ffffff;
+    color: #26B4BC;
+}
+button.text-only{
+    font-size: 12px;
+    color: #26B4BC;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/*REVIEW SCORE---------*/
+.review-score{
+    text-align: center;
+}
+.review-score .score{
+    width: 75px;
+    height: 75px;
+    background-color: #BDDC05;
+    color: #ffffff;
+    font-size: 35px;
+    border-radius: 45px;
+    padding-top: 10px;
+}
+.review-score .score.low{
+    background-color: #FF5B4F;
+}
+.review-score .score.med{
+    background-color: #F5A623;
+}
+.review-score .score.high{
+    background-color: #BDDC05;
+}
+.review-score .reviews{
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #7C7C7C;
+    margin-top: 5px;
+}
+
+
+/*LISTING ACTIONS---------*/
+.listing-action{
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #7C7C7C;
+    margin-right: 20px;
+}
+.listing-action i{
+    width: 45px;
+    height: 45px;
+    background-color: #26B4BC;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 13px;
+    border-radius: 25px;
+    margin-bottom: 5px;
+}
+/*tweaking*/
+.listing-action.website i{
+    padding-left: 5px;
+}
+.listing-action.more i{
+    padding-left: 5px;
+}

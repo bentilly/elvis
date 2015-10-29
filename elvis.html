@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/sanitize.css">
         <link rel="stylesheet" href="css/helpers.css">
         <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/ui-widgets.css">
         <link rel="stylesheet" href="css/newsletter-signup.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/playground.css">
@@ -36,7 +37,7 @@
             </div>
         </header>
         
-        <main class="flex-grow flex-column">
+        <main class="flex-grow flex-col">
             
             <div class="title-strip blade flex-row flex-centre flex-noshrink">
                 <div class="blade-content flex-row flex-space-between">
@@ -53,27 +54,42 @@
             </div>
             
             <div class="listings-list blade flex-row flex-centre">
-                <div class="blade-content flex-rcolumn">
+                <div class="blade-content flex-col flex-middle">
                     
                     <div class="listings-list-item flex-row">
                         <div class="lli-image"><img src="images/shaky.png"></img></div>
                         <div class="lli-content flex-grow flex-row">
-                            <div class="lli-content-main flex-grow">
-                                <div>Shaky Isles</div>
-                                <div>420 New North Road</div>
-                                <div>HorseLuva92 an hour ago ”Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus magna suscipit urnaghcur benit…” MORE</div>
-                                <div>call</div>
-                                <div>website</div>
-                                <div>more</div>
+                            <div class="lli-content-main flex-col flex-grow">
+                                <h2>Shaky Isles</h2>
+                                <div class="address">420 New North Road, Kingsland, Auckland</div>
+                                <div class="review-snippet flex-grow"><span class="screen-name">HorseLuva92</span><span class="reveiw-time"> an hour ago </span>”Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus magna suscipit urnaghcur benit…” <a class="more-link" href="#">MORE</a></div>
+                                
+                                <div class="listing-actions flex-row">
+                                    <div class="listing-action call flex-col flex-middle">
+                                        <i class="fa fa-phone"></i>
+                                        <p>call</p>
+                                    </div>
+                                    <div class="listing-action website flex-col flex-middle">
+                                        <i class="fa fa-external-link"></i>
+                                        <p>website</p>
+                                    </div>
+                                    <div class="listing-action more flex-col flex-middle">
+                                        <i class="fa fa-chevron-right"></i>
+                                        <p>more</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="lli-content-secondary">
-                                <div>8.7 (9 reviews)</div>
-                                <div>logo</div>
+                            <div class="lli-content-secondary flex-col flex-space-between flex-noshrink ">
+                                <div class="review-score">
+                                    <p class="score high">8.7</p>
+                                    <p class="reviews">9 reviews</p>
+                                </div>
+                                <div class="lli-logo"><img src="images/list-logo.png"></img></div>
                             </div>
-                            
                         </div>
                         <div class="lli-map"><img src="images/shakymap.png"></img></div>
                     </div>
+    
                     
                 </div>
             </div>
