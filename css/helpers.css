@@ -16,11 +16,27 @@
     row =  horizontal centre */
     justify-content: center;
 }
+.flex-space-between{
+    justify-content: space-between;
+}
 .flex-middle{
 /*  column = horizontal centre
     row =  vertical centre */
     align-items: center;
 }
+.flex-end{
+/*  column = horizontal centre
+    row =  vertical centre */
+    align-items: flex-end;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-noshrink{
+    flex-shrink: 0;
+}
+
+
 
 /*CHILD ITEMS*/
 .flex-grow{
@@ -35,7 +51,6 @@
     width: 100%;
 }
 .blade-content{
-    border: 1px solid #123456;
-    width: 95%;
+    width: 90%;
     max-width: 1200px
 }
