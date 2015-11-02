@@ -1,0 +1,95 @@
+
+/*LISTINGS LIST---------*/
+.listings-list{
+    padding-top: 20px;
+    
+}
+.listings-list-item{
+    background-color: #ffffff;
+    margin: 0px 0px 20px 0px;
+    position: relative;
+}
+
+.lli-content{
+    padding: 15px 25px 10px 25px;
+}
+.lli-content-main{
+    margin-right: 10px;
+}
+.listings-list-item h2{
+    font-size: 21px;
+    color: #26B4BC;
+    font-weight: 700;
+}
+
+.listings-list-item .address{
+    font-weight: 500;
+    font-size: 16px;
+    color: #787878;
+    line-height: 20px;
+    height: 22px;
+    overflow: hidden;
+}
+.listings-list-item .review-snippet{
+    font-weight: 700;
+    color: #000000;
+    margin: 8px 0px 8px 0px;
+    line-height: 18px;
+    overflow: hidden;
+    height: 65px;
+}
+.review-snippet .screen-name{
+    color: #26B4BC;
+    font-weight: 700;
+}
+.review-snippet .reveiw-time{
+    color: #787878;
+    font-weight: 500;
+}
+.review-snippet a.more-link{
+    color: #26B4BC;
+    font-weight: 400;
+}
+
+@media (max-width: 1100px) {
+    .lli-map{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .listings-list-item{
+        flex-direction: column-reverse;
+        max-width: 400px;
+    }
+    .lli-image{
+        width: auto;
+        height: auto;
+        background-color: #bada55;
+    }
+    .lli-image img{
+        width: 100%;
+        height: auto;
+    }
+    .listings-list-item .address{
+        height: auto;
+    }
+    .listings-list-item .review-snippet{
+        height: auto;
+    }
+    
+/*    should be a css class added to DOM at runtime with JS*/
+    .review-score .score{
+    width: 55px;
+    height: 55px;
+    color: #ffffff;
+    font-size: 25px;
+}
+    
+    .lli-logo img{
+        height: 60px;
+        width: 60px;
+    }
+    
+}

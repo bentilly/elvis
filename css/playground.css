@@ -14,104 +14,64 @@ main{
     background-color: #E2E2E2;
 }
 
-
-
-
-/*LISTINGS LIST---------*/
-.listings-list{
-    padding-top: 20px;
-    
+/*MAPS---------*/
+.map-list{
+    height: 60vh;
+    width: 100%;
+    background-image: url(/images/wellymap.png);
+    position: relative;
 }
-.listings-list-item{
-    background-color: #ffffff;
-    margin: 0px 0px 20px 0px;
+.pin-examples{
+    background: none;
+    position: absolute;
+    top: 100px;
+    left: 300px;
 }
-
-.lli-content{
-    padding: 15px 25px 10px 25px;
+.map-pin{
+    width: 100px;
+    background-image: url(/images/pins/map-pin-orange.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70px;
+    width: 50px
 }
-.lli-content-main{
-    margin-right: 10px;
-}
-.listings-list-item h2{
-    font-size: 21px;
-    color: #26B4BC;
-    font-weight: 700;
-}
-
-.listings-list-item .address{
-    font-weight: 500;
+.map-pin .pin-label{
+    text-align: center;
     font-size: 16px;
-    color: #787878;
-    line-height: 20px;
-    height: 22px;
-    overflow: hidden;
+    color: #ffffff;
+    padding-top: 12px;
 }
-.listings-list-item .review-snippet{
-    font-weight: 700;
-    color: #000000;
-    margin: 8px 0px 8px 0px;
-    line-height: 18px;
-    overflow: hidden;
-    height: 65px;
+.active-item{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color:rgba(255,255,255,0.8);
 }
-.review-snippet .screen-name{
-    color: #26B4BC;
-    font-weight: 700;
+.active-map-item{
+    margin-bottom: 0px;
 }
-.review-snippet .reveiw-time{
-    color: #787878;
-    font-weight: 500;
+.active-item-close{
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
 }
-.review-snippet a.more-link{
-    color: #26B4BC;
-    font-weight: 400;
+.active-item-close a{
+    color:#999999;
 }
-
-@media (max-width: 1100px) {
-    .lli-map{
-        display: none;
-    }
-    
+.active-item-close a:hover{
+    color:#000000;
 }
-
 @media (max-width: 800px) {
-    .listings-list-item{
-        flex-direction: column-reverse;
+/*    expand the map (js) when a pin is selected AND screen is narrow
+    */
+/*    The active item on the map must be touchable so the screen can still be scrolled on touch devices*/
+    .map-list{
+        height: 800px;
+    }
+    .active-item .blade-content{
         max-width: 400px;
     }
-    .lli-image{
-        width: auto;
-        height: auto;
-        background-color: #bada55;
-    }
-    .lli-image img{
-        width: 100%;
-        height: auto;
-    }
-    .listings-list-item .address{
-        height: auto;
-    }
-    .listings-list-item .review-snippet{
-        height: auto;
-    }
-    
-/*    should be a css class added to DOM at runtime with JS*/
-    .review-score .score{
-    width: 55px;
-    height: 55px;
-    color: #ffffff;
-    font-size: 25px;
 }
-    
-    .lli-logo img{
-        height: 60px;
-        width: 60px;
-    }
-    
-}
-
-
 
 /*FORMS---------*/
 
