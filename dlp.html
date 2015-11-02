@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Finda home</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/sanitize.css">
+        <link rel="stylesheet" href="css/helpers.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/ui-widgets.css">
+        <link rel="stylesheet" href="css/newsletter-signup.css">
+        <link rel="stylesheet" href="css/lists.css">
+        <link rel="stylesheet" href="css/maps.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/playground.css">
+    </head>
+    
+    <body class="flex-col flex-middle">
+        <header class="blade flex-row flex-centre flex-noshrink">
+            <div class="blade-content flex-row flex-middle">
+                <div class="header-logo"><img src="images/finda2.png"></img></div>
+            
+                <div class="header-search flex-grow">
+                    <form class="header-search-form">
+                        <input class="search-location-input big-text-input big-left-rounded-text-input" value="Auckland" />
+                        <input class="search-context-input big-text-input" placeholder="Find something" />
+                        <button class="search-button big-green-inline-button"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            
+                <div class="mobile-search-toggle flex-grow">
+                    <button class="mobile-search-toggle-button"><i class="fa fa-search"></i></button>
+                </div>
+                
+                <div class="header-user">
+                    <button class="pill outline">Sign in</button>
+                </div>
+            </div>
+        </header>
+        
+        <main class="flex-grow flex-col">
+            
+            <div class="hero-image blade flex-col flex-centre flex-middle">
+                <img src="images/atomic-big.png"></img>
+            </div>
+    
+            <div class="dlp-nav blade flex-row flex-centre flex-noshrink">
+               <div class="blade-content flex-row flex-space-between">
+                   <div class="dlp-page-links flex-noshrink">
+                       <button class="pill dlp-nav">about us</button>
+                       <button class="pill dlp-nav outline active">photos</button> <!-- Add extra classes at runtime to set active button styles -->
+                       <button class="pill dlp-nav">reviews</button>
+                       <button class="pill dlp-nav">contact</button>
+                   </div>
+                   <div class="dlp-page-links flex-noshrink flex-row flex-middle">
+                       <button class="pill dlp-nav claim">claim this business</button>
+                       <button class="pill dlp-nav share"></button> <!-- Button text set in css so it can be adjusted with media query -->
+                       <button class="pill white review">leave a review</button>
+                       <div class="dlp-nav-menu-indicator"><i class="fa fa-chevron-down"></i></div>
+                   </div>
+                </div>
+            </div>
+    
+    
+            <div class="blade flex-row flex-centre flex-noshrink">
+               <div class="blade-content flex-row flex-space-between">
+                   <div>more contnet goes here</div>
+                </div>
+            </div>
+            
+        </main>
+    
+        <div class="newsletter-signup blade flex-row flex-centre flex-noshrink">
+            <div class="blade-content">
+                
+                <div class="newsletter-signup-content">
+                    <h3 class="newsletter-signup-title"><span class="green">Finda</span> is changing,<br />do you want to be<br />kept up to date?</h3>
+                    <div class="newsletter-signup-text">
+                        We are under going some fantastic new updates and developments with our website. 
+                        If you would like to help and be part of the process why not give us your details and we will keep you in the loop.
+                    </div>
+                </div>
+                
+                <div class="newsletter-signup-form">
+                    <form>
+                        <input class="newsletter-signup-input big-text-input big-left-rounded-text-input" type="text" placeholder="you@example.com"/>
+                        <button class="newsletter-signup-submit big-green-inline-button">Sign up</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        <footer class="blade flex-row flex-centre">
+            <div class="blade-content">
+                
+                <div class="footer-blocks flex-row flex-wrap">
+                    <div class="footer-block green">
+                        <h6>Finda.co.nz</h6>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Site map</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="#">Add your business</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-block blue">
+                        <h6>MyFinda</h6>
+                        <ul>
+                            <li><a href="#">Sign in</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Forgot your password?</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-block pink">
+                        <h6>Business owners</h6>
+                        <ul>
+                            <li><a href="#">Add your business</a></li>
+                            <li><a href="#">Get more from Finda</a></li>
+                            <li><a href="#">Need help with Finda?</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-block green">
+                        <h6>Friends of Finda</h6>
+                        <ul>
+                            <li><a href="#">Wises</a></li>
+                            <li><a href="#">Menus</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-block blue">
+                        <h6>Connect with Finda</h6>
+                        <ul>
+                            <li><a href="#">Follow us on Twitter</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+                <div class="footer-sole flex-row flex-space-between flex-end">
+                    <div class="footer-sole-terms flex-row flex-wrap">
+                        <p>COPYRIGHT&nbsp;015&nbsp;FINDA&nbsp;LIMITED</p>
+                        <p><a href="#">PRIVACY&nbsp;POLICY</a></p>
+                        <p><a href="#">TERMS&nbsp;OF&nbsp;USE</a></p>
+                        <p><a href="#">CONTACT&nbsp;FINDA</a></p>
+                    </div>
+                    
+                    <div class="footer-logo"><img src="images/finda2.png"></img></div>
+                </div>
+                
+            </div>
+        </footer>
+    </body>
+</html>
