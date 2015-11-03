@@ -1,0 +1,295 @@
+/*DLP*/
+
+.hero-image{
+    height: 50vh;
+    max-height: 450px; /*    align with max height uploadable*/
+    overflow: hidden;
+}
+
+
+/*NAV*/
+.dlp-nav{
+    padding: 5px 0px 5px 0px;
+    background-color: #666666;
+}
+.dlp-nav-menu-indicator{
+    color: #ffffff;
+    display: none;
+}
+button.dlp-nav.share:after{
+    content: "share this business";
+}
+.dlp-nav.stuck{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+@media (max-width: 1200px) {
+    button.dlp-nav.claim{
+        display: none;
+    }
+}
+@media (max-width: 900px) {
+    button.dlp-nav,
+    button.review
+    {
+        font-size: 12px;
+        padding: 2px 10px 2px 10px;
+    }
+    button.dlp-nav.share:after{
+        content: "share";
+    }
+}
+@media (max-width: 600px) {
+    .dlp-nav-menu-indicator{
+        display: block;
+    }
+    button.dlp-nav.share,
+    button.review
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    button.dlp-nav{
+        display: none;
+    }
+    button.dlp-nav.active{
+        display: block;
+        color: #ffffff;
+        border: none;
+        font-size: 14px;
+        padding-left: 0;
+        border-radius: 0px;
+    }
+}
+
+
+
+/*CONTENT-----------------*/
+.dlp-header{
+    background-color: #ffffff;
+    padding-top: 50px;
+}
+.dlp-business{
+    margin-right: 50px;
+}
+h1.dlp-h{
+    font-weight: 700;
+    font-size: 23px;
+    color: #4a4a4a;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.dlp-header address{
+    font-size: 17px;
+    color: #787878;
+    font-style: normal;
+    margin-bottom: 5px;
+}
+.dlp-header .info{
+    margin-left: 20px;
+}
+.dlp-header .logo{
+    margin-top: 7px;
+}
+.dlp-header .rating{
+    margin-left: 30px;
+}
+
+/*actions*/
+.dlp-action{
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #7C7C7C;
+    margin-left: 20px;
+}
+.dlp-action .detail{
+    display: none;
+    margin-top: -2px;
+}
+.action-pill{
+    height: 45px;
+    min-width: 45px;
+    background-color: #26B4BC;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    letter-spacing: 1.1px;
+}
+.action-pill i{
+    font-size: 20px;
+}
+/*tweeks*/
+.dlp-action.mobile i{
+    font-size: 30px;
+    padding: 0px 0px 2px 2px;
+}
+.dlp-action.fax i{
+    padding: 0px 0px 2px 2px;
+}
+.dlp-action.contact i{
+    padding: 0px 0px 2px 2px;
+}
+.dlp-action.website i{
+    padding: 2px 0px 0px 4px;
+}
+/*Active*/
+.dlp-action.active{
+    align-items: flex-start;
+}
+.dlp-action.active .action-pill{
+    background-color: #A5A88B;
+    padding: 0px 15px 0px 15px;
+}
+.dlp-action.active .action-pill i{
+    margin-right: 10px;
+}
+.dlp-action.active .detail{
+    display: block;
+}
+.dlp-action.active .action-text{
+    padding-left: 10px;
+}
+
+@media (max-width: 1000px) {
+    .dlp-header .blade-content{
+        flex-direction: column;
+    }
+    .dlp-business{
+        margin-right: 0px;
+    }
+    .dlp-actions{
+        margin-top: 30px;
+    }
+    .dlp-action:first-child{
+        margin-left: 0px;
+    }
+}
+@media (max-width: 600px) {
+    .dlp-header{
+        padding-top: 30px;
+    }
+    .dlp-header .logo{
+        height: 50px;
+        width: 50px;
+        overflow: hidden;
+    }
+    .dlp-header .logo img{
+        width: 100%;
+        height: auto;
+    }
+    .dlp-header .rating{
+        margin-left: 15px;
+    }
+    .dlp-header .info{
+        margin-left: 15px;
+    }
+}
+    
+@media (max-width: 500px) {
+    .dlp-actions{
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+
+
+/*DLP CONTENT ---------------*/
+
+.dlp-about{
+    background-color: #ffffff;
+    padding: 30px 0px 30px 0px;
+}
+h2.dlp-h{
+    color: #4A4A4A;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.dlp-about-text{
+    margin-right: 50px;
+}
+.dlp-about-text p{
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #000000;
+}
+/*Openhours*/
+.dlp-extra-info{
+    max-width: 300px;
+}
+.dlp-extra-info dt{
+    float: left;
+    width: 40%;
+    margin-bottom: 5px;
+    color: #000000;
+}
+.dlp-extra-info dd{
+    float: left;
+    width: 60%;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #000000;
+}
+/*clear the floats*/
+.dlp-extra-info .opening-hrs::after{
+    content:"."; 
+    display:block; 
+    height:0px; 
+    clear:both; 
+    visibility:hidden; 
+}
+.dlp-extra-info .opening-hrs{
+    margin-bottom: 20px;
+}
+
+/*social icons*/
+.social .dlp-action:first-child{
+    margin-left: 0px;
+}
+.social .dlp-action{
+    margin-left: 5px;
+
+}
+.social .dlp-action i{
+    font-size: 25px;
+}
+/*tweeks*/
+.social .dlp-action.facebook i{
+    padding: 2px 0px 0px 0px;
+}
+.social .dlp-action.twitter i{
+    padding: 2px 0px 0px 2px;
+}
+.social .dlp-action.linkedin i{
+    padding: 0px 0px 0px 2px;
+}
+.social .dlp-action.g-plus i{
+    padding: 3px 0px 0px 4px;
+}
+
+@media (max-width: 800px) {
+    .dlp-about .blade-content{
+        flex-direction: column;
+        
+    }
+    .dlp-about-text{
+        margin-right: 0px;
+    }
+    .dlp-extra-info{
+        margin-top: 20px;
+    }
+}

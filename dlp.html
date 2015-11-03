@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Finda home</title>
+        <title>Finda DPL</title>
         <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/sanitize.css">
@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="css/newsletter-signup.css">
         <link rel="stylesheet" href="css/lists.css">
         <link rel="stylesheet" href="css/maps.css">
+        <link rel="stylesheet" href="css/dlp.css">
+        <link rel="stylesheet" href="css/forms.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/playground.css">
     </head>
@@ -45,7 +47,7 @@
                 <img src="images/atomic-big.png"></img>
             </div>
     
-            <div class="dlp-nav blade flex-row flex-centre flex-noshrink">
+            <div class="dlp-nav blade flex-row flex-centre flex-noshrink"> <!--Add class 'stuck' to stick the nav to the top of the page-->
                <div class="blade-content flex-row flex-space-between">
                    <div class="dlp-page-links flex-noshrink">
                        <button class="pill dlp-nav">about us</button>
@@ -63,11 +65,165 @@
             </div>
     
     
-            <div class="blade flex-row flex-centre flex-noshrink">
+            <div class="dlp-header blade flex-row flex-centre flex-noshrink">
                <div class="blade-content flex-row flex-space-between">
-                   <div>more contnet goes here</div>
+                   
+                    <div class="dlp-business flex-row flex-grow">
+                        <div class="logo flex-noshrink"><img src="images/list-logo.png"></img></div>
+                        <div class="info flex-grow">
+                            <div class="business-title flex-row">
+                                <h1 class="dlp-h">Atomic coffee roasters</h1>
+                                <div class="fav-toggle"><i class="fa fa-star-o"></i></div> <!-- swap icon class to class="fa fa-star" -->
+                            </div>
+                            <address>420 New North Road, Kingsland, Auckland, 1071</address>
+                            <button class="text-only">show postal address</button>
+                        </div>
+                        <div class="rating">
+                            <div class="review-score">
+                                <p class="score low">2.7</p>
+                                <p class="reviews">9 reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                   <div class="dlp-actions flex-row flex-noshrink">
+                       
+                        <div class="dlp-action call flex-col flex-middle flex-noshrink"> <!-- add 'active' class to show number -->
+                            <div class="action-pill flex-row flex-middle flex-centre">
+                                <i class="fa fa-phone"></i>
+                                <p class="detail">09 6655443</p>
+                            </div>
+                            <p class="action-text">call</p>
+                        </div>
+                       
+                       <div class="dlp-action mobile flex-col flex-middle flex-noshrink">
+                            <div class="action-pill flex-row flex-middle flex-centre">
+                                <i class="fa fa-mobile"></i>
+                                <p class="detail">027 6655443</p>
+                            </div>
+                            <p class="action-text">mobile</p>
+                        </div>
+                       
+                       <div class="dlp-action fax flex-col flex-middle flex-noshrink">
+                            <div class="action-pill flex-row flex-middle flex-centre">
+                                <i class="fa fa-fax"></i>
+                                <p class="detail">09 6655443</p>
+                            </div>
+                            <p class="action-text">fax</p>
+                        </div>
+                       
+                       <div class="dlp-action contact flex-col flex-middle flex-noshrink">
+                            <div class="action-pill flex-row flex-middle flex-centre">
+                                <i class="fa fa-envelope-o"></i>
+<!--                                <p class="detail">09 6655443</p>-->
+                            </div>
+                            <p class="action-text">contact</p>
+                        </div>
+                       
+                       <div class="dlp-action website flex-col flex-middle flex-noshrink">
+                            <div class="action-pill flex-row flex-middle flex-centre">
+                                <i class="fa fa-external-link"></i>
+<!--                                <p class="detail">09 6655443</p>-->
+                            </div>
+                            <p class="action-text">website</p>
+                        </div>
+                
+                    </div>
                 </div>
             </div>
+
+
+<!--ABOUT and OPENING HOURS ------------->
+            <div class="dlp-about blade flex-row flex-centre flex-noshrink">
+                <div class="blade-content flex-row">
+                    <div class="dlp-about-text flex-grow">
+                        <h2 class="dlp-h">About us</h2>
+                        <p>News Zealand’s finest roasters, puveyors of amazing coffee. 
+    Our cafe in Kingsland has now had a massive makeover - its now bigger and better.</p>
+                        <p>Coffee roasted daily for quality and freshness, distrubuted nationwide. 
+    Visit our cafe on site for great cuisine to match.In the Cafe, trained Baristas are always on hand 
+    to make sure you get your espresso, exactly the way you want it.</p>
+                        <p>Almost without exception the world's finest Arabica coffee grows 
+    at high altitude. Almost without exception the world's finest Arabica coffee grows at high altitude. We…</p>
+                        <button class="text-only">more</button>
+                    </div>
+
+                    <div class="dlp-extra-info flex-noshrink">
+                        <div class="opening-hrs">
+                            <h2 class="dlp-h">Opening Hours</h2>
+                            <dl>
+                                <dt>Monday</dt>
+                                <dd>Closed</dd>
+                                <dt>Tuesday</dt>
+                                <dd>Closed</dd>
+                                <dt>Wednesday</dt>
+                                <dd>9:00AM - 5:30PM</dd>
+                                <dt>Thursday</dt>
+                                <dd>9:00AM - 5:30PM</dd>
+                                <dt>Friday</dt>
+                                <dd>9:00AM - 5:30PM</dd>
+                                <dt>Saturday</dt>
+                                <dd>11:00AM - 5:30PM</dd>
+                                <dt>Sunday</dt>
+                                <dd>11:00AM - 2:30PM</dd>
+                            </dl>
+                        </div>
+                        <div class="social">
+                            <h2 class="dlp-h">Social</h2>
+                            <div class="flex-row">
+                                <div class="dlp-action facebook flex-col flex-middle flex-noshrink">
+                                    <div class="action-pill flex-row flex-middle flex-centre">
+                                        <i class="fa fa-facebook"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="dlp-action twitter flex-col flex-middle flex-noshrink">
+                                    <div class="action-pill flex-row flex-middle flex-centre">
+                                        <i class="fa fa-twitter"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="dlp-action linkedin flex-col flex-middle flex-noshrink">
+                                    <div class="action-pill flex-row flex-middle flex-centre">
+                                        <i class="fa fa-linkedin"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="dlp-action g-plus flex-col flex-middle flex-noshrink">
+                                    <div class="action-pill flex-row flex-middle flex-centre">
+                                        <i class="fa fa-google-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--DLP MAP and DIRECTIONS ------------->
+            <div class="dlp-map blade flex-col flex-noshrink">
+                <div class="dlp-map-directions flex-row flex-centre">
+                    <div class="blade-content flex-row flex-middle flex-space-between flex-wrap">
+                        <h4 class=" flex-noshrink">Find us</h4>
+                        <form class="dlp-directions-form flex-noshrink flex-row flex-grow">
+                            <div class="flex-row flex-grow">
+                                <input class="from-input flex-grow" value="23 Shaw Rd, Kingsland" />
+                                <button class="swap-from-to"><i class="fa fa-refresh"></i></button>
+                            </div>
+                            <div class="flex-row flex-grow">
+                                <input class="to-input flex-grow" value="Atomic Coffee, Kingsland" />
+                                <button class="directions-button">Go</button>
+                            </div>
+                        </form>
+                        <div class="map-actions  flex-noshrink">
+                            <button class="pill outline blue">All branches (8)</button>
+                            <button class="pill white">Show directions</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             
         </main>
     
