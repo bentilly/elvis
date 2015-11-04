@@ -227,16 +227,16 @@ h2.dlp-h{
     color: #000000;
 }
 /*Openhours*/
-.dlp-extra-info{
+.dlp-opening{
     max-width: 300px;
 }
-.dlp-extra-info dt{
+.dlp-opening dt{
     float: left;
     width: 40%;
     margin-bottom: 5px;
     color: #000000;
 }
-.dlp-extra-info dd{
+.dlp-opening dd{
     float: left;
     width: 60%;
     font-weight: 700;
@@ -245,14 +245,14 @@ h2.dlp-h{
     color: #000000;
 }
 /*clear the floats*/
-.dlp-extra-info .opening-hrs::after{
+.dlp-opening .opening-hrs::after{
     content:"."; 
     display:block; 
     height:0px; 
     clear:both; 
     visibility:hidden; 
 }
-.dlp-extra-info .opening-hrs{
+.dlp-opening .opening-hrs{
     margin-bottom: 20px;
 }
 
@@ -289,7 +289,140 @@ h2.dlp-h{
     .dlp-about-text{
         margin-right: 0px;
     }
-    .dlp-extra-info{
+    .dlp-opening{
         margin-top: 20px;
     }
+}
+
+
+/*MAP and DIRECTIONS --------------*/
+.dlp-map{
+    height: 350px;
+    width: 100%;
+    background-image: url(/images/wellymap.png);
+    position: relative;
+}
+.dlp-map-directions{
+    background: rgba(0,0,0,0.75);
+    width: 100%;
+    color: #ffffff;
+    padding: 20px 0px 20px 0px; 
+}
+.dlp-map-directions .blade-content{
+    background: none;
+}
+.dlp-map-directions h4{
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 30px;
+}
+
+/*directions form*/
+.dlp-directions-form input{
+    display: block;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 15px;
+    padding: 0px 10px 0px 15px;
+    height: 45px;
+}
+.dlp-directions-form .from-input{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+button.swap-from-to{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 20px;
+    width:45px;
+    height: 45px;
+    border-left: 2px solid #D8D8D8;
+    border-right: 2px solid #D8D8D8;
+}
+button.directions-button{
+    background-color: #26B4BC;
+    font-weight: 700;
+    font-size: 15px;
+    width:60px;
+    height: 45px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+/*map actions*/
+.map-actions{
+    margin-left: 20px;
+}
+.map-actions button{
+    margin: 0px 0px 0px 10px;
+}
+
+@media (max-width: 1200px) {
+    .dlp-directions-form{
+        order: 2;
+        width: 100%;
+        margin: 15px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .dlp-directions-form{
+        flex-direction: column;
+    }
+    .map-actions{
+        margin-left: 0px;
+    }
+    .map-actions button{
+        border: none;
+        background: none;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 6px;
+        font-size: 12px;
+    }
+    .dlp-map-directions h4{
+        margin-right: 0px;
+    }
+    button.swap-from-to{
+        border: none;
+        width:60px;
+        height: 45px;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+    .dlp-directions-form .to-input{
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+        margin-top: 20px;
+    }
+    button.directions-button{
+        margin-top: 20px;
+    }
+}
+
+
+
+/*IMAGES -------------*/
+.dlp-images{
+    position: relative;
+    overflow: hidden;
+}
+.dlp-images .dlp-action{
+    position: absolute;
+    top: 180px;
+    background: none;
+    margin: 0px;
+    padding: 0px;
+}
+.dlp-images .dlp-action.left{
+    left: 20px;
+}
+.dlp-images .dlp-action.right{
+    right: 20px;
+}
+/*tweeks*/
+.dlp-images .dlp-action.right .action-pill{
+    padding-left: 4px;
+}
+.dlp-images .dlp-action.left .action-pill{
+    padding-right: 2px;
 }
