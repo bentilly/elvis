@@ -32,9 +32,7 @@
 .flex-wrap{
     flex-wrap: wrap;
 }
-.flex-noshrink{
-    flex-shrink: 0;
-}
+
 
 
 
@@ -43,14 +41,7 @@
 /*  child instructed to be as big as posible */
     flex-grow: 1;
 }
-
-
-/*** BLADES--------*/
-
-.blade{
-    width: 100%;
+.flex-noshrink{
+    flex-shrink: 0;
 }
-.blade-content{
-    width: 90%;
-    max-width: 1200px
-}
+

@@ -14,236 +14,51 @@ main{
     background-color: #E2E2E2;
 }
 
-/*REVIEWS AND EXTRA INFO -------------*/
-.dlp-details{
-    padding: 50px 0px 50px 0px;
-    
+
+/*SECONDARY ACTION BAR-------------*/
+
+.dlp-secondary-actions{
+    background: #ffffff;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.15);
 }
-.dlp-details .blade-content{
-/*    flex-wrap: wrap-reverse;*/
-    
+.dlp-secondary-actions .blade-content{
+    padding: 15px 0px 8px 0px;
+    height: 80px
+}
+.dlp-secondary-actions .dlp-action{
+    margin: 0px 20px 0px 0px;
+}
+.dlp-secondary-actions .dlp-action .action-text{
+    font-size: 12px;
+    color: #000000;
+    margin: -5px 0px 0px 10px;
+}
+.dlp-secondary-actions .dlp-action.active .action-text{
+    display: none;
 }
 
-.dlp-extra-info{
-    margin-left: 80px;
+.other-buttons div{
+    margin-left: 15px;
+    margin-top: 5px;
 }
-
-.dlp-extra-info .info-block{
-    margin-bottom: 40px;
-    width: 300px;
-}
-
-.dlp-extra-info .info-block h5{
-    font-size: 14px;
+.dlp-secondary-action .action-text{
+    font-size: 10px;
+    font-weight: 700;
     color: #000000;
     text-transform: uppercase;
+    margin-top: 5px;
 }
-.dlp-extra-info .info-block ul{
-    list-style: none;
-    margin-top: 10px
-}
-.dlp-extra-info .info-block ul li{
-    font-size: 14px;
-    color: #1E8D93;
-    line-height: 25px;
-}
-.dlp-reviews h3{
-    color: #787878;
-    font-size: 20px;
-    font-weight: 500;
-}
-.dlp-reviews h4{
-    color: #787878;
-    font-size: 17px;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-/*rating------*/
-.leave-review .rate{
-    margin-left: 20px;
-}
-.leave-review .rate ul{
-    list-style: none;
-}
-.leave-review .rate ul li{
-    margin-right: 10px;
-}
-.leave-review .rate ul li a{
-    display: block;
-    color: #ffffff;
-    background-color: #F5A623;
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    padding-top: 5px;
-    font-size: 17px;
-    border-radius: 20px
-}
-.leave-review .rate ul li a.low{
-    background-color: #FF5B4F;
-}
-.leave-review .rate ul li a.high{
-    background-color: #BDDC05;
-}
-
-
-
-/*form-------*/
-.leave-review-content{
-    margin-top: 20px;
-}
-.leave-review-content form textarea{
-    background: #FFFFFF;
-    box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.50);
-    border-radius: 5px;
-    padding: 15px;
-    color: #000000;
-}
-.leave-review-footer{
-    margin-top: 20px;
-}
-.review-char-warning{
-    color: #000000;
-    font-size: 13px;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-.review-guidelines{
-    color: #787878;
-    font-size: 13px;
-    font-weight: 500;
-}
-.review-guidelines a{
-    text-decoration: underline;
-    color: #F43269;
-}
-.review-rating .review-score p{
-    width: 60px;
-    height: 60px;
-    font-size: 28px;
-    padding-top: 9px;
-}
-
-
-
-/*reviews-------*/
-.reviews{
-    margin: 20px 0px 0px 0px;
-}
-.reviews h4{
-    color: #000000;
-}
-.review{
-    border-top: 1px solid #A39B9B;
-    padding: 40px 0px 50px 0px;
-}
-.review-header-titles{
-    margin: 0px 30px 0px 30px;
-}
-.review-header-titles h6{
+.dlp-secondary-action i{
     color: #26B4BC;
-    font-weight: 700;
-    font-size: 15px;
-}
-.review-header-titles p{
-    color: #9B9B9B;
-    font-size: 11px;
-}
-.review-header-titles p.date{
-    font-weight: 500;
-    color: #787878;
-    font-size: 13px;
-}
-.review-body{
-    margin: 20px 90px 0px 90px;
-}
-.review-text{
-    font-weight: 500;
-    color: #000000;
+    font-size: 22px;
 }
 
-.review-useful{
-    margin-top: 20px;
-}
-.review-useful p{
-    margin-bottom: 10px;
-    color: #787878;
-    font-weight: 500;
-}
-.review-useful a{
-    color: #26B4BC;
-    font-weight: 500;
-    text-decoration: underline;
-    margin-right: 10px;
-}
-
-
-
-@media (max-width: 1100px) {
-    .dlp-details .blade-content{
-        flex-direction: column-reverse;
+@media (max-width: 800px) {
+    .dlp-secondary-actions .contact-buttons{
+        display: none;
     }
-    .dlp-extra-info{
-        margin: 0px 0px 50px 0px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-}
-
-@media (max-width: 670px) {
-
-    .leave-review .rate{
-        position: relative;
-    }
-    .leave-review .avatar{
-        width: 50px;
-        height: 50px;
-    }
-    .leave-review .rate ul{
-        position: absolute;
-        top: 70px;
-        left: -70px;
-        width: 87vw;
-        justify-content: space-between
-    }
-    .leave-review .rate ul li{
-        margin: 0px;
-    }
-    .leave-review h3{
-        margin-top: 10px;
-    }
-    .leave-review-content{
-        margin-top: 70px;
-    }
-    .leave-review-footer{
-        position: relative;
-        margin-bottom: 100px;
-    }
-    .leave-review-footer button{
-        position: absolute;
-        top: 80px;
-        left: 0px;
-    }
-    .review-body{
-        margin: 30px 0px 0px 0px;
-    }
-}
-
-@media (max-width: 460px) {
-    .leave-review .rate ul li a{
-        width: 26px;
-        height: 26px;
-        padding-top: 1px;
-        font-size: 16px;
+    .dlp-secondary-actions .blade-content{
+        justify-content: flex-start;
     }
     
-    
 }
-
-
-
-
-
-
-

@@ -2,29 +2,34 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Finda DPL</title>
+        <title>Finda home</title>
         <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/sanitize.css">
         <link rel="stylesheet" href="css/layout.css">
-        <link rel="stylesheet" href="css/helpers.css">
+        <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/header.css">
+        
+        
+        <link rel="stylesheet" href="css/forms.css">
+        
         <link rel="stylesheet" href="css/ui-widgets.css">
         <link rel="stylesheet" href="css/newsletter-signup.css">
         <link rel="stylesheet" href="css/lists.css">
         <link rel="stylesheet" href="css/maps.css">
+        
+        
         <link rel="stylesheet" href="css/dlp.css">
-        <link rel="stylesheet" href="css/forms.css">
-        <link rel="stylesheet" href="css/footer.css">
+        
         <link rel="stylesheet" href="css/playground.css">
     </head>
     
-    <body class="flex-col flex-middle">
-        <header class="blade flex-row flex-centre flex-noshrink">
-            <div class="blade-content flex-row flex-middle">
+    <body class="flexc">
+        <header class="blade flexchild ns">
+            <div class="blade-content flexr xc">
                 <div class="header-logo"><img src="images/finda2.png"></img></div>
             
-                <div class="header-search flex-grow">
+                <div class="header-search flexchild g">
                     <form class="header-search-form">
                         <input class="search-location-input big-text-input big-left-rounded-text-input" value="Auckland" />
                         <input class="search-context-input big-text-input" placeholder="Find something" />
@@ -32,7 +37,7 @@
                     </form>
                 </div>
             
-                <div class="mobile-search-toggle flex-grow">
+                <div class="mobile-search-toggle flexchild g">
                     <button class="mobile-search-toggle-button"><i class="fa fa-search"></i></button>
                 </div>
                 
@@ -42,21 +47,24 @@
             </div>
         </header>
         
-        <main class="flex-grow flex-col">
-            
-            <div class="hero-image blade flex-col flex-centre flex-middle">
+        <main class="flexc flexchild g">
+
+<!--IMAGE BLADE------------->
+            <div class="hero-image blade flexc jc xc"> <!-- flex-col flex-centre flex-middle">-->
                 <img src="images/atomic-big.png"></img>
             </div>
     
-            <div class="dlp-nav blade flex-row flex-centre flex-noshrink"> <!--Add class 'stuck' to stick the nav to the top of the page-->
-               <div class="blade-content flex-row flex-space-between">
-                   <div class="dlp-page-links flex-noshrink">
+<!--PAGE NAV BLADE------------->
+            <div class="dlp-nav blade"> 
+            <!-- ^^ Add class 'stuck' to stick the nav to the top of the page-->
+               <div class="blade-content flexr sb">
+                   <div class="dlp-page-links flexr xc">
                        <button class="pill dlp-nav">about us</button>
                        <button class="pill dlp-nav outline active">photos</button> <!-- Add extra classes at runtime to set active button styles -->
                        <button class="pill dlp-nav">reviews</button>
                        <button class="pill dlp-nav">contact</button>
                    </div>
-                   <div class="dlp-page-links flex-noshrink flex-row flex-middle">
+                   <div class="dlp-page-links flexr xc">
                        <button class="pill dlp-nav claim">claim this business</button>
                        <button class="pill dlp-nav share"></button> <!-- Button text set in css so it can be adjusted with media query -->
                        <button class="pill white review">leave a review</button>
@@ -65,14 +73,14 @@
                 </div>
             </div>
     
-    
-            <div class="dlp-header blade flex-row flex-centre flex-noshrink">
-               <div class="blade-content flex-row flex-space-between">
+<!--BUSINESS HEADER ------------->
+            <div class="dlp-header blade">
+               <div class="blade-content flexr sb">
                    
-                    <div class="dlp-business flex-row flex-grow">
-                        <div class="logo flex-noshrink"><img src="images/list-logo.png"></img></div>
-                        <div class="info flex-grow">
-                            <div class="business-title flex-row">
+                    <div class="dlp-business flexr flexchild g">
+                        <div class="logo flexchild ns"><img src="images/list-logo.png"></img></div>
+                        <div class="info flexchild g">
+                            <div class="business-title flexr">
                                 <h1 class="dlp-h">Atomic coffee roasters</h1>
                                 <div class="fav-toggle"><i class="fa fa-star-o"></i></div> <!-- swap icon class to class="fa fa-star" -->
                             </div>
@@ -87,42 +95,42 @@
                         </div>
                     </div>
                    
-                   <div class="dlp-actions flex-row flex-noshrink">
+                   <div class="dlp-actions flexr flexchild ns">
                        
-                        <div class="dlp-action call flex-col flex-middle flex-noshrink"> <!-- add 'active' class to show number -->
-                            <div class="action-pill flex-row flex-middle flex-centre">
+                        <div class="dlp-action call flexc xc flexchild ns"> <!-- add 'active' class to show number -->
+                            <div class="action-pill flexr xc jc">
                                 <i class="fa fa-phone"></i>
                                 <p class="detail">09 6655443</p>
                             </div>
                             <p class="action-text">call</p>
                         </div>
                        
-                       <div class="dlp-action mobile flex-col flex-middle flex-noshrink">
-                            <div class="action-pill flex-row flex-middle flex-centre">
+                       <div class="dlp-action mobile flexc xc flexchild ns">
+                            <div class="action-pill flexr xc jc">
                                 <i class="fa fa-mobile"></i>
                                 <p class="detail">027 6655443</p>
                             </div>
                             <p class="action-text">mobile</p>
                         </div>
                        
-                       <div class="dlp-action fax flex-col flex-middle flex-noshrink">
-                            <div class="action-pill flex-row flex-middle flex-centre">
+                       <div class="dlp-action fax flexc xc flexchild ns">
+                            <div class="action-pill flexr xc jc">
                                 <i class="fa fa-fax"></i>
                                 <p class="detail">09 6655443</p>
                             </div>
                             <p class="action-text">fax</p>
                         </div>
                        
-                       <div class="dlp-action contact flex-col flex-middle flex-noshrink">
-                            <div class="action-pill flex-row flex-middle flex-centre">
+                       <div class="dlp-action contact flexc xc flexchild ns">
+                            <div class="action-pill flexr xc jc">
                                 <i class="fa fa-envelope-o"></i>
 <!--                                <p class="detail">09 6655443</p>-->
                             </div>
                             <p class="action-text">contact</p>
                         </div>
                        
-                       <div class="dlp-action website flex-col flex-middle flex-noshrink">
-                            <div class="action-pill flex-row flex-middle flex-centre">
+                       <div class="dlp-action website flexc xc flexchild ns">
+                            <div class="action-pill flexr xc jc">
                                 <i class="fa fa-external-link"></i>
 <!--                                <p class="detail">09 6655443</p>-->
                             </div>
@@ -132,12 +140,11 @@
                     </div>
                 </div>
             </div>
-
-
+            
 <!--ABOUT and OPENING HOURS ------------->
-            <div class="dlp-about blade flex-row flex-centre flex-noshrink">
-                <div class="blade-content flex-row">
-                    <div class="dlp-about-text flex-grow">
+            <div class="dlp-about blade">
+                <div class="blade-content flexr">
+                    <div class="dlp-about-text flexchild g">
                         <h2 class="dlp-h">About us</h2>
                         <p>News Zealand’s finest roasters, puveyors of amazing coffee. 
     Our cafe in Kingsland has now had a massive makeover - its now bigger and better.</p>
@@ -149,7 +156,7 @@
                         <button class="text-only">more</button>
                     </div>
 
-                    <div class="dlp-opening flex-noshrink">
+                    <div class="dlp-opening flexchild ns">
                         <div class="opening-hrs">
                             <h2 class="dlp-h">Opening Hours</h2>
                             <dl>
@@ -171,27 +178,27 @@
                         </div>
                         <div class="social">
                             <h2 class="dlp-h">Social</h2>
-                            <div class="flex-row">
-                                <div class="dlp-action facebook flex-col flex-middle flex-noshrink">
-                                    <div class="action-pill flex-row flex-middle flex-centre">
+                            <div class="flexr">
+                                <div class="dlp-action facebook flexc flexchild ns">
+                                    <div class="action-pill flexr xc jc">
                                         <i class="fa fa-facebook"></i>
                                     </div>
                                 </div>
                                 
-                                <div class="dlp-action twitter flex-col flex-middle flex-noshrink">
-                                    <div class="action-pill flex-row flex-middle flex-centre">
+                                <div class="dlp-action twitter flexc flexchild ns">
+                                    <div class="action-pill flexr xc jc">
                                         <i class="fa fa-twitter"></i>
                                     </div>
                                 </div>
                                 
-                                <div class="dlp-action linkedin flex-col flex-middle flex-noshrink">
-                                    <div class="action-pill flex-row flex-middle flex-centre">
+                                <div class="dlp-action linkedin flexc flexchild ns">
+                                    <div class="action-pill flexr xc jc">
                                         <i class="fa fa-linkedin"></i>
                                     </div>
                                 </div>
                                 
-                                <div class="dlp-action g-plus flex-col flex-middle flex-noshrink">
-                                    <div class="action-pill flex-row flex-middle flex-centre">
+                                <div class="dlp-action g-plus flexc flexchild ns">
+                                    <div class="action-pill flexr xc jc">
                                         <i class="fa fa-google-plus"></i>
                                     </div>
                                 </div>
@@ -202,24 +209,24 @@
             </div>
 
 <!--DLP MAP and DIRECTIONS ------------->
-            <div class="dlp-map blade flex-col flex-noshrink">
+            <div class="dlp-map blade flexc js flexchild ns">
                 
                 <div class="blue-pin"></div>
                 
-                <div class="dlp-map-directions flex-row flex-centre">
-                    <div class="blade-content flex-row flex-middle flex-space-between flex-wrap">
-                        <h4 class=" flex-noshrink">Find us</h4>
-                        <form class="dlp-directions-form flex-noshrink flex-row flex-grow">
-                            <div class="flex-row flex-grow">
-                                <input class="from-input flex-grow" value="23 Shaw Rd, Kingsland" />
+                <div class="dlp-map-directions flexr jc">
+                    <div class="blade-content flexr xc sb w">
+                        <h4 class="flexchild ns">Find us</h4>
+                        <form class="dlp-directions-form flexchild ns g flexr">
+                            <div class="flexr flexchild g">
+                                <input class="from-input flexchild g" value="23 Shaw Rd, Kingsland" />
                                 <button class="swap-from-to"><i class="fa fa-refresh"></i></button>
                             </div>
-                            <div class="flex-row flex-grow">
-                                <input class="to-input flex-grow" value="Atomic Coffee, Kingsland" />
+                            <div class="flexr flexchild g">
+                                <input class="to-input flexchild g" value="Atomic Coffee, Kingsland" />
                                 <button class="directions-button">Go</button>
                             </div>
                         </form>
-                        <div class="map-actions  flex-noshrink">
+                        <div class="map-actions  flexchild ns">
                             <button class="pill outline blue">All branches (8)</button>
                             <button class="pill white">Show directions</button>
                         </div>
@@ -228,39 +235,38 @@
             </div>
 
 <!-- IMAGES (placeholder - replace with carosel) ------------->
-            <div class="dlp-images blade flex-row flex-noshrink">
+            <div class="dlp-images blade flexr">
                 <img src="images/dlp-photos/pic1.png"></img>
                 <img src="images/dlp-photos/pic2.png"></img>
                 <img src="images/dlp-photos/pic4.png"></img>
                 <img src="images/dlp-photos/pic3.png"></img>
 
-                <div class="dlp-action left linkedin flex-col flex-middle flex-noshrink">
-                    <div class="action-pill flex-row flex-middle flex-centre">
+                <div class="dlp-action left flexc">
+                    <div class="action-pill flexr jc xc flex-centre">
                         <i class="fa fa-chevron-left"></i>
                     </div>
                 </div>
 
-                <div class="dlp-action right linkedin flex-col flex-middle flex-noshrink">
-                    <button class="action-pill flex-row flex-middle flex-centre">
+                <div class="dlp-action right flexc">
+                    <button class="action-pill flexr jc xc">
                         <i class="fa fa-chevron-right"></i>
                     </button>
                 </div>
             </div>
 
 <!-- REVIEWS AND EXTRA INFO ------------->
-            <div class="dlp-details blade flex-row flex-centre flex-noshrink">
-                <div class="blade-content flex-row">
+            <div class="dlp-details blade">
+                <div class="blade-content flexr">
                     
-                    
-                    <div class="dlp-reviews flex-col">
+                    <div class="dlp-reviews"> <!-- flex-col"> -->
                         <h2 class="dlp-h">Review Atomic Coffee Roasters</h2>
                         
                         <div class="leave-review">
-                            <div class="leave-review-header flex-row">
-                                <div class="avatar large flex-noshrink"><img src="images/av.png"></img></div>
-                                <div class="rate flex-col flex-space-between">
+                            <div class="leave-review-header flexr">
+                                <div class="avatar large flexchild ns"><img src="images/av.png"></img></div>
+                                <div class="rate flexc sb">
                                     <h3>Select your rating</h3>
-                                    <ul class="flex-row">
+                                    <ul class="flexr">
                                         <li><a class="low" href="#">0</a></li>
                                         <li><a class="low" href="#">1</a></li>
                                         <li><a class="low" href="#">2</a></li>
@@ -278,9 +284,9 @@
                             </div>
                             <div class="leave-review-content">
                                 <h4>Your comment</h4>
-                                <form class="flex-col">
-                                    <textarea class="flex-grow" rows="6"></textarea>
-                                    <div class="leave-review-footer flex-row flex-space-between">
+                                <form class="flexc">
+                                    <textarea class="flexchild g" rows="6"></textarea>
+                                    <div class="leave-review-footer flexr sb">
                                         <div>
                                             <p class="review-char-warning">Your review must be 25 characters longer</p>
                                             <p class="review-guidelines">(Please be honest, fair and responsible - <a href="#">Read our guidelines</a>)</p>
@@ -294,21 +300,21 @@
                         <div class="reviews">
                             <h4>Latest reviews</h4>
                             
-                            <div class="review flex-col">
-                                <div class="review-header flex-row">
+                            <div class="review flexc">
+                                <div class="review-header flexr">
                                     <div class="avatar"><img src="images/av.png"></img></div>
-                                    <div class="review-header-titles flex-grow">
+                                    <div class="review-header-titles flexchild g">
                                         <h6>HorseLuva92</h6>
                                         <p class="date">27th November 2015</p>
                                         <p>12 people found this review funny</p>
                                     </div>
-                                    <div class="review-rating flex-col flex-end">
+                                    <div class="review-rating flexc je">
                                         <div class="review-score">
                                             <p class="score low">2.7</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="review-body flex-col">
+                                <div class="review-body flexc">
                                     <div class="review-text">
                                         Great coffee! This is definitely one of the best cafes in Auckland. What a great range of coffee. For a coffee connoisseur this place is heaven. You can also buy their coffee etc online.
                                     </div>
@@ -323,21 +329,21 @@
                                 </div>
                             </div>
                     
-                            <div class="review flex-col">
-                                <div class="review-header flex-row">
+                            <div class="review flexc">
+                                <div class="review-header flexr">
                                     <div class="avatar"><img src="images/av.png"></img></div>
-                                    <div class="review-header-titles flex-grow">
+                                    <div class="review-header-titles flexchild g">
                                         <h6>HorseLuva92</h6>
                                         <p class="date">27th November 2015</p>
                                         <p>12 people found this review funny</p>
                                     </div>
-                                    <div class="review-rating flex-col flex-end">
+                                    <div class="review-rating flexc je">
                                         <div class="review-score">
                                             <p class="score low">2.7</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="review-body flex-col">
+                                <div class="review-body flexc">
                                     <div class="review-text">
                                         Great coffee! This is definitely one of the best cafes in Auckland. What a great range of coffee. For a coffee connoisseur this place is heaven. You can also buy their coffee etc online.
                                     </div>
@@ -360,32 +366,32 @@
                     
                     
                     
-                    <div class="dlp-extra-info flex-col">
-                        <div class="info-block flex-noshrink">
+                    <div class="dlp-extra-info flexc">
+                        <div class="info-block flexchild ns">
                             <h5>Parking</h5>
                             <ul>
                                 <li>Is provided</li>
                             </ul>
                         </div>
-                        <div class="info-block flex-noshrink">
+                        <div class="info-block flexchild ns">
                             <h5>Size</h5>
                             <ul>
                                 <li>0-4 employees</li>
                             </ul>
                         </div>
-                        <div class="info-block flex-noshrink">
+                        <div class="info-block flexchild ns">
                             <h5>Established</h5>
                             <ul>
                                 <li>1998</li>
                             </ul>
                         </div>
-                        <div class="info-block flex-noshrink">
+                        <div class="info-block flexchild ns">
                             <h5>Payment options</h5>
                             <ul>
                                 <li>Visa, Mastercard, Debit card, Paywave</li>
                             </ul>
                         </div>
-                        <div class="info-block flex-noshrink">
+                        <div class="info-block flexchild ns">
                             <h5>Categories</h5>
                             <ul>
                                 <li>Cafes</li>
@@ -393,7 +399,7 @@
                                 <li>Coffee Merchants</li>
                             </ul>
                         </div>
-                        <div class="info-block flex-noshrink">
+                        <div class="info-block flexchild ns">
                             <h5>Products and services</h5>
                             <ul>
                                 <li>Coffee</li>
@@ -409,7 +415,7 @@
                                 <li>Domestic Equipment</li>
                             </ul>
                         </div>
-                        <div class="info-block flex-noshrink">
+                        <div class="info-block flexchild ns">
                             <h5>Brands</h5>
                             <ul>
                                 <li>ATOMIC</li>
@@ -428,50 +434,50 @@
             </div>
 
 
-            <div class="dlp-secondary-actions blade flex-row flex-centre flex-noshrink">
-                <div class="blade-content flex-row flex-space-between">
-                    <div class="contact-buttons flex-row">
+            <div class="dlp-secondary-actions blade">
+                <div class="blade-content flexr sb">
+                    <div class="contact-buttons flexr">
                         
-                        <div class="dlp-action call flex-row flex-middle flex-noshrink"> <!-- add 'active' class to show number -->
-                            <div class="action-pill flex-row flex-middle flex-centre">
+                        <div class="dlp-action call flexr xc flexchild ns"> <!-- add 'active' class to show number -->
+                            <div class="action-pill flexr xc jc">
                                 <i class="fa fa-phone"></i>
                                 <p class="detail">09 6655443</p>
                             </div>
                             <p class="action-text">call</p>
                         </div>
                         
-                        <div class="dlp-action call flex-row flex-middle flex-noshrink">
-                            <div class="action-pill flex-row flex-middle flex-centre">
+                        <div class="dlp-action call flexr xc flexchild ns">
+                            <div class="action-pill flexr xc jc">
                                 <i class="fa fa-envelope-o"></i>
                             </div>
                             <p class="action-text">contact</p>
                         </div>
                         
-                        <div class="dlp-action call flex-row flex-middle flex-noshrink">
-                            <div class="action-pill flex-row flex-middle flex-centre">
+                        <div class="dlp-action call flexr xc flexchild ns">
+                            <div class="action-pill flexr xc jc">
                                 <i class="fa fa-external-link"></i>
                             </div>
                             <p class="action-text">website</p>
                         </div>
                     
                     </div>
-                    <div class="other-buttons flex r">
-                        <div class="dlp-secondary-action flex flex-middle">
+                    <div class="other-buttons flexr">
+                        <div class="dlp-secondary-action flexc xc">
                             <i class="fa fa-exclamation-triangle"></i>
                             <p class="action-text">report page</p>
                         </div>
                         
-                        <div class="dlp-secondary-action flex flex-middle">
+                        <div class="dlp-secondary-action flexc xc">
                             <i class="fa fa-print"></i>
                             <p class="action-text">print page</p>
                         </div>
                         
-                        <div class="dlp-secondary-action flex flex-middle">
+                        <div class="dlp-secondary-action flexc xc">
                             <i class="fa fa-share-alt"></i>
                             <p class="action-text">share page</p>
                         </div>
                         
-                        <div class="dlp-secondary-action flex flex-middle">
+                        <div class="dlp-secondary-action flexc xc">
                             <i class="fa fa-star-o"></i>
                             <p class="action-text">Favourite</p>
                         </div>
@@ -479,10 +485,10 @@
                     </div>
                 </div>
             </div>
-            
+
         </main>
     
-        <div class="newsletter-signup blade flex-row flex-centre flex-noshrink">
+        <div class="newsletter-signup blade flexchild ns">
             <div class="blade-content">
                 
                 <div class="newsletter-signup-content">
@@ -502,10 +508,10 @@
                 
             </div>
         </div>
-        <footer class="blade flex-row flex-centre">
+        <footer class="blade">
             <div class="blade-content">
                 
-                <div class="footer-blocks flex-row flex-wrap">
+                <div class="footer-blocks flexr w">
                     <div class="footer-block green">
                         <h6>Finda.co.nz</h6>
                         <ul>
@@ -553,8 +559,8 @@
                     
                 </div>
                 
-                <div class="footer-sole flex-row flex-space-between flex-end">
-                    <div class="footer-sole-terms flex-row flex-wrap">
+                <div class="footer-sole flexr sb xe">
+                    <div class="footer-sole-terms flexr w">
                         <p>COPYRIGHT&nbsp;015&nbsp;FINDA&nbsp;LIMITED</p>
                         <p><a href="#">PRIVACY&nbsp;POLICY</a></p>
                         <p><a href="#">TERMS&nbsp;OF&nbsp;USE</a></p>
