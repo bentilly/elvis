@@ -429,3 +429,170 @@ button.directions-button{
 
 
 
+/*DLP DETAILS -------------*/
+
+.dlp-details{
+    padding: 50px 0px 50px 0px;
+}
+
+/*Leave your review ------*/
+.leave-review h3{
+    font-size: 20px;
+    color: #787878;
+    font-weight: 500;
+}
+.rate{
+    margin-left: 20px;
+}
+.rate ul{
+    list-style: none;
+}
+.rate ul li a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    background: #F5A623;
+    border-radius: 20px;
+    padding-top: 5px;
+    margin-right: 5px
+}
+.rate ul li a.low{
+    background: #FF5B4F;
+}
+.rate ul li a.med{
+    background: #F5A623;
+}
+.rate ul li a.high{
+    background: #BADA55;
+}
+
+.leave-review-content h4{
+    font-size: 17px;
+    color: #787878;
+    font-weight: 500;
+    margin: 20px 0px 20px 0px;
+}
+.leave-review-content form textarea{
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.50);
+    border-radius: 5px;
+    padding: 15px
+}
+.leave-review-footer{
+    margin: 10px 0px 0px 0px;
+}
+.review-char-warning{
+    font-weight:500;
+    font-size: 13px;
+    color: #000000;
+}
+.review-guidelines{
+    color: #787878;
+    font-weight: 500;
+    font-size: 13px;
+}
+.review-guidelines a{
+    color: #F43269;
+}
+
+
+/*A review ------*/
+.reviews{
+    margin: 50px 0px 0px 0px;
+}
+.reviews h4{
+    font-weight:500;
+    font-size: 17px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.review{
+    border-top: 1px solid #A39B9B;
+    padding: 20px 0px 20px 0px;
+}
+.review-header{
+    margin: 0px 0px 15px 0px;
+}
+.review-header-titles{
+    margin: 0px 0px 0px 20px;
+}
+.review-header-titles h6{
+    font-weight:700;
+    font-size: 15px;
+    color: #26B4BC;
+}
+.review-header-titles p.date{
+    font-weight: 500;
+    color: #787878;
+    font-size: 13px;
+}
+.review-header-titles p{
+    color: #9B9B9B;
+    font-size: 11px;
+}
+.review-body{
+    margin: 0px 70px 0px 80px;
+}
+.review-text{
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+}
+.review-useful{
+    margin: 20px 0px 0px 0px;
+}
+.review-useful p{
+    color: #787878;
+    font-size: 13px;
+}
+.review-useful a{
+    color: #27C0C8;
+    font-weight: 500;
+    font-size: 13px;
+    margin-right: 20px;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+/*----------- BADGE -------------*/
+/*not clickable - based on <div>*/
+.badge{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60px;/*default size*/
+    height: 60px;
+    border-radius: 100px; /* shouldnt need a badge bigger than this */
+    background: #bada55;/*default colours*/
+    color: white;
+    font-weight: 400;
+    font-size: 28px;
+}
+.badge.rating.low{
+    background: #FF5B4F;
+}
+.badge.rating.med{
+    background: #F5A623;
+}
+.badge.rating.high{
+    background: #bada55;
+}
+
+
+
+
+
+
+
+
+
+
