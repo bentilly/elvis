@@ -45,3 +45,6 @@
     flex-shrink: 0;
 }
 
+
+button:focus {outline:0;}
+
