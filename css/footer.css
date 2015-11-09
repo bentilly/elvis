@@ -62,6 +62,9 @@ footer{
     margin-right: 15px
 }
 
-
+/*TINY FOOTER-------------*/
+footer.tiny .footer-sole{
+    margin: 0px 0px 5px 0px;
+}
 
 
