@@ -2,7 +2,7 @@
 .map-list{
     height: 60vh;
     width: 100%;
-    background-image: url(/images/wellymap.png);
+    background-image: url(../images/wellymap.png);
     position: relative;
 }
 .pin-examples{
@@ -12,7 +12,7 @@
     left: 300px;
 }
 .map-pin{
-    background-image: url(/images/pins/map-pin-orange.svg);
+    background-image: url(../images/pins/map-pin-orange.svg);
     background-repeat: no-repeat;
     background-position: center;
     height: 70px;
@@ -26,7 +26,7 @@
 }
 .blue-pin{
     background: none;
-    background-image: url(/images/pins/blue-pin.svg);
+    background-image: url(../images/pins/blue-pin.svg);
     background-repeat: no-repeat;
     background-position: center;
     height: 50px;
