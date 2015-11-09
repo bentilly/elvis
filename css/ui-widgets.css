@@ -258,7 +258,7 @@ tweaking
 /*----------- MAP PINS -------------*/
 
 .map-pin{
-    background-image: url(/images/pins/map-pin-orange.svg);
+    background-image: url(../images/pins/map-pin-orange.svg);
     background-repeat: no-repeat;
     background-position: center;
     height: 70px;
@@ -269,22 +269,22 @@ tweaking
     padding-bottom: 22px
 }
 .map-pin.low{
-    background-image: url(/images/pins/map-pin-red.svg);
+    background-image: url(../images/pins/map-pin-red.svg);
 }
 .map-pin.med{
-    background-image: url(/images/pins/map-pin-orange.svg);
+    background-image: url(../images/pins/map-pin-orange.svg);
 }
 .map-pin.high{
-    background-image: url(/images/pins/map-pin-green.svg);
+    background-image: url(../images/pins/map-pin-green.svg);
 }
 .map-pin.dim{
     opacity: .4;
 }
 .map-pin.selected{
-    background-image: url(/images/pins/map-pin-blue.svg);
+    background-image: url(../images/pins/map-pin-blue.svg);
 }
 .map-pin.small{
-    background-image: url(/images/pins/blue-pin.svg);
+    background-image: url(../images/pins/blue-pin.svg);
     height: 40px;
     width: 30px;
 }

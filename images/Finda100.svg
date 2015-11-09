@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="103px" height="31px" viewBox="0 0 103 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.1 (15681) - http://www.bohemiancoding.com/sketch -->
+    <title>Finda100</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="FINDA---Responsive---Reviewed" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="HOME-UNKNOWN-LOCATION-1650" sketch:type="MSArtboardGroup" transform="translate(-259.000000, -20.000000)" fill="#BDDC05">
+            <g id="Condensed-SRP-Copy" sketch:type="MSLayerGroup" transform="translate(0.000000, -1.000000)">
+                <g id="Header-Copy">
+                    <g id="Finda100" transform="translate(259.000000, 21.000000)">
+                        <path d="M8,31 L4,31 L4,19 L0,19 L0,15 L4,15 L4,7 L6,7 L6,5 L8,5 L8,3 L16,3 L16,7 L8,7 L8,15 L12,15 L12,19 L8,19 L8,31 Z" id="Path-87" sketch:type="MSShapeGroup"></path>
+                        <rect id="Rectangle-71" sketch:type="MSShapeGroup" x="20" y="11" width="4" height="20"></rect>
+                        <path d="M28,31 L28,11 L44,11 L44,13 L46,13 L46,15 L48,15 L48,31 L44,31 L44,15 L32,15 L32,31 L28,31 Z" id="Path-88" sketch:type="MSShapeGroup"></path>
+                        <path d="M72,3 L68,3 L68,11 L56,11 L56,13 L54,13 L54,15 L52,15 L52,27 L54,27 L54,29 L56,29 L56,31 L72,31 L72,3 Z M56,15 L68,15 L68,27 L56,27 L56,15 Z" id="Path-89" sketch:type="MSShapeGroup"></path>
+                        <path d="M80,15 L92,15 L92,19 L80,19 L80,21 L78,21 L78,23 L76,23 L76,27 L78,27 L78,29 L80,29 L80,31 L96,31 C96,31 95.9877941,20.3371038 96,15 C96.0000365,14.9897049 94,15 94,15 L94,13 L92,13 L92,11 L80,11 L80,15 Z M80,23 L92,23 L92,27 L80,27 L80,23 Z" id="Path-90" sketch:type="MSShapeGroup"></path>
+                        <text id="®-copy" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="7" font-weight="260">
+                            <tspan x="97" y="12">®</tspan>
+                        </text>
+                        <path d="M22.4243164,8.66052246 L23.3227539,8.40136719 L22.0233154,5.41833496 L24.4854736,5.63659668 L19.5496826,0.447387695 L19.5145264,7.27246094 L21.1804199,5.77978516 L22.4243164,8.66052246 Z" id="Path-91" sketch:type="MSShapeGroup"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
