@@ -580,7 +580,7 @@ button.directions-button{
 }
 
 .other-buttons div{
-    margin-left: 15px;
+    margin-left: 25px;
     margin-top: 5px;
 }
 .dlp-secondary-action .action-text{
@@ -601,6 +601,11 @@ button.directions-button{
     }
     .dlp-secondary-actions .blade-content{
         justify-content: flex-start;
+    }
+
+    .other-buttons div {
+        margin-left: 0px;
+        margin-right: 25px;
     }
     
 }
