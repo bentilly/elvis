@@ -15,6 +15,19 @@
 }
 
 
+/*Full screen map - ACTIVE ITEM--------*/
+button.active-item-close{
+    position: absolute;
+    top: 0px;
+    right:6px;
+    color: #6A6A6A;
+    font-size: 20px;
+}
+
+
+
+
+
 /*SEARCH RESULTS----------*/
 .search-results{
     background: #434343;
@@ -59,10 +72,18 @@
 }
 .selected-pin-listing .blade-content{
     background: white;
+    position: relative;
 }
 .li-content{
     padding: 20px 20px 20px 20px;
 }
+.li-body{
+    font-size: 14px;
+    color: black;
+    padding-top: 8px;
+}
+
+
 .li-text-block{
     padding-right: 20px;
 }
