@@ -1,0 +1,290 @@
+/*PILL BUTTONS---------*/
+button.pill{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+}
+
+button.outline{
+    color: #EE1556;
+    border: 2px solid #EE1556;
+}
+button.outline.fine{
+    border-width: 1px;
+}
+button.outline.blue{
+    color: #26B4BC;
+    border-color: #26B4BC;
+}
+button.outline.black{
+    color: black;
+    border-color: black;
+}
+
+button.outline.black.active{
+    color: white;
+    border-color: white;
+    display: flex;
+    flex-direction: row;
+}
+button.outline.black.active i{
+    margin: 0px -12px 0px 10px;
+    font-size: 22px;
+    
+}
+
+
+button.solid.blue{
+    background-color: #26B4BC;
+    color: #ffffff;
+}
+button.long{
+    padding: 10px 45px 10px 40px;
+    border-radius: 40px;
+}
+button.white{
+    background-color: #ffffff;
+    color: #26B4BC;
+}
+button.text-only{
+    font-size: 12px;
+    color: #26B4BC;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+button.dlp-nav{
+    color: #ffffff;
+    margin-right: 10px;
+}
+button.dlp-nav.active{
+    color: #000000;
+    border-color: #000000;
+}
+button.dlp-nav:hover{
+    background-color: #777777;
+    
+}
+
+/*-----------ICON BUTTON -------------*/
+button.icon-only{
+    font-size: 18px
+}
+
+
+/*-----------ROUND BUTTON -------------*/
+
+/*default button. Blue with white icon*/
+button.fbut i{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 45px;/*default size*/
+    height: 45px;
+    border-radius: 100px; /* shouldnt need a badge bigger than this */
+    background: #26B4BC;/*default colours*/
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+}
+button.fbut.pink i{
+    background: #EE1556;
+}
+/*default label below*/
+button.fbut.labeled{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+button.fbut.labeled p{
+    font-size: 11px;
+    font-weight: 700;
+    color: #7C7C7C;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+button.fbut.labeled.beside{
+    flex-direction: row;
+}
+button.fbut.labeled.beside p{
+    margin: 0px 0px 0px 10px;
+    color: black;
+    font-size: 12px;
+}
+button.fbut.active .label{
+    display: none;
+}
+button.fbut.active i{
+    width: auto;
+    padding: 0px 20px 0px 14px;
+    background: #A5A88B;
+}
+button.fbut span{
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 10px;
+    display: none;
+}
+button.fbut.active span{
+    display: inline;
+}
+
+
+/*----------- BADGE -------------*/
+/*not clickable - based on <div class="badge">*/
+.badge{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60px;/*default size*/
+    height: 60px;
+    border-radius: 100px; /* shouldnt need a badge bigger than this */
+    background: #bada55;/*default colours*/
+    color: white;
+    font-weight: 400;
+    font-size: 28px;
+}
+.badge.rating.low{
+    background: #FF5B4F;
+}
+.badge.rating.med{
+    background: #F5A623;
+}
+.badge.rating.high{
+    background: #bada55;
+}
+.badge.big{
+    font-size: 34px;
+    width: 80px;
+    height: 80px;
+}
+
+
+/*REVIEW SCORE---------*/
+/*TODO Replace in HTML with BADGE*/
+.review-score{
+    text-align: center;
+}
+.review-score .score{
+    width: 75px;
+    height: 75px;
+    background-color: #BDDC05;
+    color: #ffffff;
+    font-size: 35px;
+    border-radius: 45px;
+    padding-top: 10px;
+}
+.review-score .score.low{
+    background-color: #FF5B4F;
+}
+.review-score .score.med{
+    background-color: #F5A623;
+}
+.review-score .score.high{
+    background-color: #BDDC05;
+}
+.review-score .reviews{
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #7C7C7C;
+    margin-top: 5px;
+}
+
+
+/*LISTING ACTIONS---------*/
+/*TODO: Might be superflous.Check home page*/
+.listing-action{
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #7C7C7C;
+    margin-right: 20px;
+}
+.listing-action i{
+    width: 45px;
+    height: 45px;
+    background-color: #26B4BC;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 13px;
+    border-radius: 25px;
+    margin-bottom: 5px;
+}
+tweaking
+.listing-action.website i{
+    padding-left: 5px;
+}
+.listing-action.more i{
+    padding-left: 5px;
+}
+
+
+/*FAV TOGGLE---------*/
+.fav-toggle{
+    font-size: 18px;
+    color: #26B4BC;
+    padding-top: 6px;
+}
+
+
+
+
+/*Avatar ------------*/
+.avatar{
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+}
+.avatar img{
+    width: 100%; /*images must be square*/
+}
+.avatar.large{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+
+
+
+/*----------- MAP PINS -------------*/
+
+.map-pin{
+    background-image: url(/images/pins/map-pin-orange.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70px;
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    padding-bottom: 22px
+}
+.map-pin.low{
+    background-image: url(/images/pins/map-pin-red.svg);
+}
+.map-pin.med{
+    background-image: url(/images/pins/map-pin-orange.svg);
+}
+.map-pin.high{
+    background-image: url(/images/pins/map-pin-green.svg);
+}
+.map-pin.dim{
+    opacity: .4;
+}
+.map-pin.selected{
+    background-image: url(/images/pins/map-pin-blue.svg);
+}
+.map-pin.small{
+    background-image: url(/images/pins/blue-pin.svg);
+    height: 40px;
+    width: 30px;
+}

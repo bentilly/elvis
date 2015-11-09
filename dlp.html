@@ -1,0 +1,573 @@
+﻿<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Finda DPL</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/sanitize.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/helpers.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/ui-widgets.css">
+        <link rel="stylesheet" href="css/newsletter-signup.css">
+        <link rel="stylesheet" href="css/lists.css">
+        <link rel="stylesheet" href="css/maps.css">
+        <link rel="stylesheet" href="css/dlp.css">
+        <link rel="stylesheet" href="css/forms.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/playground.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="js/core.js"></script>
+    </head>
+    
+    <body class="flex-col flex-middle">
+        <header class="blade flex-row flex-centre flex-noshrink">
+            <div class="blade-content flex-row flex-middle">
+                <div class="header-logo"><img src="images/finda2.png"></img></div>
+            
+                <div class="header-search flex-grow">
+                    <form class="header-search-form">
+                        <input class="search-location-input big-text-input big-left-rounded-text-input" value="Auckland" />
+                        <input class="search-context-input big-text-input" placeholder="Find something" />
+                        <button class="search-button big-green-inline-button"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            
+                <div class="mobile-search-toggle flex-grow">
+                    <button class="mobile-search-toggle-button"><i class="fa fa-search"></i></button>
+                </div>
+                
+                <div class="header-user">
+                    <button class="pill outline">Sign in</button>
+                </div>
+            </div>
+        </header>
+        
+        <main class="flex-grow flex-col">
+            
+            <div class="hero-image blade flex-col flex-centre flex-middle">
+                <img src="images/atomic-big.png"></img>
+            </div>
+    
+            <div class="dlp-nav blade flex-row flex-centre flex-noshrink"> <!--Add class 'stuck' to stick the nav to the top of the page-->
+               <div class="blade-content flex-row flex-space-between">
+                   <div class="dlp-page-links flex-noshrink">
+                       <button class="pill dlp-nav">about us</button>
+                       <button class="pill dlp-nav outline active">photos</button> <!-- Add extra classes at runtime to set active button styles -->
+                       <button class="pill dlp-nav">reviews</button>
+                       <button class="pill dlp-nav">contact</button>
+                   </div>
+                   <div class="dlp-page-links flex-noshrink flex-row flex-middle">
+                       <button class="pill dlp-nav claim">claim this business</button>
+                       <button class="pill dlp-nav share"></button> <!-- Button text set in css so it can be adjusted with media query -->
+                       <button class="pill white review">leave a review</button>
+                       <div class="dlp-nav-menu-indicator"><i class="fa fa-chevron-down"></i></div>
+                   </div>
+                </div>
+            </div>
+    
+    
+            <div class="dlp-header blade flex-row flex-centre flex-noshrink">
+               <div class="blade-content flex-row flex-space-between">
+                   
+                    <div class="dlp-business flex-row flex-grow">
+                        <div class="logo flex-noshrink"><img src="images/list-logo.png"></img></div>
+                        <div class="info flex-grow">
+                            <div class="business-title flex-row">
+                                <h1 class="dlp-h">Atomic coffee roasters</h1>
+                                <div class="fav-toggle"><i class="fa fa-star-o"></i></div> <!-- swap icon class to class="fa fa-star" -->
+                            </div>
+                            <address>420 New North Road, Kingsland, Auckland, 1071</address>
+                            <button class="text-only">show postal address</button>
+                        </div>
+                        <div class="rating">
+                            <div class="review-score">
+                                <p class="score low">2.7</p>
+                                <p class="reviews">9 reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                   <div class="dlp-actions flex-row flex-noshrink">
+                       
+                        <div class="dlp-action call flex-col flex-middle flex-noshrink"> <!-- add 'active' class to show number -->
+                            <div class="action-pill flex-row flex-middle flex-centre">
+                                <i class="fa fa-phone"></i>
+                                <p class="detail">09 6655443</p>
+                            </div>
+                            <p class="action-text">call</p>
+                        </div>
+                       
+                       <div class="dlp-action mobile flex-col flex-middle flex-noshrink">
+                            <div class="action-pill flex-row flex-middle flex-centre">
+                                <i class="fa fa-mobile"></i>
+                                <p class="detail">027 6655443</p>
+                            </div>
+                            <p class="action-text">mobile</p>
+                        </div>
+                       
+                       <div class="dlp-action fax flex-col flex-middle flex-noshrink">
+                            <div class="action-pill flex-row flex-middle flex-centre">
+                                <i class="fa fa-fax"></i>
+                                <p class="detail">09 6655443</p>
+                            </div>
+                            <p class="action-text">fax</p>
+                        </div>
+                       
+                       <div class="dlp-action contact flex-col flex-middle flex-noshrink">
+                            <div class="action-pill flex-row flex-middle flex-centre">
+                                <i class="fa fa-envelope-o"></i>
+<!--                                <p class="detail">09 6655443</p>-->
+                            </div>
+                            <p class="action-text">contact</p>
+                        </div>
+                       
+                       <div class="dlp-action website flex-col flex-middle flex-noshrink">
+                            <div class="action-pill flex-row flex-middle flex-centre">
+                                <i class="fa fa-external-link"></i>
+<!--                                <p class="detail">09 6655443</p>-->
+                            </div>
+                            <p class="action-text">website</p>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+
+
+<!--ABOUT and OPENING HOURS ------------->
+            <div class="dlp-about blade flex-row flex-centre flex-noshrink">
+                <div class="blade-content flex-row">
+                    <div class="dlp-about-text flex-grow">
+                        <h2 class="dlp-h">About us</h2>
+                        <p>News Zealand’s finest roasters, puveyors of amazing coffee. 
+    Our cafe in Kingsland has now had a massive makeover - its now bigger and better.</p>
+                        <p>Coffee roasted daily for quality and freshness, distrubuted nationwide. 
+    Visit our cafe on site for great cuisine to match.In the Cafe, trained Baristas are always on hand 
+    to make sure you get your espresso, exactly the way you want it.</p>
+                        <p>Almost without exception the world's finest Arabica coffee grows 
+    at high altitude. Almost without exception the world's finest Arabica coffee grows at high altitude. We…</p>
+                        <button class="text-only">more</button>
+                    </div>
+
+                    <div class="dlp-opening flex-noshrink">
+                        <div class="opening-hrs">
+                            <h2 class="dlp-h">Opening Hours</h2>
+                            <dl>
+                                <dt>Monday</dt>
+                                <dd>Closed</dd>
+                                <dt>Tuesday</dt>
+                                <dd>Closed</dd>
+                                <dt>Wednesday</dt>
+                                <dd>9:00AM - 5:30PM</dd>
+                                <dt>Thursday</dt>
+                                <dd>9:00AM - 5:30PM</dd>
+                                <dt>Friday</dt>
+                                <dd>9:00AM - 5:30PM</dd>
+                                <dt>Saturday</dt>
+                                <dd>11:00AM - 5:30PM</dd>
+                                <dt>Sunday</dt>
+                                <dd>11:00AM - 2:30PM</dd>
+                            </dl>
+                        </div>
+                        <div class="social">
+                            <h2 class="dlp-h">Social</h2>
+                            <div class="flex-row">
+                                <div class="dlp-action facebook flex-col flex-middle flex-noshrink">
+                                    <div class="action-pill flex-row flex-middle flex-centre">
+                                        <i class="fa fa-facebook"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="dlp-action twitter flex-col flex-middle flex-noshrink">
+                                    <div class="action-pill flex-row flex-middle flex-centre">
+                                        <i class="fa fa-twitter"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="dlp-action linkedin flex-col flex-middle flex-noshrink">
+                                    <div class="action-pill flex-row flex-middle flex-centre">
+                                        <i class="fa fa-linkedin"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="dlp-action g-plus flex-col flex-middle flex-noshrink">
+                                    <div class="action-pill flex-row flex-middle flex-centre">
+                                        <i class="fa fa-google-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--DLP MAP and DIRECTIONS ------------->
+            <div class="dlp-map blade flex-col flex-noshrink">
+                
+                <div class="blue-pin"></div>
+                
+                <div class="dlp-map-directions flex-row flex-centre">
+                    <div class="blade-content flex-row flex-middle flex-space-between flex-wrap">
+                        <h4 class=" flex-noshrink">Find us</h4>
+                        <form class="dlp-directions-form flex-noshrink flex-row flex-grow">
+                            <div class="flex-row flex-grow">
+                                <input class="from-input flex-grow" value="23 Shaw Rd, Kingsland" />
+                                <button class="swap-from-to"><i class="fa fa-refresh"></i></button>
+                            </div>
+                            <div class="flex-row flex-grow">
+                                <input class="to-input flex-grow" value="Atomic Coffee, Kingsland" />
+                                <button class="directions-button">Go</button>
+                            </div>
+                        </form>
+                        <div class="map-actions  flex-noshrink">
+                            <button class="pill outline blue">All branches (8)</button>
+                            <button class="pill white">Show directions</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- IMAGES (placeholder - replace with carosel) ------------->
+            <div class="dlp-images blade flex-row flex-noshrink">
+                <img src="images/dlp-photos/pic1.png"></img>
+                <img src="images/dlp-photos/pic2.png"></img>
+                <img src="images/dlp-photos/pic4.png"></img>
+                <img src="images/dlp-photos/pic3.png"></img>
+
+                <div class="dlp-action left linkedin flex-col flex-middle flex-noshrink">
+                    <div class="action-pill flex-row flex-middle flex-centre">
+                        <i class="fa fa-chevron-left"></i>
+                    </div>
+                </div>
+
+                <div class="dlp-action right linkedin flex-col flex-middle flex-noshrink">
+                    <button class="action-pill flex-row flex-middle flex-centre">
+                        <i class="fa fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+<!-- REVIEWS AND EXTRA INFO ------------->
+            <div class="dlp-details blade flex-row flex-centre flex-noshrink">
+                <div class="blade-content flex-row">
+                    
+                    
+                    <div class="dlp-reviews flex-col">
+                        <h2 class="dlp-h">Review Atomic Coffee Roasters</h2>
+                        
+                        <div class="leave-review">
+                            <div class="leave-review-header flex-row">
+                                <div class="avatar large flex-noshrink"><img src="images/av.png"></img></div>
+                                <div class="rate flex-col flex-space-between">
+                                    <h3>Select your rating</h3>
+                                    <ul class="flex-row">
+                                        <li><a class="low" href="#">0</a></li>
+                                        <li><a class="low" href="#">1</a></li>
+                                        <li><a class="low" href="#">2</a></li>
+                                        <li><a class="med" href="#">3</a></li>
+                                        <li><a class="med" href="#">4</a></li>
+                                        <li><a class="med" href="#">5</a></li>
+                                        <li><a class="med" href="#">6</a></li>
+                                        <li><a class="high" href="#">7</a></li>
+                                        <li><a class="high" href="#">8</a></li>
+                                        <li><a class="high" href="#">9</a></li>
+                                        <li><a class="high" href="#">10</a></li>
+                                    </ul>
+                                </div>
+                            
+                            </div>
+                            <div class="leave-review-content">
+                                <h4>Your comment</h4>
+                                <form class="flex-col">
+                                    <textarea class="flex-grow" rows="6"></textarea>
+                                    <div class="leave-review-footer flex-row flex-space-between">
+                                        <div>
+                                            <p class="review-char-warning">Your review must be 25 characters longer</p>
+                                            <p class="review-guidelines">(Please be honest, fair and responsible - <a href="#">Read our guidelines</a>)</p>
+                                        </div>
+                                        <button class="pill solid blue long">submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        <div class="reviews">
+                            <h4>Latest reviews</h4>
+                            
+                            <div class="review flex-col">
+                                <div class="review-header flex-row">
+                                    <div class="avatar"><img src="images/av.png"></img></div>
+                                    <div class="review-header-titles flex-grow">
+                                        <h6>HorseLuva92</h6>
+                                        <p class="date">27th November 2015</p>
+                                        <p>12 people found this review funny</p>
+                                    </div>
+                                    <div class="review-rating flex-col flex-end">
+                                        <div class="review-score">
+                                            <p class="score low">2.7</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-body flex-col">
+                                    <div class="review-text">
+                                        Great coffee! This is definitely one of the best cafes in Auckland. What a great range of coffee. For a coffee connoisseur this place is heaven. You can also buy their coffee etc online.
+                                    </div>
+                                    <div class="review-useful">
+                                        <p>Is this review</p>
+                                        <div class="useful-options">
+                                            <a href="#">Useful</a>
+                                            <a href="#">Funny</a>
+                                            <a href="#">Not useful</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="review flex-col">
+                                <div class="review-header flex-row">
+                                    <div class="avatar"><img src="images/av.png"></img></div>
+                                    <div class="review-header-titles flex-grow">
+                                        <h6>HorseLuva92</h6>
+                                        <p class="date">27th November 2015</p>
+                                        <p>12 people found this review funny</p>
+                                    </div>
+                                    <div class="review-rating flex-col flex-end">
+                                        <div class="review-score">
+                                            <p class="score low">2.7</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-body flex-col">
+                                    <div class="review-text">
+                                        Great coffee! This is definitely one of the best cafes in Auckland. What a great range of coffee. For a coffee connoisseur this place is heaven. You can also buy their coffee etc online.
+                                    </div>
+                                    <div class="review-useful">
+                                        <p>Is this review</p>
+                                        <div class="useful-options">
+                                            <a href="#">Useful</a>
+                                            <a href="#">Funny</a>
+                                            <a href="#">Not useful</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    
+                    
+                    <div class="dlp-extra-info flex-col">
+                        <div class="info-block flex-noshrink">
+                            <h5>Parking</h5>
+                            <ul>
+                                <li>Is provided</li>
+                            </ul>
+                        </div>
+                        <div class="info-block flex-noshrink">
+                            <h5>Size</h5>
+                            <ul>
+                                <li>0-4 employees</li>
+                            </ul>
+                        </div>
+                        <div class="info-block flex-noshrink">
+                            <h5>Established</h5>
+                            <ul>
+                                <li>1998</li>
+                            </ul>
+                        </div>
+                        <div class="info-block flex-noshrink">
+                            <h5>Payment options</h5>
+                            <ul>
+                                <li>Visa, Mastercard, Debit card, Paywave</li>
+                            </ul>
+                        </div>
+                        <div class="info-block flex-noshrink">
+                            <h5>Categories</h5>
+                            <ul>
+                                <li>Cafes</li>
+                                <li>Eateries</li>
+                                <li>Coffee Merchants</li>
+                            </ul>
+                        </div>
+                        <div class="info-block flex-noshrink">
+                            <h5>Products and services</h5>
+                            <ul>
+                                <li>Coffee</li>
+                                <li>Tea / teas</li>
+                                <li>Consumables</li>
+                                <li>Barista training</li>
+                                <li>Coffee equipment </li>
+                                <li>Coffee distributor and distributors </li>
+                                <li>Coffee Roasters </li>
+                                <li>Wholesalers and Retailers </li>
+                                <li>Coffee Specialists </li>
+                                <li>Commercial Equipment </li>
+                                <li>Domestic Equipment</li>
+                            </ul>
+                        </div>
+                        <div class="info-block flex-noshrink">
+                            <h5>Brands</h5>
+                            <ul>
+                                <li>ATOMIC</li>
+                                <li>RANCILIO</li>
+                                <li>Espresso coffee machines</li>
+                                <li>Stash Teas (qty 30s)</li>
+                                <li>Promotional / branded coffee</li>
+                                <li>Altura Blend</li>
+                                <li>Tea Drop</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+
+            <div class="dlp-secondary-actions blade flex-row flex-centre flex-noshrink">
+                <div class="blade-content flex-row flex-space-between">
+                    <div class="contact-buttons flex-row">
+                        
+                        <div class="dlp-action call flex-row flex-middle flex-noshrink"> <!-- add 'active' class to show number -->
+                            <div class="action-pill flex-row flex-middle flex-centre">
+                                <i class="fa fa-phone"></i>
+                                <p class="detail">09 6655443</p>
+                            </div>
+                            <p class="action-text">call</p>
+                        </div>
+                        
+                        <div class="dlp-action call flex-row flex-middle flex-noshrink">
+                            <div class="action-pill flex-row flex-middle flex-centre">
+                                <i class="fa fa-envelope-o"></i>
+                            </div>
+                            <p class="action-text">contact</p>
+                        </div>
+                        
+                        <div class="dlp-action call flex-row flex-middle flex-noshrink">
+                            <div class="action-pill flex-row flex-middle flex-centre">
+                                <i class="fa fa-external-link"></i>
+                            </div>
+                            <p class="action-text">website</p>
+                        </div>
+                    
+                    </div>
+                    <div class="other-buttons flex r">
+                        <div class="dlp-secondary-action flex flex-middle">
+                            <i class="fa fa-exclamation-triangle"></i>
+                            <p class="action-text">report page</p>
+                        </div>
+                        
+                        <div class="dlp-secondary-action flex flex-middle">
+                            <i class="fa fa-print"></i>
+                            <p class="action-text">print page</p>
+                        </div>
+                        
+                        <div class="dlp-secondary-action flex flex-middle">
+                            <i class="fa fa-share-alt"></i>
+                            <p class="action-text">share page</p>
+                        </div>
+                        
+                        <div class="dlp-secondary-action flex flex-middle">
+                            <i class="fa fa-star-o"></i>
+                            <p class="action-text">Favourite</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+    
+        <div class="newsletter-signup blade flex-row flex-centre flex-noshrink">
+            <div class="blade-content">
+                
+                <div class="newsletter-signup-content">
+                    <h3 class="newsletter-signup-title"><span class="green">Finda</span> is changing,<br />do you want to be<br />kept up to date?</h3>
+                    <div class="newsletter-signup-text">
+                        We are under going some fantastic new updates and developments with our website. 
+                        If you would like to help and be part of the process why not give us your details and we will keep you in the loop.
+                    </div>
+                </div>
+                
+                <div class="newsletter-signup-form">
+                    <form>
+                        <input class="newsletter-signup-input big-text-input big-left-rounded-text-input" type="text" placeholder="you@example.com"/>
+                        <button class="newsletter-signup-submit big-green-inline-button">Sign up</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        <footer class="blade flex-row flex-centre">
+            <div class="blade-content">
+                
+                <div class="footer-blocks flex-row flex-wrap">
+                    <div class="footer-block green">
+                        <h6>Finda.co.nz</h6>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Site map</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="#">Add your business</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-block blue">
+                        <h6>MyFinda</h6>
+                        <ul>
+                            <li><a href="#">Sign in</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Forgot your password?</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-block pink">
+                        <h6>Business owners</h6>
+                        <ul>
+                            <li><a href="#">Add your business</a></li>
+                            <li><a href="#">Get more from Finda</a></li>
+                            <li><a href="#">Need help with Finda?</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-block green">
+                        <h6>Friends of Finda</h6>
+                        <ul>
+                            <li><a href="#">Wises</a></li>
+                            <li><a href="#">Menus</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-block blue">
+                        <h6>Connect with Finda</h6>
+                        <ul>
+                            <li><a href="#">Follow us on Twitter</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+                <div class="footer-sole flex-row flex-space-between flex-end">
+                    <div class="footer-sole-terms flex-row flex-wrap">
+                        <p>COPYRIGHT&nbsp;015&nbsp;FINDA&nbsp;LIMITED</p>
+                        <p><a href="#">PRIVACY&nbsp;POLICY</a></p>
+                        <p><a href="#">TERMS&nbsp;OF&nbsp;USE</a></p>
+                        <p><a href="#">CONTACT&nbsp;FINDA</a></p>
+                    </div>
+                    
+                    <div class="footer-logo"><img src="images/finda2.png"></img></div>
+                </div>
+                
+            </div>
+        </footer>
+    </body>
+</html>

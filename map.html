@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Finda home</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/sanitize.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/header.css">
+        
+        <link rel="stylesheet" href="css/forms.css">
+        <link rel="stylesheet" href="css/ui-widgets.css">
+        <link rel="stylesheet" href="css/lists.css">
+        
+        <link rel="stylesheet" href="css/playground.css">
+    </head>
+    
+    <body class="flexc">
+        <header class="blade flexchild ns">
+            <div class="blade-content flexr xc">
+                <div class="header-logo"><img src="images/finda2.png"></img></div>
+            
+                <div class="header-search flexchild g">
+                    <form class="header-search-form">
+                        <input class="search-location-input big-text-input big-left-rounded-text-input" value="Auckland" />
+                        <input class="search-context-input big-text-input" placeholder="Find something" />
+                        <button class="search-button big-green-inline-button"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            
+                <div class="mobile-search-toggle flexchild g">
+                    <button class="mobile-search-toggle-button"><i class="fa fa-search"></i></button>
+                </div>
+                
+                <div class="header-user">
+                    <button class="pill outline">Sign in</button>
+                </div>
+            </div>
+        </header>
+        
+        <main class="flexc flexchild g">
+<!--SEARCH RESULTS------------>
+            <div class="search-results blade">
+                <div class="blade-content flexr sb">
+                    <div class="flexr xc flexchild ns">
+                        <p>You searched <span>Cafes</span> in <span class="highlight">Kingsland</span></p>
+                        <p class="num-results">67 results</p>
+                    </div>
+                    <div class="fs-map-actions flexr xc flexchild ns">
+                        <button type="button" class="pill outline blue">switch to list view</button>
+                    </div>
+                </div>
+            </div>
+            
+<!--            The map bit-->
+            <div class="g-map flexchild g">
+            
+                <div class="example-map-pins flexr">
+                    <button type="button" class="flexchild ns map-pin low">2.4</button>
+                    <button type="button" class="flexchild ns map-pin med">6.8</button>
+                    <button type="button" class="flexchild ns map-pin high">8.5</button>
+                    <button type="button" class="flexchild ns map-pin med dim">6.8</button>
+                    <button type="button" class="flexchild ns map-pin high selected">8.5</button>
+                    <button type="button" class="flexchild ns map-pin small"></button>
+                    <button type="button" class="flexchild ns map-pin small dim"></button>
+                </div>
+            
+                <div class="selected-pin-listing blade">
+                        <div class="blade-content flexr">
+                            <img src="images/shaky.png"></img>
+                    
+                            <div class="li-content flexr flexchild g">
+                                <div class="li-text-block flexc  flexchild g">
+                                    
+                                    <div class="li-text flexc flexchild g">
+                                        <h2>Bradley Isles is amazing<i class="fa fa-star-o"></i></h2>
+                                        <address>420 New North Road, Kingsland, Auckland</address>
+                                    </div>
+                                
+                                    <div class="li-actions flexr">
+                                        <button type="button" class="fbut labeled">
+                                            <!--Add "active" class for alt state ^^-->
+                                            <i class="fa fa-phone"><span>09 6655443</span></i>
+                                            <p class="label">call</p>
+                                        </button>
+                                        <button type="button" class="fbut labeled ">
+                                            <i class="fa fa-external-link"></i>
+                                            <p class="label">website</p>
+                                        </button>
+                                        <button type="button" class="fbut labeled ">
+                                            <i class="fa fa-chevron-right"></i>
+                                            <p class="label">more</p>
+                                        </button>
+                                        <button type="button" class="fbut labeled pink">
+                                            <i class="fa fa-dollar"></i>
+                                            <p class="label">Coupons</p>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="li-badges flexc sb">
+                                    <div class="badge rating low big">2.7</div>
+                                    <img src="images/list-logo.png"></img>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                
+                
+                
+                
+            
+            
+            </div>
+            
+            <div class="search-options blade">
+                <div class="blade-content flexr">
+                    <div class="related-cats flexc flexchild g">
+                        <div class="title-block flexr sb xs">
+                            <h6>Related categories</h6>
+                            <button type="button" class="icon-only"><i class="fa fa-arrow-down"></i></button>
+                        </div>
+                        
+                        <div class="cats flexr w">
+                            <button type="button" class="pill outline fine black active">This category <i class="fa fa-check-circle"></i></button>
+                            <button type="button" class="pill outline fine black">a category</button>
+                            <button type="button" class="pill outline fine black">a category</button>
+                            <button type="button" class="pill outline fine black">a category</button>
+                            <button type="button" class="pill outline fine black">a category</button>
+                            <button type="button" class="pill outline fine black">a category</button>
+                            <button type="button" class="pill outline fine black">a category</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </main>
+    
+
+    
+    
+        <footer class="blade tiny">
+            <div class="blade-content">
+                
+                <div class="footer-sole flexr sb xe">
+                    <div class="footer-sole-terms flexr w">
+                        <p>COPYRIGHT&nbsp;015&nbsp;FINDA&nbsp;LIMITED</p>
+                        <p><a href="#">PRIVACY&nbsp;POLICY</a></p>
+                        <p><a href="#">TERMS&nbsp;OF&nbsp;USE</a></p>
+                        <p><a href="#">CONTACT&nbsp;FINDA</a></p>
+                    </div>
+                    
+                    <div class="footer-logo"><img src="images/finda1.png"></img></div>
+                </div>
+                
+            </div>
+        </footer>
+    </body>
+</html>

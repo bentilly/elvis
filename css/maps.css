@@ -1,0 +1,69 @@
+/*MAPS---------*/
+.map-list{
+    height: 60vh;
+    width: 100%;
+    background-image: url(/images/wellymap.png);
+    position: relative;
+}
+.pin-examples{
+    background: none;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+}
+.map-pin{
+    background-image: url(/images/pins/map-pin-orange.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70px;
+    width: 50px;
+}
+.map-pin .pin-label{
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    padding-top: 12px;
+}
+.blue-pin{
+    background: none;
+    background-image: url(/images/pins/blue-pin.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 30px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    
+}
+.active-item{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color:rgba(255,255,255,0.8);
+}
+.active-map-item{
+    margin-bottom: 0px;
+}
+.active-item-close{
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+}
+.active-item-close a{
+    color:#999999;
+}
+.active-item-close a:hover{
+    color:#000000;
+}
+@media (max-width: 800px) {
+/*    expand the map (js) when a pin is selected AND screen is narrow
+    */
+/*    The active item on the map must be touchable so the screen can still be scrolled on touch devices*/
+    .map-list{
+        height: 800px;
+    }
+    .active-item .blade-content{
+        max-width: 400px;
+    }
+}
