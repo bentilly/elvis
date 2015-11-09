@@ -225,7 +225,7 @@ h2.dlp-h{
 .dlp-map{
     height: 350px;
     width: 100%;
-    background-image: url(/images/wellymap.png);
+    background-image: url(../images/wellymap.png);
     position: relative;
 }
 .dlp-map-directions{
