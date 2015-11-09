@@ -91,6 +91,7 @@
                             <button class="text-only">show postal address</button>
                         </div>
                         <div class="rating">
+<!--                            TOD: replace with BADGE-->
                             <div class="review-score">
                                 <p class="score low">2.7</p>
                                 <p class="reviews">9 reviews</p>
@@ -98,48 +99,34 @@
                         </div>
                     </div>
                    
-                   <div class="dlp-actions flexr flexchild ns">
-                       
-                        <div class="dlp-action call flexc xc flexchild ns"> <!-- add 'active' class to show number -->
-                            <div class="action-pill flexr xc jc">
-                                <i class="fa fa-phone"></i>
-                                <p class="detail">09 6655443</p>
-                            </div>
-                            <p class="action-text">call</p>
-                        </div>
-                       
-                       <div class="dlp-action mobile flexc xc flexchild ns">
-                            <div class="action-pill flexr xc jc">
-                                <i class="fa fa-mobile"></i>
-                                <p class="detail">027 6655443</p>
-                            </div>
-                            <p class="action-text">mobile</p>
-                        </div>
-                       
-                       <div class="dlp-action fax flexc xc flexchild ns">
-                            <div class="action-pill flexr xc jc">
-                                <i class="fa fa-fax"></i>
-                                <p class="detail">09 6655443</p>
-                            </div>
-                            <p class="action-text">fax</p>
-                        </div>
-                       
-                       <div class="dlp-action contact flexc xc flexchild ns">
-                            <div class="action-pill flexr xc jc">
-                                <i class="fa fa-envelope-o"></i>
-<!--                                <p class="detail">09 6655443</p>-->
-                            </div>
-                            <p class="action-text">contact</p>
-                        </div>
-                       
-                       <div class="dlp-action website flexc xc flexchild ns">
-                            <div class="action-pill flexr xc jc">
-                                <i class="fa fa-external-link"></i>
-<!--                                <p class="detail">09 6655443</p>-->
-                            </div>
-                            <p class="action-text">website</p>
-                        </div>
-                
+                    <div class="dlp-actions flexr flexchild ns">
+
+                        <button type="button" class="fbut labeled">
+                            <!--Add "active" class for alt state ^^-->
+                            <i class="fa fa-phone"><span>09 6655443</span></i>
+                            <p class="label">call</p>
+                        </button>
+                        <button type="button" class="fbut labeled ">
+                            <i class="fa fa-mobile"><span>09 6655443</span></i>
+                            <p class="label">mobile</p>
+                        </button>
+                        <button type="button" class="fbut labeled ">
+                            <i class="fa fa-fax"><span>09 6655443</span></i>
+                            <p class="label">fax</p>
+                        </button>
+                        <button type="button" class="fbut labeled ">
+                            <i class="fa fa-envelope-o"></i>
+                            <p class="label">contact</p>
+                        </button>
+                        <button type="button" class="fbut labeled ">
+                            <i class="fa fa-external-link"></i>
+                            <p class="label">website</p>
+                        </button>
+                        <button type="button" class="fbut labeled pink">
+                            <i class="fa fa-dollar"></i>
+                            <p class="label">Coupons</p>
+                        </button>
+
                     </div>
                 </div>
             </div>
@@ -181,30 +168,21 @@
                         </div>
                         <div class="social">
                             <h2 class="dlp-h">Social</h2>
-                            <div class="flexr">
-                                <div class="dlp-action facebook flexc flexchild ns">
-                                    <div class="action-pill flexr xc jc">
-                                        <i class="fa fa-facebook"></i>
-                                    </div>
-                                </div>
+                            <div class="social-buttons flexr">
                                 
-                                <div class="dlp-action twitter flexc flexchild ns">
-                                    <div class="action-pill flexr xc jc">
-                                        <i class="fa fa-twitter"></i>
-                                    </div>
-                                </div>
+                                <button type="button" class="fbut">
+                                    <i class="fa fa-facebook"></i>
+                                </button>
+                                <button type="button" class="fbut">
+                                    <i class="fa fa-twitter"></i>
+                                </button>
+                                <button type="button" class="fbut">
+                                    <i class="fa fa-linkedin"></i>
+                                </button>
+                                <button type="button" class="fbut">
+                                    <i class="fa fa-google-plus"></i>
+                                </button>
                                 
-                                <div class="dlp-action linkedin flexc flexchild ns">
-                                    <div class="action-pill flexr xc jc">
-                                        <i class="fa fa-linkedin"></i>
-                                    </div>
-                                </div>
-                                
-                                <div class="dlp-action g-plus flexc flexchild ns">
-                                    <div class="action-pill flexr xc jc">
-                                        <i class="fa fa-google-plus"></i>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -239,23 +217,21 @@
 
 <!-- IMAGES (placeholder - replace with carosel) ------------->
             <div class="dlp-images blade flexr">
+
                 <img src="images/dlp-photos/pic1.png"></img>
                 <img src="images/dlp-photos/pic2.png"></img>
                 <img src="images/dlp-photos/pic4.png"></img>
                 <img src="images/dlp-photos/pic3.png"></img>
 
-                <div class="dlp-action left flexc">
-                    <div class="action-pill flexr jc xc flex-centre">
-                        <i class="fa fa-chevron-left"></i>
-                    </div>
-                </div>
+                <button type="button" class="fbut left">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+                
+                <button type="button" class="fbut right">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
 
-                <div class="dlp-action right flexc">
-                    <button class="action-pill flexr jc xc">
-                        <i class="fa fa-chevron-right"></i>
-                    </button>
-                </div>
-            </div>
+        </div>
 
 <!-- REVIEWS AND EXTRA INFO ------------->
             <div class="dlp-details blade">
@@ -358,7 +334,7 @@
                     
                     
                     
-                    <div class="dlp-extra-info flexc">
+                    <div class="dlp-extra-info flexc flexchild ns">
                         <div class="info-block flexchild ns">
                             <h5>Parking</h5>
                             <ul>
@@ -425,35 +401,31 @@
                 </div>
             </div>
 
-
+<!-- SECONDARY ACTIONS ------------->
             <div class="dlp-secondary-actions blade">
                 <div class="blade-content flexr sb">
                     <div class="contact-buttons flexr">
                         
-                        <div class="dlp-action call flexr xc flexchild ns"> <!-- add 'active' class to show number -->
-                            <div class="action-pill flexr xc jc">
-                                <i class="fa fa-phone"></i>
-                                <p class="detail">09 6655443</p>
-                            </div>
-                            <p class="action-text">call</p>
-                        </div>
                         
-                        <div class="dlp-action call flexr xc flexchild ns">
-                            <div class="action-pill flexr xc jc">
-                                <i class="fa fa-envelope-o"></i>
-                            </div>
-                            <p class="action-text">contact</p>
-                        </div>
+                        <button type="button" class="fbut labeled beside">
+                            <!--Add "active" class for alt state ^^-->
+                            <i class="fa fa-phone"><span>09 6655443</span></i>
+                            <p class="label">call</p>
+                        </button>
+                        <button type="button" class="fbut labeled beside ">
+                            <i class="fa fa-envelope-o"></i>
+                            <p class="label">contact</p>
+                        </button>
+                        <button type="button" class="fbut labeled beside">
+                            <i class="fa fa-external-link"></i>
+                            <p class="label">website</p>
+                        </button>
                         
-                        <div class="dlp-action call flexr xc flexchild ns">
-                            <div class="action-pill flexr xc jc">
-                                <i class="fa fa-external-link"></i>
-                            </div>
-                            <p class="action-text">website</p>
-                        </div>
+
                     
                     </div>
                     <div class="other-buttons flexr">
+                        
                         <div class="dlp-secondary-action flexc xc">
                             <i class="fa fa-exclamation-triangle"></i>
                             <p class="action-text">report page</p>

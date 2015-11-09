@@ -1,4 +1,23 @@
+/***PAGE----------*/
+
+html{
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #444444;
+    font-size: 14px;
+}
+main{
+    width: 100%;
+    background-color: #E2E2E2;
+}
+
 /***BLADES----------*/
+
 .blade{
     width: 100%;
     display: flex;

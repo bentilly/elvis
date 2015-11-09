@@ -100,62 +100,8 @@ h1.dlp-h{
 }
 
 /*actions*/
-.dlp-action{
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #7C7C7C;
+.dlp-actions button{
     margin-left: 20px;
-}
-.dlp-action .detail{
-    display: none;
-    margin-top: -2px;
-}
-.action-pill{
-    height: 45px;
-    min-width: 45px;
-    background-color: #26B4BC;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 500;
-    border-radius: 25px;
-    overflow: hidden;
-    margin-bottom: 10px;
-    letter-spacing: 1.1px;
-}
-.action-pill i{
-    font-size: 20px;
-}
-/*tweeks*/
-.dlp-action.mobile i{
-    font-size: 30px;
-    padding: 0px 0px 2px 2px;
-}
-.dlp-action.fax i{
-    padding: 0px 0px 2px 2px;
-}
-.dlp-action.contact i{
-    padding: 0px 0px 2px 2px;
-}
-.dlp-action.website i{
-    padding: 2px 0px 0px 4px;
-}
-/*Active*/
-.dlp-action.active{
-    align-items: flex-start;
-}
-.dlp-action.active .action-pill{
-    background-color: #A5A88B;
-    padding: 0px 15px 0px 15px;
-}
-.dlp-action.active .action-pill i{
-    margin-right: 10px;
-}
-.dlp-action.active .detail{
-    display: block;
-}
-.dlp-action.active .action-text{
-    padding-left: 10px;
 }
 
 @media (max-width: 1000px) {
@@ -257,28 +203,8 @@ h2.dlp-h{
 }
 
 /*social icons*/
-.social .dlp-action:first-child{
-    margin-left: 0px;
-}
-.social .dlp-action{
-    margin-left: 5px;
-
-}
-.social .dlp-action i{
-    font-size: 25px;
-}
-/*tweeks*/
-.social .dlp-action.facebook i{
-    padding: 2px 0px 0px 0px;
-}
-.social .dlp-action.twitter i{
-    padding: 2px 0px 0px 2px;
-}
-.social .dlp-action.linkedin i{
-    padding: 0px 0px 0px 2px;
-}
-.social .dlp-action.g-plus i{
-    padding: 3px 0px 0px 4px;
+.social-buttons button{
+    margin-right: 10px;
 }
 
 @media (max-width: 800px) {
@@ -406,28 +332,16 @@ button.directions-button{
     position: relative;
     overflow: hidden;
 }
-.dlp-images .dlp-action{
+.dlp-images button{
     position: absolute;
     top: 180px;
-    background: none;
-    margin: 0px;
-    padding: 0px;
 }
-.dlp-images .dlp-action.left{
-    left: 20px;
+.dlp-images button.left{
+    left:3vw;
 }
-.dlp-images .dlp-action.right{
-    right: 20px;
+.dlp-images button.right{
+    right:3vw;
 }
-/*tweeks*/
-.dlp-images .dlp-action.right .action-pill{
-    padding-left: 4px;
-}
-.dlp-images .dlp-action.left .action-pill{
-    padding-right: 2px;
-}
-
-
 
 /*DLP DETAILS -------------*/
 
@@ -511,10 +425,10 @@ button.directions-button{
 }
 .review{
     border-top: 1px solid #A39B9B;
-    padding: 20px 0px 20px 0px;
+    padding: 30px 0px 40px 0px;
 }
 .review-header{
-    margin: 0px 0px 15px 0px;
+    margin: 0px 0px 20px 0px;
 }
 .review-header-titles{
     margin: 0px 0px 0px 20px;
@@ -557,39 +471,139 @@ button.directions-button{
 }
 
 
-
-
-
-
-
-/*----------- BADGE -------------*/
-/*not clickable - based on <div>*/
-.badge{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 60px;/*default size*/
-    height: 60px;
-    border-radius: 100px; /* shouldnt need a badge bigger than this */
-    background: #bada55;/*default colours*/
-    color: white;
-    font-weight: 400;
-    font-size: 28px;
+/*EXTRA INFO------------*/
+.dlp-extra-info{
+    margin-left: 100px;
 }
-.badge.rating.low{
-    background: #FF5B4F;
+.info-block{
+    min-width: 300px;
+    margin-bottom: 40px;
 }
-.badge.rating.med{
-    background: #F5A623;
+.info-block h5{
+    font-weight: 700;
+    font-size: 14px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
-.badge.rating.high{
-    background: #bada55;
+.info-block ul{
+    list-style: none;
+    font-size: 14px;
+    color: #1E8D93;
+    line-height: 26px;
+}
+
+.contact-buttons button{
+    margin-right: 30px
 }
 
 
+@media (max-width: 1000px) {
+    .dlp-details .blade-content{
+        flex-direction: column-reverse;
+    }
+    .dlp-extra-info{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 600px) {
+    .review-body{
+        margin: 0px 0px 0px 0px;
+    }
+    .leave-review-footer{
+        flex-direction: column;
+    }
+    .leave-review-footer button{
+        margin-top: 10px;
+        width: 150px
+    }
+    .leave-review-header{
+        margin-bottom: 80px;
+    }
+    .leave-review-header .avatar{
+        width: 50px;
+        height: 50px;
+    }
+    .rate{
+        position: relative;
+    }
+    .rate h3{
+        margin-top:10px
+    }
+    .rate ul{
+        position: absolute;
+        top: 60px;
+        left: -70px;
+    }
+}
+@media (max-width: 500px) {
+    .rate ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90vw;
+        padding-right: 15px
+    }
+    .rate ul li a{
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+        font-weight: 700;
+        padding-top: 2px;
+        margin: 0px;
+    }
+}
 
 
+/*SECONDARY ACTION BAR-------------*/
+
+.dlp-secondary-actions{
+    background: #ffffff;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.15);
+}
+.dlp-secondary-actions .blade-content{
+    padding: 15px 0px 8px 0px;
+    height: 80px
+}
+.dlp-secondary-actions .dlp-action{
+    margin: 0px 20px 0px 0px;
+}
+.dlp-secondary-actions .dlp-action .action-text{
+    font-size: 12px;
+    color: #000000;
+    margin: -5px 0px 0px 10px;
+}
+.dlp-secondary-actions .dlp-action.active .action-text{
+    display: none;
+}
+
+.other-buttons div{
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.dlp-secondary-action .action-text{
+    font-size: 10px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+.dlp-secondary-action i{
+    color: #26B4BC;
+    font-size: 22px;
+}
+
+@media (max-width: 800px) {
+    .dlp-secondary-actions .contact-buttons{
+        display: none;
+    }
+    .dlp-secondary-actions .blade-content{
+        justify-content: flex-start;
+    }
+    
+}
 
 
 
