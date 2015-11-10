@@ -131,6 +131,16 @@ button.green.active{
 nav.auth-nav button:first-child{
     border-top: 1px solid #DFE8EB;
 }
+
+button.green.list:hover{
+    color:#A5A88B;
+}
+
+button.green.list.active:hover{
+    color: white;
+}
+
+
 nav.auth-nav button.active:first-child{
     border-top: none;
 }
