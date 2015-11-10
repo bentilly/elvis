@@ -78,6 +78,7 @@ button.dlp-nav.share:after{
 h1.dlp-h{
     font-weight: 700;
     font-size: 23px;
+    line-height: 27px;
     color: #4a4a4a;
     margin-right: 10px;
     margin-bottom: 5px;
@@ -204,7 +205,7 @@ h2.dlp-h{
 
 /*social icons*/
 .social-buttons button{
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 @media (max-width: 800px) {
@@ -265,6 +266,16 @@ button.swap-from-to{
     border-left: 2px solid #D8D8D8;
     border-right: 2px solid #D8D8D8;
 }
+
+button.swap-from-to i:hover{
+    color: #26B4BC;   
+}
+
+button.swap-from-to i.active{
+    color: #26B4BC;   
+}
+
+
 button.directions-button{
     background-color: #26B4BC;
     font-weight: 700;
@@ -273,7 +284,17 @@ button.directions-button{
     height: 45px;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
+    text-transform: uppercase;
 }
+
+button.directions-button:hover{
+    background-color: #A5A88B;
+}
+
+button.directions-button.active{
+    background-color: #A5A88B;
+}
+
 /*map actions*/
 .map-actions{
     margin-left: 20px;
@@ -383,6 +404,16 @@ button.directions-button{
     background: #BADA55;
 }
 
+.rate ul li a:hover{
+    background: #26B4BC;
+}
+
+.rate ul li a.active{
+    background: #A5A88B;
+}
+
+
+
 .leave-review-content h4{
     font-size: 17px;
     color: #787878;
@@ -412,6 +443,18 @@ button.directions-button{
     color: #F43269;
 }
 
+.review-guidelines a:hover{
+
+ text-decoration: underline;
+
+}
+
+.review-guidelines a.active{
+
+ text-decoration: underline;
+    
+}
+
 
 /*A review ------*/
 .reviews{
@@ -433,11 +476,25 @@ button.directions-button{
 .review-header-titles{
     margin: 0px 0px 0px 20px;
 }
+
 .review-header-titles h6{
     font-weight:700;
     font-size: 15px;
     color: #26B4BC;
 }
+
+.review-header-titles h6:hover{
+
+    color: #A5A88B;
+
+}
+
+.review-header-titles h6.active{
+
+    color: #A5A88B;
+
+}
+
 .review-header-titles p.date{
     font-weight: 500;
     color: #787878;
@@ -452,7 +509,7 @@ button.directions-button{
 }
 .review-text{
     color: black;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
 }
 .review-useful{
@@ -468,6 +525,18 @@ button.directions-button{
     font-size: 13px;
     margin-right: 20px;
     text-decoration: underline;
+}
+
+.review-useful a:hover{
+
+    color: #A5A88B;
+
+}
+
+.review-useful a.active{
+
+    color: #A5A88B;
+
 }
 
 
@@ -489,7 +558,7 @@ button.directions-button{
 .info-block ul{
     list-style: none;
     font-size: 14px;
-    color: #1E8D93;
+    color: #787878;
     line-height: 26px;
 }
 
@@ -537,6 +606,8 @@ button.directions-button{
         top: 60px;
         left: -70px;
     }
+
+    
 }
 @media (max-width: 500px) {
     .rate ul{
@@ -593,6 +664,18 @@ button.directions-button{
 .dlp-secondary-action i{
     color: #26B4BC;
     font-size: 22px;
+}
+
+.dlp-secondary-action i:hover{
+
+    color: #A5A88B;
+
+}
+
+.dlp-secondary-action i.active{
+
+    color: #A5A88B;
+
 }
 
 @media (max-width: 800px) {

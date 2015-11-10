@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="27px" height="37px" viewBox="0 0 27 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.1 (15681) - http://www.bohemiancoding.com/sketch -->
+    <title>grey-pin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="FINDA---Responsive---Reviewed" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="SRP-MAP-800" sketch:type="MSArtboardGroup" transform="translate(-263.000000, -297.000000)">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(-421.000000, -12.000000)">
+                <g id="grey-pin" transform="translate(684.000000, 309.000000)" sketch:type="MSShapeGroup">
+                    <ellipse id="Oval-1-Copy" fill="#FFFFFF" cx="13.5" cy="13" rx="8" ry="8"></ellipse>
+                    <path d="M13.5,36.6896552 L25.4028,18.3448276 C26.0983,16.7370345 26.5,14.972 26.5,13.1034483 C26.5,5.86641379 20.6799,0 13.5,0 C6.3201,0 0.5,5.86641379 0.5,13.1034483 C0.5,14.972 0.8965,16.7370345 1.5972,18.3448276 L13.5,36.6896552 L13.5,36.6896552 Z M13.5,7.86206897 C16.3691,7.86206897 18.7,10.2115172 18.7,13.1034483 C18.7,16.0006207 16.3691,18.3448276 13.5,18.3448276 C10.6257,18.3448276 8.3,16.0006207 8.3,13.1034483 C8.3,10.2115172 10.6257,7.86206897 13.5,7.86206897 L13.5,7.86206897 Z" id="Imported-Layers-Copy-3" fill="#787878"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
