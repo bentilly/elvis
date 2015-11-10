@@ -22,7 +22,6 @@ button.outline.black{
     color: black;
     border-color: black;
 }
-
 button.outline.black.active{
     color: white;
     border-color: white;
@@ -32,10 +31,7 @@ button.outline.black.active{
 button.outline.black.active i{
     margin: 0px -12px 0px 10px;
     font-size: 22px;
-    
 }
-
-
 button.solid.blue{
     background-color: #26B4BC;
     color: #ffffff;
@@ -54,7 +50,6 @@ button.text-only{
     text-transform: uppercase;
     font-weight: 500;
 }
-
 button.dlp-nav{
     color: #ffffff;
     margin-right: 10px;
@@ -65,7 +60,33 @@ button.dlp-nav.active{
 }
 button.dlp-nav:hover{
     background-color: #777777;
-    
+}
+
+/*menu for auth space*/
+button.green{
+    color: #26B4BC;
+}
+button.green.list{
+    height: 40px;
+    width: 200px;
+    text-align: left;
+    border-radius: 0px;
+    border-bottom: 1px solid #DFE8EB;
+}
+button.green.active{
+    background: #A5A88B;
+    color: white;
+    border-radius: 40px;
+    border-bottom: none;
+}
+nav.auth-nav button:first-child{
+    border-top: 1px solid #DFE8EB;
+}
+nav.auth-nav button.active:first-child{
+    border-top: none;
+}
+nav.auth-nav button.pre-active{
+    border-bottom: none;
 }
 
 /*-----------ICON BUTTON -------------*/
