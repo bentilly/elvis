@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/ui-widgets.css">
-        
+        <link rel="stylesheet" href="css/auth.css">
         <link rel="stylesheet" href="css/playground.css">
     </head>
     
@@ -65,7 +65,13 @@
                 
                 <div class="auth-content flexchild g">
                     <header>
-                        <h2><a href="#">Previous page</a>Current page title</h2>
+                        <h2 class="flexr sb">
+                           <span><!-- <a href="#">Previous page</a>-->Favourites</span>
+                            <button type="button" class="auth-header-button flexchild ns flexr xc">Remove all<i class="fa fa-trash"></i></button>
+                        </h2>
+                        
+<!--SECTION NAV -->
+<!--
                         <nav>
                             <button type="button" class="">Settings</button>
                             <button type="button" class="active">Listings</button>
@@ -73,7 +79,53 @@
                             <button type="button" class="">Coupons</button>
                             <button type="button" class="">Reviews</button>
                         </nav>
+-->
+                        
                     </header>
+                    
+<!--FAVOURITES LIST                   -->
+                    <main>
+                        <div class="auth-list flexc">
+                            <div class="item favourites flexr xc">
+                                <img src="images/list-logo.png">
+                                <div class="item-content flexchild g flexc">
+                                    <h3 class="">
+                                        Atomic coffee Roasters&nbsp;&nbsp;
+                                        <button type="button" class="fav selected"><i class="fa fa-star"></i></button>
+                                    </h3>
+                                    <address>Kingsland, Auckland</address>
+                                </div>
+                                <div class="badge rating low">2.7</div>
+                            </div>
+                            
+                            <div class="item favourites flexr xc">
+                                <img src="images/list-logo.png">
+                                <div class="item-content flexchild g flexc">
+                                    <h3 class="">
+                                        Atomic coffee Roasters&nbsp;&nbsp;
+                                        <button type="button" class="fav selected"><i class="fa fa-star"></i></button>
+                                    </h3>
+                                    <address>Kingsland, Auckland</address>
+                                </div>
+                                <div class="badge rating med">6.7</div>
+                            </div>
+                            
+                            <div class="item favourites flexr xc">
+                                <img src="images/list-logo.png">
+                                <div class="item-content flexchild g flexc">
+                                    <h3 class="">
+                                        Atomic coffee Roasters&nbsp;&nbsp;
+                                        <button type="button" class="fav selected"><i class="fa fa-star"></i></button>
+                                    </h3>
+                                    <address>Kingsland, Auckland</address>
+                                </div>
+                                <div class="badge rating high">8.9</div>
+                            </div>
+                        </div>
+                    </main>
+                    
+<!--CONTENT DISPLAY                    -->
+<!-- 
                     <main>
                         <div class="auth-block">
                             <h3>Block title</h3>
@@ -94,6 +146,7 @@
                             <button type="button" class="pill solid blue long">edit</button>
                         </div>
                     </main>
+-->
 
                 </div>
             </div>

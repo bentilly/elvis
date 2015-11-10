@@ -1,138 +1,56 @@
-button.user-logged-in{
-    color: #BABEC1;
-    font-size: 14px;
-}
-button.user-logged-in img{
-    width: 35px;
-    height: 35px;
-    border-radius: 20px;
-    margin: 0px 10px 0px 10px;
-}
-button.user-logged-in i{
-    color: white;
-}
-/*TODO: this button is longer and screws up the responsive breakpoints. Fix it*/
-
-main.auth{
-    background: white;
-}
-main.auth .blade-content{
-    padding: 50px 0px;
-}
-@media (max-width: 700px) {
-    .user-menu{
-        display: none;
-    } 
-}
-
-/*User info and menu-------- */
-.user-menu{
-    margin-right: 50px;
-}
-.user-info img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-}
-.user-info a{
-    color: #26B4BC;
-    text-decoration: underline;
-    font-weight: 500;
-    font-size: 13px;
-    margin-top: 15px;
-}
-.user-info .user-name{
-    color: #4A4A4A;
-    font-weight: 700;
-    font-size: 21px;
-    margin-top: 10px;
-}
-.user-info .user-email{
-    color: #787878;
-    font-weight: 500;
-    font-size: 17px;
-    margin-top: 10px;
-    margin-top: 10px;
-}
-nav.auth-nav{
-    margin-top: 20px;
-}
-
-/*PAGE CONTENT-------- */
-.auth-content header{
-    background: none;
-}
-.auth-content h2{
-    font-weight: 500;
-    font-size: 21px;
-    color: #4A4A4A;
-}
-.auth-content h2 a{
-    color: #27C0C8;
-    padding-right: 20px;
-}
-.auth-content nav{
-    border-bottom: 1px solid #DFE8EB;
-    margin-top: 20px;
-    padding-bottom: 10px;
-}
-.auth-content nav button{
-    margin-right: 20px;
-    color: #26B4BC;
-    font-size: 16px;
-}
-.auth-content nav button.active{
-    color: #787878;
-}
-
-/*main-------- */
-
-.auth-content main{
-    background: none;
-    margin-top: 30px
-}
-.auth-block{
-    border
-}
-.auth-block h3{
-    color: #4A4A4A;
-    font-size: 21px;
-    font-weight: 700;
-}
-.auth-block dt{
-    color: #9B9B9B;
-    font-weight: 700;
-    font-size: 13px;
+button.auth-header-button{
+    font-weight:700;
+    font-size: 11px;
+    color: #7C7C7C;
     text-transform: uppercase;
-    margin-top: 20px
+    height: 34px;
+    margin-left: 5px;
 }
-.auth-block dd{
-    color: black;
+button.auth-header-button i{
+    color: #26B4BC;
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+    padding: 0px 0px 2px 0px;
+}
+
+/*GENERIC - TODO: retrofit back to rest of site */
+/*Fav icon toggle*/
+button.fav{
+    color: #26B4BC;
+    font-size: 20px;
+}
+button.fav.selected i{
+    color: #EE1556;
+}
+button.fav:hover i{
+    color: #A5A88B;
+}
+
+/*FAVOURITES LIST*/
+.auth-list .item{
+    border-bottom: 1px solid #DFE8EB;
+    padding: 20px 0px 20px 0px;
+}
+.auth-list .item:first-child{
+    padding-top: 0px;
+}
+.auth-list .item h3{
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 16px;
+    color: #26B4BC;
+}
+.auth-list .item img{
+    height: 70px;
+    width: 70px;
+}
+.item-content{
+    padding: 0px 15px 0px 15px;
+}
+
+.item-content address{
+    font-weight: 500;
     font-size: 16px;
-    margin-top: 10px;
-    line-height: 19px;
+    color: #787878;
+    font-style: normal;
 }
-.auth-block dd p{
-    margin-bottom: 10px;
-}
-.auth-block span.note{
-    font-size: 12px;
-    color: #9B9B9B;
-}
-.auth-block dd img{
-    max-height: 150px;
-    height: auto;
-}
-.auth-block a{
-    color: #27C0C8;
-    text-decoration: underline;
-}
-.auth-block button{
-    margin-top: 50px;
-}
-
-
-
-
-
-
