@@ -204,7 +204,7 @@ h2.dlp-h{
 
 /*social icons*/
 .social-buttons button{
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 @media (max-width: 800px) {
@@ -452,7 +452,7 @@ button.directions-button{
 }
 .review-text{
     color: black;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
 }
 .review-useful{

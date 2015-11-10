@@ -10,6 +10,7 @@
     position: relative;
 }
 
+
 .lli-content{
     padding: 15px 25px 10px 25px;
 }
@@ -31,7 +32,7 @@
     overflow: hidden;
 }
 .listings-list-item .review-snippet{
-    font-weight: 700;
+    font-weight: 500;
     color: #000000;
     margin: 8px 0px 8px 0px;
     line-height: 18px;
@@ -48,7 +49,8 @@
 }
 .review-snippet a.more-link{
     color: #26B4BC;
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 13px;
 }
 
 @media (max-width: 1100px) {
