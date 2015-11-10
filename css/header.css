@@ -53,12 +53,28 @@ header{
     margin-bottom: 8px;
 }
 
+.search-button:hover{
+    background: #A5A88B;
+    
+}
+
+.search-button:active{
+    background: #A5A88B;
+    
+}
+
 .mobile-search-toggle{
     color: #ffffff; 
-    font-size: 23px;
+    font-size: 30px;
     text-align: right;
     display: none;
+    padding-bottom: 2px;
 }
+
+.mobile-search-toggle:hover{
+    color: #26B4BC; 
+}
+
 .mobile-search-toggle-button{
     width: 40px;
     height: 40px;
@@ -121,9 +137,10 @@ header.m-search-open{
     font-size: 26px;
     margin: 10px 0px 10px 0px;
 }
-.title-strip-title h1 a{
+.title-strip-title h1 .green{
     color: #BDDC05;
 }
+
 .title-strip-content{
     font-size: 22px;
 }

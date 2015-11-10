@@ -58,6 +58,15 @@ footer{
 .footer-sole-terms a{
     color: #BDDC05;
 }
+
+.footer-sole-terms a:hover{
+    text-decoration: underline;
+}
+
+.footer-sole-terms a.active{
+    text-decoration: underline;
+}
+
 .footer-sole-terms p{
     margin-right: 15px
 }

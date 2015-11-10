@@ -18,6 +18,28 @@ button.outline.blue{
     color: #26B4BC;
     border-color: #26B4BC;
 }
+
+button.outline.fine.black:hover{
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+button.outline.fine.black.active{
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+button.outline.active{
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+button.outline:hover{
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    
+}
+
 button.outline.black{
     color: black;
     border-color: black;
@@ -32,10 +54,23 @@ button.outline.black.active i{
     margin: 0px -12px 0px 10px;
     font-size: 22px;
 }
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> origin/master
 button.solid.blue{
     background-color: #26B4BC;
     color: #ffffff;
 }
+
+button.solid.blue:hover{
+
+     background: #A5A88B;
+}
+
 button.long{
     padding: 10px 45px 10px 40px;
     border-radius: 40px;
@@ -44,12 +79,36 @@ button.white{
     background-color: #ffffff;
     color: #26B4BC;
 }
+
+button.white.active{
+    background-color: #26B4BC;
+    color: #ffffff;
+}
+button.white:hover{
+    background-color: #26B4BC;
+    color: #ffffff;
+    
+}
+
 button.text-only{
     font-size: 12px;
     color: #26B4BC;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
 }
+<<<<<<< HEAD
+=======
+
+button.text-only:hover{
+    color: #A5A88B;
+}
+
+button.text-only.active{
+    color: #A5A88B;
+}
+
+
+>>>>>>> origin/master
 button.dlp-nav{
     color: #ffffff;
     margin-right: 10px;
@@ -91,7 +150,11 @@ nav.auth-nav button.pre-active{
 
 /*-----------ICON BUTTON -------------*/
 button.icon-only{
-    font-size: 18px
+    font-size: 18px;
+}
+
+button.icon-only:hover{
+    color: #000000;
 }
 
 
@@ -111,9 +174,91 @@ button.fbut i{
     font-weight: 400;
     font-size: 22px;
 }
+
+button.fbut i:hover {
+
+     background-color: #A5A88B;
+}
+
+button.fbut.facebook i{
+    padding-right: 2px;
+    padding-top: 2px;
+}
+
+button.fbut.twitter i{
+    padding-left: 2px;
+    padding-top: 2px;
+}
+
+button.fbut.linkedin i{
+    padding-left: 2px;
+    padding-bottom: 2px;
+
+}
+
+button.fbut.gplus i{
+    padding-left: 3px;
+    padding-top: 3px;
+
+}
+
+button.fbut.mobile i{
+    font-size: 30px;
+    padding-right: 1px;
+
+}
+
+button.fbut.website i{
+    padding-top: 1px;
+    padding-left: 3px;
+}
+
+button.fbut.contact i{
+    padding-bottom: 2px;
+    padding-right: 1px;
+}
+
+button.fbut.call i{
+    padding-top: 1px;
+    padding-right: 1px;
+}
+
+button.fbut.more i{
+    padding-left: 2px;
+    padding-top: 1px;
+
+}
+
+button.fbut.left i{
+    padding-top: 2px;
+    padding-right: 4px;
+
+}
+
+button.fbut.right i{ 
+    padding-top: 2px;
+    padding-left: 3px;
+}
+
+button.fbut.fax i{
+    font-size: 20px;
+    padding-bottom: 1px;
+    padding-right: 1px;
+}
+
 button.fbut.pink i{
+    padding-bottom: 1px;
     background: #EE1556;
 }
+
+button.fbut.pink i:hover{
+    background: #A5A88B;
+}
+
+button.fbut.pink i.active{
+    background: #A5A88B;
+}
+
 /*default label below*/
 button.fbut.labeled{
     display: flex;
@@ -122,28 +267,62 @@ button.fbut.labeled{
     
 }
 button.fbut.labeled p{
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
     color: #7C7C7C;
     text-transform: uppercase;
+<<<<<<< HEAD
     margin-top: 5px;
+=======
+    margin-top: 7px;
+>>>>>>> origin/master
 }
 button.fbut.labeled.beside{
     flex-direction: row;
 }
+
+button.fbut.labeled.beside.website i{
+    padding-top: 1px;
+    padding-left: 3px;
+}
+
+button.fbut.labeled.beside.contact i{
+    padding-bottom: 2px;
+    padding-right: 1px;
+}
+
+button.fbut.labeled.beside.call i{
+    padding-top: 1px;
+    padding-right: 1px;
+}
+
 button.fbut.labeled.beside p{
     margin: 0px 0px 0px 10px;
     color: black;
     font-size: 12px;
 }
-button.fbut.active .label{
+button.fbut.active.label{
     display: none;
 }
-button.fbut.active i{
+button.fbut.call.active i{
     width: auto;
-    padding: 0px 20px 0px 14px;
+    padding: 1px 20px 0px 15px;
     background: #A5A88B;
 }
+
+button.fbut.mobile.active i{
+    width: auto;
+    padding: 0px 20px 0px 15px;
+    background: #A5A88B;
+}
+
+button.fbut.fax.active i{
+    width: auto;
+    padding: 0px 20px 1px 15px;
+    background: #A5A88B;
+}
+
+
 button.fbut span{
     font-size: 15px;
     font-weight: 700;
@@ -256,6 +435,13 @@ tweaking
     padding-top: 6px;
 }
 
+.fav-toggle:hover{
+    color: #A5A88B;
+}
+
+.fav-toggle.active{
+    color: #A5A88B;
+}
 
 
 
@@ -305,7 +491,14 @@ tweaking
 .map-pin.selected{
     background-image: url(../images/pins/map-pin-blue.svg);
 }
+
 .map-pin.small{
+    background-image: url(../images/pins/grey-pin.svg);
+    height: 40px;
+    width: 30px;
+}
+
+.map-pin.small.selected{
     background-image: url(../images/pins/blue-pin.svg);
     height: 40px;
     width: 30px;

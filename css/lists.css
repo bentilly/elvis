@@ -10,6 +10,7 @@
     position: relative;
 }
 
+
 .lli-content{
     padding: 15px 25px 10px 25px;
 }
@@ -18,9 +19,15 @@
 }
 .listings-list-item h2{
     font-size: 21px;
+    line-height: 27px;
     color: #26B4BC;
     font-weight: 700;
 }
+
+.listings-list-item h2:hover{
+   color: #A5A88B;
+}
+
 
 .listings-list-item .address{
     font-weight: 500;
@@ -31,7 +38,7 @@
     overflow: hidden;
 }
 .listings-list-item .review-snippet{
-    font-weight: 700;
+    font-weight: 500;
     color: #000000;
     margin: 8px 0px 8px 0px;
     line-height: 18px;
@@ -42,13 +49,23 @@
     color: #26B4BC;
     font-weight: 700;
 }
+
+.review-snippet .screen-name:hover{
+    color: #A5A88B;
+}
+
 .review-snippet .reveiw-time{
     color: #787878;
     font-weight: 500;
 }
 .review-snippet a.more-link{
     color: #26B4BC;
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.review-snippet a.more-link:hover{
+    color: #A5A88B;
 }
 
 @media (max-width: 1100px) {

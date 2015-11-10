@@ -19,8 +19,55 @@ button.fav{
     color: #26B4BC;
     font-size: 20px;
 }
+<<<<<<< HEAD
 button.fav.selected i{
     color: #EE1556;
+=======
+.search-results .num-results{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.search-results span:hover{
+    text-decoration: underline;
+}
+
+.search-results span.active{
+    text-decoration: underline;
+}
+
+/*SEARCH OPTIONS----------*/
+.search-options{
+    background: #9B9B9B;
+    color: white;
+    padding: 10px 0px 5px 0px;
+}
+.search-options h6{
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.related-cats .cats button{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/*LISTING (v2.0)----------*/
+
+.selected-pin-listing{
+    background: rgba(255, 255, 255, .5);
+    position: absolute;
+    bottom: 0px;
+
+}
+.selected-pin-listing .blade-content{
+    background: white;
+    position: relative;
+}
+.li-content{
+    padding: 20px 20px 20px 20px;
+>>>>>>> origin/master
 }
 button.fav:hover i{
     color: #A5A88B;
@@ -31,18 +78,36 @@ button.fav:hover i{
     border-bottom: 1px solid #DFE8EB;
     padding: 20px 0px 20px 0px;
 }
+<<<<<<< HEAD
 .auth-list .item:first-child{
     padding-top: 0px;
+=======
+.li-actions button{
+    margin: 0px 20px 0px 0px;
+>>>>>>> origin/master
 }
 .auth-list .item h3{
     font-weight: 700;
     font-size: 21px;
     line-height: 16px;
     color: #26B4BC;
+<<<<<<< HEAD
 }
 .auth-list .item img{
     height: 70px;
     width: 70px;
+=======
+    
+}
+
+.li-text h2:hover{
+    color: #A5A88B;
+}
+
+
+.li-text h2 i{
+    margin-left: 15px;
+>>>>>>> origin/master
 }
 .item-content{
     padding: 0px 15px 0px 15px;
