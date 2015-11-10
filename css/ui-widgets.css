@@ -163,8 +163,9 @@ button.fbut.active span{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 60px;/*default size*/
-    height: 60px;
+    flex-shrink: 0;
+    width: 65px;/*default size*/
+    height: 65px;
     border-radius: 100px; /* shouldnt need a badge bigger than this */
     background: #bada55;/*default colours*/
     color: white;
