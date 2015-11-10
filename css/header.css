@@ -4,6 +4,32 @@ header{
     position: relative;
 }
 
+
+
+/*FORMS---------*/
+
+.big-text-input{
+    background-color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    height: 50px;
+    margin-right: -4px;
+}
+.big-left-rounded-text-input{
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    padding-left: 25px
+}
+.big-green-inline-button{
+    background-color: #26B4BC;
+    height: 50px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    color: #ffffff;
+    position: relative;
+}
+
 /*HEADER SEARCH---------*/
 .header-search{
     text-align: center;
@@ -43,11 +69,14 @@ header{
     text-align: right;
     display: none;
     padding-bottom: 2px;
+
 }
 
 .mobile-search-toggle:hover{
     color: #26B4BC; 
 }
+
+
 
 .mobile-search-toggle-button{
     width: 40px;
