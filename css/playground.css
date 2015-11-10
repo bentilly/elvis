@@ -45,6 +45,13 @@ button.active-item-close{
     margin-left: 20px;
 }
 
+.search-results span:hover{
+    text-decoration: underline;
+}
+
+.search-results span.active{
+    text-decoration: underline;
+}
 
 /*SEARCH OPTIONS----------*/
 .search-options{
@@ -96,6 +103,12 @@ button.active-item-close{
     color: #26B4BC;
     
 }
+
+.li-text h2:hover{
+    color: #A5A88B;
+}
+
+
 .li-text h2 i{
     margin-left: 15px;
 }
