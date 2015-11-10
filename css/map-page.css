@@ -1,0 +1,132 @@
+/*Full screen map--------*/
+
+
+.g-map{
+    background-image: url(../images/wellymap.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.example-map-pins{
+    background: none;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+
+/*Full screen map - ACTIVE ITEM--------*/
+button.active-item-close{
+    position: absolute;
+    top: 0px;
+    right:6px;
+    color: #6A6A6A;
+    font-size: 20px;
+}
+
+
+
+
+
+/*SEARCH RESULTS----------*/
+.search-results{
+    background: #434343;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    height: 55px;
+}
+.search-results span{
+    color: #26B4BC;
+}
+.search-results .num-results{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+
+/*SEARCH OPTIONS----------*/
+.search-options{
+    background: #9B9B9B;
+    color: white;
+    padding: 10px 0px 5px 0px;
+}
+.search-options h6{
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.related-cats .cats button{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/*LISTING (v2.0)----------*/
+
+.selected-pin-listing{
+    background: rgba(255, 255, 255, .5);
+    position: absolute;
+    bottom: 0px;
+
+}
+.selected-pin-listing .blade-content{
+    background: white;
+    position: relative;
+}
+.li-content{
+    padding: 15px 20px 15px 20px;
+}
+.li-body{
+    font-size: 14px;
+    color: black;
+    padding-top: 5px;
+    max-height: 75px;
+    overflow: hidden;
+}
+
+
+.li-text-block{
+    padding-right: 20px;
+}
+.li-actions button{
+    margin: 0px 10px 0px 0px;
+}
+.li-text h2{
+    font-weight: 700;
+    font-size: 21px;
+    color: #26B4BC;
+    text-decoration: underline;
+}
+.li-text h2 i{
+    margin-left: 15px;
+}
+.li-text address{
+    font-weight: 500;
+    font-size: 16px;
+    color: #787878;
+    font-style: normal;
+}
+
+@media (max-width: 800px) {
+    .li-image{
+        display: none;
+    }
+    .li-badges .badge{
+/*        this could be replaced with JS that removes the 'big' class name from the badge*/
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+    .li-badges img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+
+
+
+
+

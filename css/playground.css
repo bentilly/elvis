@@ -1,44 +1,29 @@
-/*Full screen map--------*/
-
-
-.g-map{
-    background-image: url(../images/wellymap.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
+button.auth-header-button{
+    font-weight:700;
+    font-size: 11px;
+    color: #7C7C7C;
+    text-transform: uppercase;
+    height: 34px;
+    margin-left: 5px;
 }
-.example-map-pins{
-    background: none;
-    position: absolute;
-    top: 60px;
-    left: 60px;
+button.auth-header-button i{
+    color: #26B4BC;
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+    padding: 0px 0px 2px 0px;
 }
 
-
-/*Full screen map - ACTIVE ITEM--------*/
-button.active-item-close{
-    position: absolute;
-    top: 0px;
-    right:6px;
-    color: #6A6A6A;
+/*GENERIC - TODO: retrofit back to rest of site */
+/*Fav icon toggle*/
+button.fav{
+    color: #26B4BC;
     font-size: 20px;
 }
 
-
-
-
-
-/*SEARCH RESULTS----------*/
-.search-results{
-    background: #434343;
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    height: 55px;
+button.fav.selected i{
+    color: #EE1556;
 }
-.search-results span{
-    color: #26B4BC;
-}
+
 .search-results .num-results{
     text-transform: uppercase;
     font-size: 14px;
@@ -84,23 +69,38 @@ button.active-item-close{
 .li-content{
     padding: 20px 20px 20px 20px;
 }
-.li-body{
-    font-size: 14px;
-    color: black;
-    padding-top: 8px;
+button.fav:hover i{
+    color: #A5A88B;
 }
 
-
-.li-text-block{
-    padding-right: 20px;
+/*FAVOURITES LIST*/
+.auth-list .item{
+    border-bottom: 1px solid #DFE8EB;
+    padding: 20px 0px 20px 0px;
 }
+<<<<<<< HEAD
+.auth-list .item:first-child{
+    padding-top: 0px;
+=======
 .li-actions button{
     margin: 0px 20px 0px 0px;
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
+>>>>>>> origin/master
 }
-.li-text h2{
+.auth-list .item h3{
     font-weight: 700;
     font-size: 21px;
+    line-height: 16px;
     color: #26B4BC;
+<<<<<<< HEAD
+<<<<<<< HEAD
+}
+.auth-list .item img{
+    height: 70px;
+    width: 70px;
+=======
     
 }
 
@@ -108,22 +108,27 @@ button.active-item-close{
     color: #A5A88B;
 }
 
+=======
+    
+}
+
+.li-text h2:hover{
+    color: #A5A88B;
+}
+
+>>>>>>> origin/master
 
 .li-text h2 i{
     margin-left: 15px;
+>>>>>>> origin/master
 }
-.li-text address{
+.item-content{
+    padding: 0px 15px 0px 15px;
+}
+
+.item-content address{
     font-weight: 500;
     font-size: 16px;
     color: #787878;
     font-style: normal;
 }
-
-
-
-
-
-
-
-
-
