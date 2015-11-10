@@ -54,13 +54,7 @@ button.outline.black.active i{
     margin: 0px -12px 0px 10px;
     font-size: 22px;
 }
-<<<<<<< HEAD
-=======
 
-
-
-
->>>>>>> origin/master
 button.solid.blue{
     background-color: #26B4BC;
     color: #ffffff;
@@ -96,8 +90,6 @@ button.text-only{
     text-transform: uppercase;
     font-weight: 700;
 }
-<<<<<<< HEAD
-=======
 
 button.text-only:hover{
     color: #A5A88B;
@@ -107,8 +99,6 @@ button.text-only.active{
     color: #A5A88B;
 }
 
-
->>>>>>> origin/master
 button.dlp-nav{
     color: #ffffff;
     margin-right: 10px;
@@ -271,11 +261,7 @@ button.fbut.labeled p{
     font-weight: 700;
     color: #7C7C7C;
     text-transform: uppercase;
-<<<<<<< HEAD
-    margin-top: 5px;
-=======
     margin-top: 7px;
->>>>>>> origin/master
 }
 button.fbut.labeled.beside{
     flex-direction: row;
@@ -419,7 +405,7 @@ button.fbut.active span{
     border-radius: 25px;
     margin-bottom: 5px;
 }
-tweaking
+
 .listing-action.website i{
     padding-left: 5px;
 }

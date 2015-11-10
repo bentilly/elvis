@@ -19,10 +19,11 @@ button.fav{
     color: #26B4BC;
     font-size: 20px;
 }
-<<<<<<< HEAD
+
 button.fav.selected i{
     color: #EE1556;
-=======
+}
+
 .search-results .num-results{
     text-transform: uppercase;
     font-size: 14px;
@@ -67,7 +68,6 @@ button.fav.selected i{
 }
 .li-content{
     padding: 20px 20px 20px 20px;
->>>>>>> origin/master
 }
 button.fav:hover i{
     color: #A5A88B;
@@ -84,6 +84,9 @@ button.fav:hover i{
 =======
 .li-actions button{
     margin: 0px 20px 0px 0px;
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 }
 .auth-list .item h3{
@@ -91,6 +94,7 @@ button.fav:hover i{
     font-size: 21px;
     line-height: 16px;
     color: #26B4BC;
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 .auth-list .item img{
@@ -104,6 +108,15 @@ button.fav:hover i{
     color: #A5A88B;
 }
 
+=======
+    
+}
+
+.li-text h2:hover{
+    color: #A5A88B;
+}
+
+>>>>>>> origin/master
 
 .li-text h2 i{
     margin-left: 15px;

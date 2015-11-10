@@ -69,11 +69,14 @@ header{
     text-align: right;
     display: none;
     padding-bottom: 2px;
+
 }
 
 .mobile-search-toggle:hover{
     color: #26B4BC; 
 }
+
+
 
 .mobile-search-toggle-button{
     width: 40px;
