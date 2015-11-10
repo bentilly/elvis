@@ -5,6 +5,9 @@
     color: #BABEC1;
 
 }
+
+
+
 .newsletter-signup .blade-content{
     display: flex;
     flex-direction: row;
@@ -44,6 +47,18 @@
     font-size: 15px;
     font-weight: 700;
     padding: 0px 20px 0px 15px;
+}
+
+.newsletter-signup-submit:hover{
+
+    background-color: #A5A88B;
+
+}
+
+.newsletter-signup-submit.active{
+
+    background-color: #A5A88B;
+
 }
 
 @media (max-width: 1000px) {

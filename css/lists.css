@@ -24,6 +24,11 @@
     font-weight: 700;
 }
 
+.listings-list-item h2:hover{
+   color: #A5A88B;
+}
+
+
 .listings-list-item .address{
     font-weight: 500;
     font-size: 16px;
@@ -44,6 +49,11 @@
     color: #26B4BC;
     font-weight: 700;
 }
+
+.review-snippet .screen-name:hover{
+    color: #A5A88B;
+}
+
 .review-snippet .reveiw-time{
     color: #787878;
     font-weight: 500;
@@ -52,6 +62,10 @@
     color: #26B4BC;
     font-weight: 600;
     font-size: 13px;
+}
+
+.review-snippet a.more-link:hover{
+    color: #A5A88B;
 }
 
 @media (max-width: 1100px) {
