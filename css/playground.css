@@ -88,13 +88,13 @@ button.active-item-close{
     padding-right: 20px;
 }
 .li-actions button{
-    margin: 0px 10px 0px 0px;
+    margin: 0px 20px 0px 0px;
 }
 .li-text h2{
     font-weight: 700;
     font-size: 21px;
     color: #26B4BC;
-    text-decoration: underline;
+    
 }
 .li-text h2 i{
     margin-left: 15px;

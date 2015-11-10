@@ -52,7 +52,7 @@ button.text-only{
     font-size: 12px;
     color: #26B4BC;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 button.dlp-nav{
@@ -90,7 +90,75 @@ button.fbut i{
     font-weight: 400;
     font-size: 22px;
 }
+
+button.fbut.facebook i{
+    padding-right: 2px;
+    padding-top: 2px;
+}
+
+button.fbut.twitter i{
+    padding-left: 2px;
+    padding-top: 2px;
+}
+
+button.fbut.linkedin i{
+    padding-left: 2px;
+    padding-bottom: 2px;
+
+}
+
+button.fbut.gplus i{
+    padding-left: 3px;
+    padding-top: 3px;
+
+}
+
+button.fbut.mobile i{
+    font-size: 30px;
+    padding-right: 1px;
+
+}
+
+button.fbut.website i{
+    padding-top: 1px;
+    padding-left: 3px;
+}
+
+button.fbut.contact i{
+    padding-bottom: 2px;
+    padding-right: 1px;
+}
+
+button.fbut.call i{
+    padding-top: 1px;
+    padding-right: 1px;
+}
+
+button.fbut.more i{
+    padding-left: 2px;
+    padding-top: 1px;
+
+}
+
+button.fbut.left i{
+    padding-top: 2px;
+    padding-right: 4px;
+
+}
+
+button.fbut.right i{ 
+    padding-top: 2px;
+    padding-left: 3px;
+}
+
+button.fbut.fax i{
+    font-size: 20px;
+    padding-bottom: 1px;
+    padding-right: 1px;
+}
+
 button.fbut.pink i{
+    padding-bottom: 1px;
     background: #EE1556;
 }
 /*default label below*/
@@ -101,28 +169,58 @@ button.fbut.labeled{
     
 }
 button.fbut.labeled p{
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
     color: #7C7C7C;
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-top: 7px;
 }
 button.fbut.labeled.beside{
     flex-direction: row;
 }
+
+button.fbut.labeled.beside.website i{
+    padding-top: 1px;
+    padding-left: 3px;
+}
+
+button.fbut.labeled.beside.contact i{
+    padding-bottom: 2px;
+    padding-right: 1px;
+}
+
+button.fbut.labeled.beside.call i{
+    padding-top: 1px;
+    padding-right: 1px;
+}
+
 button.fbut.labeled.beside p{
     margin: 0px 0px 0px 10px;
     color: black;
     font-size: 12px;
 }
-button.fbut.active .label{
+button.fbut.active.label{
     display: none;
 }
-button.fbut.active i{
+button.fbut.call.active i{
     width: auto;
-    padding: 0px 20px 0px 14px;
+    padding: 1px 20px 0px 15px;
     background: #A5A88B;
 }
+
+button.fbut.mobile.active i{
+    width: auto;
+    padding: 0px 20px 0px 15px;
+    background: #A5A88B;
+}
+
+button.fbut.fax.active i{
+    width: auto;
+    padding: 0px 20px 1px 15px;
+    background: #A5A88B;
+}
+
+
 button.fbut span{
     font-size: 15px;
     font-weight: 700;
