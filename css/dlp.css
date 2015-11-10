@@ -635,7 +635,7 @@ button.directions-button.active{
     box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.15);
 }
 .dlp-secondary-actions .blade-content{
-    padding: 15px 0px 8px 0px;
+    padding: 10px 0px 8px 0px;
     height: 80px
 }
 .dlp-secondary-actions .dlp-action{
@@ -652,7 +652,7 @@ button.directions-button.active{
 
 .other-buttons div{
     margin-left: 25px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 .dlp-secondary-action .action-text{
     font-size: 10px;
