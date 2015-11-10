@@ -19,25 +19,86 @@ button.fav{
     color: #26B4BC;
     font-size: 20px;
 }
-
 button.fav.selected i{
     color: #EE1556;
 }
-
-.search-results .num-results{
-    text-transform: uppercase;
-    font-size: 14px;
-    margin-left: 20px;
+button.fav:hover i{
+    color: #A5A88B;
 }
 
-.search-results span:hover{
-    text-decoration: underline;
+/*LIST*/
+.auth-list .item{
+    border-bottom: 1px solid #DFE8EB;
+    padding: 20px 0px 20px 0px;
+}
+.auth-list .item:first-child{
+    padding-top: 0px;
+}
+.auth-list .item h3{
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 16px;
+    color: #26B4BC;
+}
+.auth-list .item img{
+    height: 70px;
+    width: 70px;
+}
+.item-content{
+    padding: 0px 15px 0px 15px;
 }
 
-.search-results span.active{
-    text-decoration: underline;
+.item-content address{
+    font-weight: 500;
+    font-size: 16px;
+    color: #787878;
+    font-style: normal;
+}
+.auth-list-footer{
+    background: none;
+    padding: 20px 0px 20px 0px;
 }
 
+
+
+
+
+
+
+
+
+
+
+/*stuff to put in the right place*/
+/*LISTING (v2.0)----------*/
+.selected-pin-listing{
+    background: rgba(255, 255, 255, .5);
+    position: absolute;
+    bottom: 0px;
+
+}
+.selected-pin-listing .blade-content{
+    background: white;
+    position: relative;
+}
+.li-content{
+    padding: 20px 20px 20px 20px;
+}
+.li-actions button{
+    margin: 0px 20px 0px 0px;
+}
+.li-text h2:hover{
+    color: #A5A88B;
+}
+
+.li-text h2:hover{
+    color: #A5A88B;
+}
+
+
+.li-text h2 i{
+    margin-left: 15px;
+}
 /*SEARCH OPTIONS----------*/
 .search-options{
     background: #9B9B9B;
@@ -54,81 +115,16 @@ button.fav.selected i{
     margin-bottom: 10px;
 }
 
-/*LISTING (v2.0)----------*/
-
-.selected-pin-listing{
-    background: rgba(255, 255, 255, .5);
-    position: absolute;
-    bottom: 0px;
-
-}
-.selected-pin-listing .blade-content{
-    background: white;
-    position: relative;
-}
-.li-content{
-    padding: 20px 20px 20px 20px;
-}
-button.fav:hover i{
-    color: #A5A88B;
+.search-results .num-results{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 20px;
 }
 
-/*FAVOURITES LIST*/
-.auth-list .item{
-    border-bottom: 1px solid #DFE8EB;
-    padding: 20px 0px 20px 0px;
-}
-<<<<<<< HEAD
-.auth-list .item:first-child{
-    padding-top: 0px;
-=======
-.li-actions button{
-    margin: 0px 20px 0px 0px;
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master
-}
-.auth-list .item h3{
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 16px;
-    color: #26B4BC;
-<<<<<<< HEAD
-<<<<<<< HEAD
-}
-.auth-list .item img{
-    height: 70px;
-    width: 70px;
-=======
-    
+.search-results span:hover{
+    text-decoration: underline;
 }
 
-.li-text h2:hover{
-    color: #A5A88B;
-}
-
-=======
-    
-}
-
-.li-text h2:hover{
-    color: #A5A88B;
-}
-
->>>>>>> origin/master
-
-.li-text h2 i{
-    margin-left: 15px;
->>>>>>> origin/master
-}
-.item-content{
-    padding: 0px 15px 0px 15px;
-}
-
-.item-content address{
-    font-weight: 500;
-    font-size: 16px;
-    color: #787878;
-    font-style: normal;
+.search-results span.active{
+    text-decoration: underline;
 }
