@@ -19,10 +19,15 @@ main.auth{
 main.auth .blade-content{
     padding: 50px 0px;
 }
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
+    .header-user button p{
+        display: none;
+    }
+}
+@media (max-width: 800px) {
     .user-menu{
         display: none;
-    } 
+    }
 }
 
 /*User info and menu-------- */
