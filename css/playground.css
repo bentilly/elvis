@@ -30,6 +30,33 @@ button.fav:hover i{
     color: #A5A88B;
 }
 
+.pill-tag{
+    text-align: center;
+    border-radius: 20px;
+    width: 125px;
+    padding: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    background: grey;
+    color: white;
+}
+.pill-tag.outline{
+    background: none;
+    border: 1px solid grey;
+    color: grey;
+    padding: 1px;
+}
+.pill-tag.gold{
+    background-color: #C0A36F; 
+}
+.pill-tag.free{
+    color: #979797;
+    border-color: #979797;
+}
+
+
+
 /*LIST*/
 .auth-list .item{
     border-bottom: 1px solid #DFE8EB;
@@ -61,6 +88,9 @@ button.fav:hover i{
     font-size: 16px;
     color: #787878;
     font-style: normal;
+}
+.item-content .pill-tag{
+    margin-top: 10px;
 }
 .auth-list-footer{
     background: none;
@@ -99,6 +129,20 @@ button.fav:hover i{
     margin-right: 10px;
 }
 
+/*Businesses*/
+
+.business-item-actions button{
+    margin-left: 15px
+}
+.business-item-actions button:first-child{
+    margin-left: 0px
+}
+.business .item-status-block{
+    margin-top: 10px;
+}
+.item.disabled{
+    opacity: .5;
+}
 
 @media (max-width: 600px) {
     .auth-list .item img{
@@ -122,6 +166,11 @@ button.fav:hover i{
         align-items: flex-start;
     }
 }
+
+
+
+
+
 
 
 
