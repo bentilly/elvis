@@ -510,3 +510,62 @@ button.fbut.active span{
     height: 40px;
     width: 30px;
 }
+
+
+button.auth-header-button{
+    font-weight:700;
+    font-size: 11px;
+    color: #7C7C7C;
+    text-transform: uppercase;
+    height: 34px;
+    margin-left: 5px;
+}
+button.auth-header-button i{
+    color: #26B4BC;
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+    padding: 0px 0px 2px 0px;
+}
+
+button.auth-header-button i:hover{
+    color: #A5A88B;
+}
+
+/*GENERIC - TODO: retrofit back to rest of site */
+/*Fav icon toggle*/
+button.fav{
+    color: #26B4BC;
+    font-size: 20px;
+}
+button.fav.selected i{
+    color: #EE1556;
+}
+button.fav:hover i{
+    color: #A5A88B;
+}
+
+.pill-tag{
+    text-align: center;
+    border-radius: 20px;
+    width: 125px;
+    height: auto;
+    padding: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    background: grey;
+    color: white;
+}
+.pill-tag.outline{
+    background: none;
+    border: 1px solid grey;
+    color: grey;
+    padding: 1px;
+}
+.pill-tag.gold{
+    background-color: #C0A36F; 
+}
+.pill-tag.free{
+    color: #979797;
+    border-color: #979797;
+}
