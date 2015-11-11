@@ -185,6 +185,16 @@ button.fbut.facebook i{
     padding-top: 2px;
 }
 
+button.fbut.view i{
+    padding-right: 1x;
+    padding-bottom: 2px;
+}
+
+button.fbut.edit i{
+    padding-left: 1px;
+    padding-top: 1px;
+}
+
 button.fbut.twitter i{
     padding-left: 2px;
     padding-top: 2px;
@@ -271,7 +281,8 @@ button.fbut.labeled p{
     font-weight: 700;
     color: #7C7C7C;
     text-transform: uppercase;
-    margin-top: 7px;
+    margin-top: 8px;
+    line-height: 12px;
 }
 button.fbut.labeled.beside{
     flex-direction: row;
