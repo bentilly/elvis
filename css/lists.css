@@ -17,14 +17,15 @@
 .lli-content-main{
     margin-right: 10px;
 }
-.listings-list-item h2{
+.listings-list-item h2 a{
     font-size: 21px;
     line-height: 27px;
     color: #26B4BC;
     font-weight: 700;
+    cursor: pointer;
 }
 
-.listings-list-item h2:hover{
+.listings-list-item h2 a:hover{
    color: #A5A88B;
 }
 
@@ -48,6 +49,7 @@
 .review-snippet .screen-name{
     color: #26B4BC;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .review-snippet .screen-name:hover{
