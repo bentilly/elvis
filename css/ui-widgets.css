@@ -171,6 +171,7 @@ nav.auth-nav button.pre-active{
 /*-----------ICON BUTTON -------------*/
 button.icon-only{
     font-size: 18px;
+    cursor: pointer;
 }
 
 button.icon-only:hover{
