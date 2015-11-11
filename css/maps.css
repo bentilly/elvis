@@ -50,10 +50,10 @@
     position: absolute;
     right: 10px;
 }
-.active-item-close a{
+button.active-item-close{
     color:#999999;
 }
-.active-item-close a:hover{
+button.active-item-close:hover{
     color:#000000;
 }
 @media (max-width: 800px) {

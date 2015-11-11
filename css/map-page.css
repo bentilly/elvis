@@ -20,11 +20,13 @@ button.active-item-close{
     position: absolute;
     top: 0px;
     right:6px;
-    color: #6A6A6A;
+    color: #999999;
     font-size: 20px;
 }
 
-
+button.active-item-close:hover{
+    color:#000000;
+}
 
 
 
