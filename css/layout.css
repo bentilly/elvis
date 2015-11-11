@@ -21,6 +21,18 @@ font-family: Roboto;
 
 }
 
+button{
+    cursor:pointer;
+}
+
+button.selected{
+    cursor:default;
+}
+
+button.active{
+    cursor:default;
+}
+
 /***BLADES----------*/
 
 .blade{
