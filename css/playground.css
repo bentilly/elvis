@@ -13,6 +13,10 @@ button.auth-header-button i{
     padding: 0px 0px 2px 0px;
 }
 
+button.auth-header-button i:hover{
+    color: #A5A88B;
+}
+
 /*GENERIC - TODO: retrofit back to rest of site */
 /*Fav icon toggle*/
 button.fav{
@@ -40,6 +44,10 @@ button.fav:hover i{
     line-height: 16px;
     color: #26B4BC;
 }
+.auth-list .item h3 span:hover{
+    color: #A5A88B;  
+}
+
 .auth-list .item img{
     height: 70px;
     width: 70px;
