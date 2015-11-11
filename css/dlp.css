@@ -326,6 +326,12 @@ button.directions-button.active{
         padding-top: 6px;
         font-size: 12px;
     }
+
+    .map-actions button:hover{
+        border: none;
+        background: none;
+
+    }
     .dlp-map-directions h4{
         margin-right: 0px;
     }
