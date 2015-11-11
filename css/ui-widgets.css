@@ -19,6 +19,26 @@ button.outline.blue{
     border-color: #26B4BC;
 }
 
+button.outline.blueonwhite{
+    color: #26B4BC;
+    border-color: #26B4BC;
+}
+
+button.outline.blueonwhite:hover{
+    color: #A5A88B;
+    border: 2px solid #A5A88B;
+}
+
+button.outline.pinkonwhite{
+    color: #EE1556;
+    border: 2px solid #EE1556;
+}
+
+button.outline.pinkonwhite:hover{
+    color: #A5A88B;
+    border: 2px solid #A5A88B;
+}
+
 button.outline.fine.black:hover{
     color: #FFFFFF;
     border-color: #FFFFFF;
@@ -519,6 +539,7 @@ button.auth-header-button{
     text-transform: uppercase;
     height: 34px;
     margin-left: 5px;
+
 }
 button.auth-header-button i{
     color: #26B4BC;
