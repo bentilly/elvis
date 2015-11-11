@@ -2,6 +2,18 @@ button.user-logged-in{
     color: #BABEC1;
     font-size: 14px;
 }
+
+button.user-logged-in:hover i{
+    color: #A5A88B;
+}
+
+button.user-logged-in:hover{
+    color: #A5A88B;
+}
+
+
+
+
 button.user-logged-in img{
     width: 35px;
     height: 35px;
@@ -41,11 +53,16 @@ main.auth .blade-content{
 }
 .user-info a{
     color: #26B4BC;
-    text-decoration: underline;
     font-weight: 500;
     font-size: 13px;
     margin-top: 15px;
 }
+
+.user-info a:hover{
+    text-decoration: underline;
+}
+
+
 .user-info .user-name{
     color: #4A4A4A;
     font-weight: 700;
