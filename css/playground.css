@@ -1,181 +1,95 @@
-button.auth-header-button{
-    font-weight:700;
-    font-size: 11px;
-    color: #7C7C7C;
-    text-transform: uppercase;
-    height: 34px;
-    margin-left: 5px;
-}
-button.auth-header-button i{
-    color: #26B4BC;
-    font-size: 20px;
-    margin: 0px 0px 0px 10px;
-    padding: 0px 0px 2px 0px;
-}
-
-button.auth-header-button i:hover{
-    color: #A5A88B;
-}
-
-/*GENERIC - TODO: retrofit back to rest of site */
-/*Fav icon toggle*/
-button.fav{
-    color: #26B4BC;
-    font-size: 20px;
-}
-button.fav.selected i{
-    color: #EE1556;
-}
-button.fav:hover i{
-    color: #A5A88B;
-}
-
-.pill-tag{
-    text-align: center;
-    border-radius: 20px;
-    width: 125px;
-    padding: 2px;
-    text-transform: uppercase;
-    font-weight: 500;
+.title-actions p{
+    font-weight:500;
     font-size: 12px;
-    background: grey;
-    color: white;
-}
-.pill-tag.outline{
-    background: none;
-    border: 1px solid grey;
-    color: grey;
-    padding: 1px;
-}
-.pill-tag.gold{
-    background-color: #C0A36F; 
-}
-.pill-tag.free{
-    color: #979797;
-    border-color: #979797;
-}
-
-
-
-/*LIST*/
-.auth-list .item{
-    border-bottom: 1px solid #DFE8EB;
-    padding: 20px 0px 20px 0px;
-}
-.auth-list .item:first-child{
-    padding-top: 0px;
-}
-.auth-list .item h3{
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 16px;
-    color: #26B4BC;
-}
-.auth-list .item h3 span:hover{
-    color: #A5A88B;  
-}
-
-.auth-list .item img{
-    height: 70px;
-    width: 70px;
-}
-.item-content{
-    padding: 0px 15px 0px 15px;
-}
-
-.item-content address{
-    font-weight: 500;
-    font-size: 16px;
-    color: #787878;
-    font-style: normal;
-}
-.item-content .pill-tag{
-    margin-top: 10px;
-}
-.auth-list-footer{
-    background: none;
-    padding: 20px 0px 20px 0px;
-}
-
-/*REVIEWS*/
-.auth-list .list-item-content{
-    margin-top: 20px;
-}
-.item-status-block .status{
+    color: #000000;
     text-transform: uppercase;
-    color: #EE1556;
-    font-weight: 700;
-    font-size: 14px;
-    margin-right: 8px;
-}
-.item-status-block .info{
-    text-transform: uppercase;
-    color: #8B8B8B;
-    font-weight: 500;
-    font-size: 14px;
-}
-.list-item-content .item-text{
-    color: black;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
-    margin-top: 20px;
-}
-
-.list-item-content .item-actions{
-    margin-top: 20px;
-}
-.list-item-content .item-actions .first-actions button{
     margin-right: 10px;
 }
 
-/*Businesses*/
 
-.business-item-actions button{
-    margin-left: 15px
+/*PLANS*/
+.plans{
+    margin-top: 20px;
 }
-.business-item-actions button:first-child{
-    margin-left: 0px
+.plans .plan{
+    padding: 0px 10px 0px 10px;
+    border-right: 1px solid #DFE8EB;
 }
-.business .item-status-block{
-    margin-top: 10px;
+.plans .plan:first-child{
+    padding-left: 0px;
 }
-.item.disabled{
-    opacity: .5;
+.plans .plan:last-child{
+    padding-right: 0px;
+    border-right: none;
 }
+.plan-price{
+    background: grey;
+    padding: 15px 0px 10px 0px;
+    color: white;
+    position: relative;
+    margin-bottom: 40px;
+    
+}
+.plan-price h5{
+    text-transform: uppercase;
+    font-weight:500;
+    font-size: 24px;
+}
+.plan-price p{
+    font-weight:500;
+    font-size: 55px;
+    letter-spacing: -2px;
+    z-index: 1;
+}
+.plan-price span{
+    font-weight:300;
+    font-size: 20px;
+}
+.plan-price span:first-child{
+    padding-top: 15px
+}
+.plan-price span:last-child{
+    align-self: flex-end;
+    padding-bottom: 15px
+}
+.plan-price.bronze{
+    background: #C08A6F;
+}
+.plan-price.silver{
+    background: #C0C0C0;
+}
+.plan-price.gold{
+    background: #C0A36F;
+}
+.plan-price.bronze .point{
+    background: #C08A6F;
+}
+.plan-price.silver .point{
+    background: #C0C0C0;
+}
+.plan-price.gold .point{
+    background: #C0A36F;
+}
+.plan-price .point{
+    background: hotpink;
+    width: 50px;
+    height: 50px;
+    top:30px;
+    transform: rotate(45deg);
+    margin-bottom: -30px;
+    margin-top: -20px;
+    z-index: 0;
+}
+
+
+
+
 
 @media (max-width: 600px) {
-    .auth-list .item img{
-        height: 50px;
-        width: 50px;
-    }
-    .auth-list .badge{
-        height: 50px;
-        width: 50px;
-        font-size: 24px;
-    }
-    .auth-list .item h3{
-        font-weight: 700;
-        font-size: 17px;
-        line-height: 14px;
-    }
-    .auth-list .item button.fav{
-        font-size: 16px;
-    }
-    .auth-list .business{
-        align-items: flex-start;
+    .title-actions p{
+        display: none;
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
