@@ -42,7 +42,7 @@ main.auth .blade-content{
     }
 }
 
-/*User info and menu-------- */
+/*User info and menu-------------------------------- */
 .user-menu{
     margin-right: 50px;
 }
@@ -80,7 +80,7 @@ nav.auth-nav{
     margin-top: 20px;
 }
 
-/*PAGE CONTENT-------- */
+/*PAGE CONTENT-------------------------------------------- */
 .auth-content header{
     background: none;
     height: auto;
@@ -117,7 +117,7 @@ nav.auth-nav{
     color: #787878;
 }
 
-/*CONTENT DISPLAY -------- */
+/*CONTENT DISPLAY ---------------------------------------- */
 
 .auth-content main{
     background: none;
@@ -170,7 +170,7 @@ nav.auth-nav{
 }
 
 
-/*LIST*/
+/*LIST --------------------------------------------  */
 .auth-list .item{
     border-bottom: 1px solid #DFE8EB;
     padding: 20px 0px 20px 0px;
@@ -210,7 +210,7 @@ nav.auth-nav{
     padding: 20px 0px 20px 0px;
 }
 
-/*REVIEWS*/
+/*REVIEWS --------------------------------------------  */
 .auth-list .list-item-content{
     margin-top: 20px;
 }
@@ -277,5 +277,161 @@ nav.auth-nav{
     }
     .auth-list .business{
         align-items: flex-start;
+    }
+}
+
+
+
+
+.title-actions p{
+    font-weight:500;
+    font-size: 12px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+
+/*PLANS------------------------------------------  */
+.plans{
+    margin-top: 20px;
+}
+.plans .plan{
+    padding: 0px 10px 0px 10px;
+    border-right: 1px solid #DFE8EB;
+}
+.plans .plan:first-child{
+    padding-left: 0px;
+}
+.plans .plan:last-child{
+    padding-right: 0px;
+    border-right: none;
+}
+.plan-price{
+    background: grey;
+    padding: 15px 0px 10px 0px;
+    color: white;
+    position: relative;
+    margin-bottom: 40px;
+    
+}
+.plan-price h5{
+    text-transform: uppercase;
+    font-weight:500;
+    font-size: 24px;
+}
+.plan-price p{
+    font-weight:500;
+    font-size: 45px;
+    letter-spacing: -2px;
+    z-index: 1;
+}
+.plan-price span{
+    font-weight:300;
+    font-size: 20px;
+}
+.plan-price span:first-child{
+    padding-top: 12px
+}
+.plan-price span:last-child{
+    align-self: flex-end;
+    padding-bottom: 10px
+}
+.plan-price.bronze{
+    background: #C08A6F;
+}
+.plan-price.silver{
+    background: #C0C0C0;
+}
+.plan-price.gold{
+    background: #C0A36F;
+}
+.plan-price.bronze .point{
+    background: #C08A6F;
+}
+.plan-price.silver .point{
+    background: #C0C0C0;
+}
+.plan-price.gold .point{
+    background: #C0A36F;
+}
+.plan-price .point{
+    width: 50px;
+    height: 50px;
+    top:30px;
+    transform: rotate(45deg);
+    margin-bottom: -30px;
+    margin-top: -20px;
+    z-index: 0;
+}
+.plan-points p{
+    text-align: center;
+    font-size: 15px;
+    color: #000000;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+.plan-points button{
+    margin-top: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+@media (max-width: 600px) {
+    .title-actions p{
+        display: none;
+    }
+    .plans{
+        flex-direction: column;
+    }
+    .plans>.plan{
+        flex-direction: row;
+        margin: 0px 0px 0px 0px;
+        padding: 15px 0px 15px 0px;
+        border: none;
+        border-bottom: 1px solid #DFE8EB;
+    }
+    .plans>.plan:last-child{
+        border: none;
+    }
+    .plan-price{
+        width: 130px;
+        height: 120px;
+        margin: 0px 40px 0px 0px;
+        padding: 0px;
+    }
+    .plan-price h5{
+        font-size: 18px;
+        z-index: 1;
+    }
+    .plan-price p{
+        font-size: 35px;
+        letter-spacing: 0px;
+    }
+    .plan-price span:first-child{
+        padding-top: 7px
+    }
+    .plan-price span:last-child{
+        align-self: flex-end;
+        padding-bottom: 6px
+    }
+    .plan-price .point{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: -10px;
+        top: 32px;
+        transform: rotate(45deg);
+        margin-bottom: 0px;
+        margin-top: 0px;
+        z-index: 0;
+    }
+    .plan-points p{
+        text-align: left;
+    }
+    .plan-points button{
+        width: 130px;
+        margin: 10px 0px 0px 0px;
     }
 }
