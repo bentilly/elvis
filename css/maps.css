@@ -8,8 +8,8 @@
 .pin-examples{
     background: none;
     position: absolute;
-    top: 100px;
-    left: 300px;
+    top: 50px;
+    left: 50px;
 }
 .map-pin{
     background-image: url(../images/pins/map-pin-orange.svg);
