@@ -95,9 +95,7 @@ nav.auth-nav{
     padding-right: 20px;
 }
 .auth-content nav{
-    border-bottom: 1px solid #DFE8EB;
     margin-top: 20px;
-    padding-bottom: 10px;
 }
 .auth-content nav button{
     margin-right: 20px;
@@ -112,10 +110,11 @@ nav.auth-nav{
 
 .auth-content main{
     background: none;
-    margin-top: 20px
+    margin-top: 20px;
 }
 .auth-block{
-    border
+    border-top: 1px solid #DFE8EB;
+    padding: 30px 0px 40px 0px;
 }
 .auth-block h3{
     color: #4A4A4A;
@@ -152,4 +151,115 @@ nav.auth-nav{
 }
 .auth-block button{
     margin-top: 50px;
+}
+
+
+/*LIST*/
+.auth-list .item{
+    border-bottom: 1px solid #DFE8EB;
+    padding: 20px 0px 20px 0px;
+}
+.auth-list .item:first-child{
+    padding-top: 0px;
+}
+.auth-list .item h3{
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 16px;
+    color: #26B4BC;
+}
+.auth-list .item h3 span:hover{
+    color: #A5A88B;  
+}
+
+.auth-list .item img{
+    height: 70px;
+    width: 70px;
+}
+.item-content{
+    padding: 0px 15px 0px 15px;
+}
+
+.item-content address{
+    font-weight: 500;
+    font-size: 16px;
+    color: #787878;
+    font-style: normal;
+}
+.item-content .pill-tag{
+    margin-top: 10px;
+}
+.auth-list-footer{
+    background: none;
+    padding: 20px 0px 20px 0px;
+}
+
+/*REVIEWS*/
+.auth-list .list-item-content{
+    margin-top: 20px;
+}
+.item-status-block .status{
+    text-transform: uppercase;
+    color: #EE1556;
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 8px;
+}
+.item-status-block .info{
+    text-transform: uppercase;
+    color: #8B8B8B;
+    font-weight: 500;
+    font-size: 14px;
+}
+.list-item-content .item-text{
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 20px;
+}
+
+.list-item-content .item-actions{
+    margin-top: 20px;
+}
+.list-item-content .item-actions .first-actions button{
+    margin-right: 10px;
+}
+
+/*Businesses*/
+
+.business-item-actions button{
+    margin-left: 15px
+}
+.business-item-actions button:first-child{
+    margin-left: 0px
+}
+.business .item-status-block{
+    margin-top: 10px;
+}
+.item.disabled{
+    opacity: .5;
+}
+
+@media (max-width: 600px) {
+    .auth-list .item img{
+        height: 50px;
+        width: 50px;
+    }
+    .auth-list .badge{
+        height: 50px;
+        width: 50px;
+        font-size: 24px;
+    }
+    .auth-list .item h3{
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 19px;
+    }
+    .auth-list .item button.fav{
+        font-size: 16px;
+    }
+    .auth-list .business{
+        align-items: flex-start;
+    }
 }
