@@ -90,10 +90,16 @@ nav.auth-nav{
     font-size: 21px;
     color: #4A4A4A;
 }
+
 .auth-content h2 a{
     color: #27C0C8;
     padding-right: 20px;
 }
+
+.auth-content h2 a:hover{
+    color: #A5A88B;
+}
+
 .auth-content nav{
     margin-top: 20px;
 }
@@ -102,6 +108,11 @@ nav.auth-nav{
     color: #26B4BC;
     font-size: 16px;
 }
+
+.auth-content nav button:hover{
+     color: #A5A88B;
+}
+
 .auth-content nav button.active{
     color: #787878;
 }
@@ -147,8 +158,13 @@ nav.auth-nav{
 }
 .auth-block a{
     color: #27C0C8;
-    text-decoration: underline;
+    
 }
+
+.auth-block a:hover{
+    text-decoration: underline; 
+}
+
 .auth-block button{
     margin-top: 50px;
 }
@@ -162,13 +178,13 @@ nav.auth-nav{
 .auth-list .item:first-child{
     padding-top: 0px;
 }
-.auth-list .item h3{
+.auth-list .item h3 a{
     font-weight: 700;
     font-size: 21px;
     line-height: 16px;
     color: #26B4BC;
 }
-.auth-list .item h3 span:hover{
+.auth-list .item h3 a:hover{
     color: #A5A88B;  
 }
 
