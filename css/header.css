@@ -30,6 +30,17 @@ header{
     position: relative;
 }
 
+.header-logo{
+    padding-bottom: 6px;
+
+}
+
+.header-search{
+    padding-bottom: 2px;
+
+}
+
+
 /*HEADER SEARCH---------*/
 .header-search{
     text-align: center;
