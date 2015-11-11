@@ -428,7 +428,7 @@ button.fbut.active span{
 .fav-toggle{
     font-size: 18px;
     color: #26B4BC;
-    padding-top: 6px;
+    padding-top: 0px;
 }
 
 .fav-toggle:hover{
