@@ -37,7 +37,7 @@
 }
 .plan-price p{
     font-weight:500;
-    font-size: 55px;
+    font-size: 45px;
     letter-spacing: -2px;
     z-index: 1;
 }
@@ -46,11 +46,11 @@
     font-size: 20px;
 }
 .plan-price span:first-child{
-    padding-top: 15px
+    padding-top: 12px
 }
 .plan-price span:last-child{
     align-self: flex-end;
-    padding-bottom: 15px
+    padding-bottom: 10px
 }
 .plan-price.bronze{
     background: #C08A6F;
@@ -71,7 +71,6 @@
     background: #C0A36F;
 }
 .plan-price .point{
-    background: hotpink;
     width: 50px;
     height: 50px;
     top:30px;
@@ -80,17 +79,77 @@
     margin-top: -20px;
     z-index: 0;
 }
-
-
-
+.plan-points p{
+    text-align: center;
+    font-size: 15px;
+    color: #000000;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+.plan-points button{
+    margin-top: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
 
 
 @media (max-width: 600px) {
     .title-actions p{
         display: none;
     }
+    .plans{
+        flex-direction: column;
+    }
+    .plans>.plan{
+        flex-direction: row;
+        margin: 0px 0px 0px 0px;
+        padding: 15px 0px 15px 0px;
+        border: none;
+        border-bottom: 1px solid #DFE8EB;
+    }
+    .plans>.plan:last-child{
+        border: none;
+    }
+    .plan-price{
+        width: 130px;
+        height: 120px;
+        margin: 0px 40px 0px 0px;
+        padding: 0px;
+    }
+    .plan-price h5{
+        font-size: 18px;
+        z-index: 1;
+    }
+    .plan-price p{
+        font-size: 35px;
+        letter-spacing: 0px;
+    }
+    .plan-price span:first-child{
+        padding-top: 7px
+    }
+    .plan-price span:last-child{
+        align-self: flex-end;
+        padding-bottom: 6px
+    }
+    .plan-price .point{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: -10px;
+        top: 32px;
+        transform: rotate(45deg);
+        margin-bottom: 0px;
+        margin-top: 0px;
+        z-index: 0;
+    }
+    .plan-points p{
+        text-align: left;
+    }
+    .plan-points button{
+        width: 130px;
+        margin: 10px 0px 0px 0px;
+    }
 }
-
 
 
 
