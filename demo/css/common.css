@@ -1,0 +1,191 @@
+/*PAGE ---------------------------------------------- */
+
+html{
+    height: 100%;
+}
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #444444;
+    font-size: 14px;
+}
+span{
+    font-family: Roboto;
+}
+button:hover{
+    cursor: pointer;
+}
+
+/*END PAGE ------------------------------------------ */
+/*PAGE HEADER ---------------------------------------------- */
+
+body>header{
+    background: #0f1213;
+    height: 80px;
+    transition: all 0.3s;
+}
+body>header.open{
+    height: 120px;
+    background: #bada55;
+}
+/*.......... Header forms .......... */
+
+.search-form input{
+    background-color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    height: 50px;
+    margin-right: -4px;
+    width: 200px;
+    transition: all 0.3s;
+}
+.search-form input.location{
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    padding-left: 25px;
+}
+.search-form input.context{
+    border-left: 2px solid #D8D8D8;
+    padding-left: 20px;
+}
+.search-form button{
+    background-color: #26B4BC;
+    height: 50px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    color: #ffffff;
+    width: 60px;
+    font-size: 23px;
+    transition: all 0.3s;
+}
+.search-form button i{
+    padding-bottom: 10px;
+    padding-right: 5px;
+    background: none;
+}
+.search-form button:hover{
+    background: #A5A88B;
+}
+body>header button.search-toggle{
+    color: #ffffff; 
+    font-size: 30px;
+    padding-bottom: 2px;
+    margin-right: 20px;
+    display: none;
+}
+body>header button.search-toggle:hover{
+    color: #26B4BC; 
+}
+
+/*END .......... Header forms .......... */
+/* .......... Toggle search form .......... */
+
+.toggle-search{
+    overflow: hidden;
+    height: 0px;
+    background: #0f1213;
+    transition: all 0.3s;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    padding-top: 5px;
+}
+.toggle-search.open{
+    height: 115px;
+}
+.toggle-search input{
+    padding-left: 20px;
+    background: white;
+    height: 40px;
+}
+.toggle-search input.location{
+    border-radius: 25px;
+    margin-bottom: 10px
+}
+.toggle-search input.context{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.toggle-search button{
+    background-color: #26B4BC;
+    height: 40px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    color: #ffffff;
+    width: 60px;
+    font-size: 23px;
+    transition: all 0.3s;
+}
+.toggle-search button i{
+    padding-bottom:9px;
+    padding-right: 5px;
+    background: none;
+}
+
+/*END .......... Toggle search form .......... */
+
+
+/*END PAGE HEADER ------------------------------------------ */
+/*PAGE MAIN ---------------------------------------------- */
+
+body>main{
+    width: 100%;
+    background-color: #E2E2E2;
+}
+
+/*end PAGE MAIN ------------------------------------------ */
+
+
+
+
+/*MEDIA QUERY ############################################### */
+
+/* .......... Less than 1200px wide .......... */
+@media (max-width: 1200px) {
+    
+}
+/* .......... Less than 1000px wide .......... */
+@media (max-width: 1000px) {
+    
+}
+/* .......... Less than 800px wide .......... */
+@media (max-width: 800px) {
+    body>header{
+        height: 60px;
+    }
+    .search-form input{
+        width: 135px;
+        height: 40px;
+        padding-left: 15px;
+        font-size: 16px;
+    }
+    .search-form button{
+        height: 40px;
+        width: 45px;
+        font-size: 23px;
+    }
+    .search-form input.context{
+        padding-left: 10px !important;
+    }
+}
+/* .......... Less than 600px wide .......... */
+@media (max-width: 600px) {
+    header .search-form{
+        display: none;
+    }
+    body>header button.search-toggle{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+

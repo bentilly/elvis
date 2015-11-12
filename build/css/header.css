@@ -19,7 +19,7 @@ header{
 .big-left-rounded-text-input{
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
-    padding-left: 25px
+    padding-left: 25px;
 }
 .big-green-inline-button{
     background-color: #26B4BC;

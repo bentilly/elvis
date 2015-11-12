@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Finda</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/sanitize.css">
+        <link rel="stylesheet" href="css/flex.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/widgets.css">
+        
+        <!-- dont use in PROD-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    </head>
+    <body>
+        
+<!--COMMON HEADER ------------- -->
+        <header class="blade fx-c ns">
+            <div class="blade-content flexr xc sb">
+
+                <img src="img/finda100.svg"></img>
+
+                <div class="fx-c g">    
+                    <form class="search-form flexr jc">
+                        <input class="location" value="Auckland" />
+                        <input class="context" placeholder="Find something" />
+                        <button class="flexchild ns"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            
+                <button class="search-toggle"><i class="fa fa-search"></i></button>
+
+                <div class="fx-c ns">
+                    <button class="pill outline pink">Sign in</button>
+                </div>
+            
+            </div>
+        </header>
+    
+        <div class="toggle-search blade">
+            <form class="blade-content flexc">
+                <input class="location" value="Auckland" />
+                <div class="flexr">
+                    <input class="context fx-c g" placeholder="Find something" />
+                    <button class="flexchild ns"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+    
+        <!-- Header control-->
+        <script>
+            $(document).ready(function(){
+                $(".search-toggle").click(function(){
+                    $( ".toggle-search" ).addClass( "open" );
+                });
+            });
+        </script>
+<!--end COMMON HEADER ------------- -->
+    
+        <main>main</main>
+        <footer>footer</footer>
+    </body>
+</html>
