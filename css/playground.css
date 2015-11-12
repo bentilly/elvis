@@ -1,6 +1,41 @@
+/* MODAL ------------------------------------------  */
+.finda-modal{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0,0,0,.5);
+}
+body.modal-open{
+    overflow: hidden;
+}
+/*resets and top level styles*/
+.finda-modal header,
+.finda-modal main,
+.finda-modal footer{
+    color: white;
+    background: none;
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+.finda-modal main{
+    overflow-y: auto;
+}
+
+
+/*sort out properly*/
+.auth-block button.auth-block-action{
+    margin-top: 30px;
+}
+
+
 /* COUPONS ------------------------------------------  */
 
-.block-title button{
+.auth-block button{
     margin-top: 0px;
 }
 .auth-coupons{
@@ -52,3 +87,37 @@
     height: 100%;
     
 }
+
+/* COUPON EDIT ------------------------------------------  */
+
+.coupon-actions{
+    margin: 10px 0px 0px 0px;
+    color: #000000;
+}
+.coupon-actions>p{
+    margin-bottom: 10px;
+}
+.coupon-actions button{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.coupon-actions button:first-child{
+    margin-left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
