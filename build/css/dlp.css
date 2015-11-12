@@ -114,6 +114,7 @@ h1.dlp-h{
     }
     .dlp-actions{
         margin-top: 30px;
+        margin-left: -20px;
     }
     .dlp-action:first-child{
         margin-left: 0px;
@@ -143,6 +144,11 @@ h1.dlp-h{
 @media (max-width: 500px) {
     .dlp-actions{
         justify-content: space-between;
+        margin-left: -10px;
+    }
+
+    .dlp-actions button{
+        margin-left: 10px;
     }
 }
 
@@ -156,7 +162,7 @@ h1.dlp-h{
 
 .dlp-about{
     background-color: #ffffff;
-    padding: 30px 0px 30px 0px;
+    padding: 30px 0px 50px 0px;
 }
 h2.dlp-h{
     color: #4A4A4A;
@@ -165,7 +171,8 @@ h2.dlp-h{
     margin-bottom: 20px;
 }
 .dlp-about-text{
-    margin-right: 50px;
+    margin-right: 100px;
+
 }
 .dlp-about-text p{
     margin-bottom: 10px;
@@ -178,12 +185,14 @@ h2.dlp-h{
     max-width: 300px;
 }
 .dlp-opening dt{
+    font-size: 15px;
     float: left;
     width: 40%;
     margin-bottom: 5px;
     color: #000000;
 }
 .dlp-opening dd{
+    font-size: 15px;
     float: left;
     width: 60%;
     font-weight: 700;
@@ -325,6 +334,12 @@ button.directions-button.active{
         padding-right: 0px;
         padding-top: 6px;
         font-size: 12px;
+    }
+
+    .map-actions button:hover{
+        border: none;
+        background: none;
+
     }
     .dlp-map-directions h4{
         margin-right: 0px;

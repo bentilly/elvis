@@ -35,15 +35,12 @@ header{
 
 }
 
-.header-search{
-    padding-bottom: 2px;
-
-}
-
 
 /*HEADER SEARCH---------*/
 .header-search{
     text-align: center;
+    padding-bottom: 2px;
+    
 }
 .header-search-form input{
 
