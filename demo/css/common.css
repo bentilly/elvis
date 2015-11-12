@@ -47,7 +47,6 @@ nav{
     background: none;
 }
 
-/*END PAGE ------------------------------------------ */
 /*PAGE HEADER ---------------------------------------------- */
 
 body>header{
@@ -113,7 +112,6 @@ body>header button.search-toggle:hover{
     color: #26B4BC; 
 }
 
-/*END .......... Header forms .......... */
 /* .......... Toggle search form .......... */
 
 .toggle-search{
@@ -158,7 +156,6 @@ body>header button.search-toggle:hover{
     background: none;
 }
 
-/*END .......... Toggle search form .......... */
 /*.......... Signed in USER .......... */
 
 nav.signed-in-nav{
@@ -173,10 +170,6 @@ nav.signed-in-nav.open{
     height: 180px;
 }
 
-/*END .......... Signed in USER .......... */
-
-
-/*END PAGE HEADER ------------------------------------------ */
 /*PAGE MAIN ---------------------------------------------- */
 
 body>main{
@@ -184,7 +177,94 @@ body>main{
     background-color: #E2E2E2;
 }
 
-/*end PAGE MAIN ------------------------------------------ */
+/*PAGE FOOTER ------------------------------------------ */
+
+footer{
+    background-color: #000000;
+    color: #9B9B9B;
+}
+
+/*.......... Footer blocks .......... */
+.footer-blocks{
+    margin-bottom: 40px;
+}
+.footer-block{
+    border-top: 2px solid;
+    margin: 30px 59px 0px 0px;
+}
+.footer-block:last-child{
+    margin-right: 0px;
+}
+.footer-block h6{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    font-size: 14px;
+    margin: 10px 0px 10px 0px;
+}
+.footer-block ul{
+    list-style: none;
+    width: 180px;
+}
+.footer-block ul li{
+    margin: 0px;
+    padding: 0px;
+}
+.footer-block ul li a{
+    color: #9B9B9B;
+    font-size: 13px;
+}
+.footer-block ul li a:hover{
+    color: white;
+}
+.footer-block.green{
+    border-top-color: #BDDC05;
+}
+.footer-block.blue{
+    border-top-color: #26B4BC;
+}
+.footer-block.pink{
+    border-top-color: #EE1556;
+}
+
+/*.......... Footer sole .......... */
+.footer-sole{
+    margin-bottom: 30px;
+}
+.footer-sole-terms{
+    font-size: 11px;
+    color: white;
+}
+.footer-sole-terms a{
+    color: #BDDC05;
+}
+.footer-sole-terms a:hover{
+    text-decoration: underline;
+}
+.footer-sole-terms a.active{
+    text-decoration: underline;
+}
+.footer-sole-terms p{
+    margin-right: 15px
+}
+
+/*.......... Footer - Tiny .......... */
+footer.tiny .footer-sole{
+    margin: 0px 0px 5px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
