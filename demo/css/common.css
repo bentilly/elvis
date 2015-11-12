@@ -1,3 +1,30 @@
+/*
+Colour palette
+
+GREEN       #BDDC05
+BLUE        #26B4BC
+PINK        #EE1556
+BROWN       #A5A88B
+ORANGE      #F5A623
+RED         #FF5B4F
+DARK GREY   #4A4A4A
+GREY        #E2E2E2
+NOT BLACK   #0F1213
+-------------------
+DARK GREY 2 #787878
+MID GREY    #9B9B9B
+SILVER      #BABEC1
+L.B.GREY    #DFE8EB
+DARK BLUE   #1E8D93
+DARK RED    #9E3932
+DARK GREEN  #889F00
+DARK ORANGE #FA7F1C
+BRONZE      #C08A6F
+GOLD        #C0A36F
+
+
+*/
+
 /*PAGE ---------------------------------------------- */
 
 html{
@@ -16,6 +43,9 @@ span{
 button:hover{
     cursor: pointer;
 }
+nav{
+    background: none;
+}
 
 /*END PAGE ------------------------------------------ */
 /*PAGE HEADER ---------------------------------------------- */
@@ -29,6 +59,10 @@ body>header.open{
     height: 120px;
     background: #bada55;
 }
+body>header .blade-content{
+    position:relative;
+}
+
 /*.......... Header forms .......... */
 
 .search-form input{
@@ -125,6 +159,21 @@ body>header button.search-toggle:hover{
 }
 
 /*END .......... Toggle search form .......... */
+/*.......... Signed in USER .......... */
+
+nav.signed-in-nav{
+    position: absolute;
+    top: 85px;
+    right: 0px;
+    overflow: hidden;
+    height: 0px;
+    transition: all 0.3s;
+}
+nav.signed-in-nav.open{
+    height: 180px;
+}
+
+/*END .......... Signed in USER .......... */
 
 
 /*END PAGE HEADER ------------------------------------------ */
@@ -148,10 +197,13 @@ body>main{
 }
 /* .......... Less than 1000px wide .......... */
 @media (max-width: 1000px) {
-    
+    button.user-signed-in p{
+        display: none;
+    }
 }
 /* .......... Less than 800px wide .......... */
 @media (max-width: 800px) {
+/*    HEADER   */
     body>header{
         height: 60px;
     }
@@ -172,6 +224,7 @@ body>main{
 }
 /* .......... Less than 600px wide .......... */
 @media (max-width: 600px) {
+/*    HEADER   */
     header .search-form{
         display: none;
     }
