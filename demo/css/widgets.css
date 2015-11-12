@@ -1,0 +1,21 @@
+/*PILL BUTTONS ---------------------------------------------- */
+
+/*.......... Layout .......... */
+
+button.pill{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+}
+button.outline.fine{
+    border-width: 1px;
+}
+
+/*.......... Colour .......... */
+
+button.outline.pink{
+    color: #EE1556;
+    border: 2px solid #EE1556;
+}
