@@ -10,9 +10,20 @@
     position: relative;
 }
 
+.lli-map{
+    background: none;
+    position: relative;
+}
+
+.list-map-pins{
+    background: none;
+    position: absolute;
+    top: 90px;
+    left: 113px;
+}
 
 .lli-content{
-    padding: 15px 35px 10px 25px;
+    padding: 15px 25px 15px 25px;
 }
 .lli-content-main{
     margin-right: 10px;

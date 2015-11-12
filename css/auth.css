@@ -93,7 +93,11 @@ nav.auth-nav{
 
 .auth-content h2 a{
     color: #27C0C8;
-    padding-right: 20px;
+    padding-right: 10px;
+}
+
+.auth-content h2 span{
+    margin-bottom: 5px;
 }
 
 .auth-content h2 a:hover{
@@ -121,7 +125,7 @@ nav.auth-nav{
 
 .auth-content main{
     background: none;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .auth-block{
     border-top: 1px solid #DFE8EB;
@@ -294,7 +298,7 @@ nav.auth-nav{
 
 /*PLANS------------------------------------------  */
 .plans{
-    margin-top: 20px;
+    margin-top: 34px;
 }
 .plans .plan{
     padding: 0px 10px 0px 10px;
