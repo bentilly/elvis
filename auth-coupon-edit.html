@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/ui-widgets.css">
         <link rel="stylesheet" href="css/auth.css">
+        <link rel="stylesheet" href="css/modals.css">
         <link rel="stylesheet" href="css/playground.css">
     </head>
     
@@ -204,14 +205,20 @@
 <!--        MODAL EXAMPLE    -->
         <div class="finda-modal flexr xc jc">
             <div class="flexc">
-                <header class="flexchild ns">top bit of modal</header>
+                <header class="flexchild ns flexr xc sb">
+                    <h3>Modal title</h3>
+                    <button type="button" class="modal-close"><i class="fa fa-times-circle"></i></button>
+                </header>
                 <main  class="flexchild ns g">
                     
                     main
                 
                 
                 </main>
-                <footer  class="flexchild ns">bottom bit of modal</footer>
+                <footer  class="flexchild ns flexr xc sb">
+                    <button type="button" class="pill solid blue">save and close</button>
+                    <button type="button" class="pill text-only link">Cancel</button>
+                </footer>
             </div>
         </div>
     
