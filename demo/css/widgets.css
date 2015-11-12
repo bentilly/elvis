@@ -1,3 +1,13 @@
+button{
+    outline: none;
+}
+button:hover{
+    cursor: pointer;
+}
+button.hide{
+    display: none;
+}
+
 /*PILL BUTTONS ---------------------------------------------- */
 
 /*.......... Layout .......... */
@@ -19,3 +29,66 @@ button.outline.pink{
     color: #EE1556;
     border: 2px solid #EE1556;
 }
+button.outline.pink:hover{
+    color: white;
+    border-color: white;
+}
+
+/*END PILL BUTTONS ---------------------------------------------- */
+/*OTHER BUTTONS ---------------------------------------------- */
+
+/* .......... Signed in USER .......... */
+
+button.user-signed-in{
+    color: #BABEC1; /* <<< ??  */
+    font-size: 14px;
+}
+button.user-signed-in:hover i{
+    color: #A5A88B;
+}
+button.user-signed-in:hover{
+    color: #A5A88B;
+}
+button.user-signed-in img{
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    margin: 0px 10px 0px 10px;
+}
+button.user-signed-in i{
+    color: white;
+    transition: all 0.3s;
+}
+button.user-signed-in.open i{
+    transform: rotate(180deg);
+}
+
+/* .......... Dropdown menu .......... */
+button.dropdown-menu{
+    background: white;
+    padding: 8px 10px 8px 15px;
+    min-width: 180px;
+    text-align: left;
+    font-size: 16px;
+    color: #26B4BC;
+    border-bottom: 1px solid #DFE8EB
+}
+button.dropdown-menu:last-child,
+button.dropdown-menu:nth-last-child(2) {
+    border-bottom:none;
+}
+button.dropdown-menu.sign-out{
+    background: #26B4BC;
+    color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+button.dropdown-menu:hover{
+    color: #A5A88B;
+}
+button.dropdown-menu.sign-out:hover{
+    background: #A5A88B;
+    color: white;
+}
+
+/*END OTHER BUTTONS ---------------------------------------------- */

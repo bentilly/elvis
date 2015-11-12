@@ -25,25 +25,38 @@
                     <form class="search-form flexr jc">
                         <input class="location" value="Auckland" />
                         <input class="context" placeholder="Find something" />
-                        <button class="flexchild ns"><i class="fa fa-search"></i></button>
+                        <button class="fx-c ns"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
             
                 <button class="search-toggle"><i class="fa fa-search"></i></button>
 
                 <div class="fx-c ns">
-                    <button class="pill outline pink">Sign in</button>
+                    <button class="sign-in-button pill outline pink">Sign in</button>
+                    
+                    <button class="user-signed-in flexr xc hide">
+                        <p>floydpepper@gmail.com</p>
+                        <img src="img/av.png"></img>
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
                 </div>
+        
+                <nav class="signed-in-nav flexc">
+                    <button type="button" class="dropdown-menu fx-c ns">Favourites</button>
+                    <button type="button" class="dropdown-menu fx-c ns">Reviews</button>
+                    <button type="button" class="dropdown-menu fx-c ns">Businesses</button>
+                    <button type="button" class="dropdown-menu sign-out fx-c ns">Sign out</button>
+                </nav>
             
             </div>
         </header>
     
         <div class="toggle-search blade">
             <form class="blade-content flexc">
-                <input class="location" value="Auckland" />
-                <div class="flexr">
-                    <input class="context fx-c g" placeholder="Find something" />
-                    <button class="flexchild ns"><i class="fa fa-search"></i></button>
+                <input class="location fx-c ns" value="Auckland" />
+                <div class="flexr fx-c ns">
+                    <input class="context fx-c g ns" placeholder="Find something" />
+                    <button class="fx-c ns"><i class="fa fa-search"></i></button>
                 </div>
             </form>
         </div>
@@ -51,9 +64,41 @@
         <!-- Header control-->
         <script>
             $(document).ready(function(){
+                //hide/show mobile search
                 $(".search-toggle").click(function(){
-                    $( ".toggle-search" ).addClass( "open" );
+                    if ($(".toggle-search").hasClass('open')) {
+                        $( ".toggle-search" ).removeClass( "open" );
+                    }else{
+                        $( ".toggle-search" ).addClass( "open" );
+                    };
                 });
+                
+                //hide/show sign in
+                $(".sign-in-button").click(function(){
+                    $( ".sign-in-button" ).addClass( "hide" );
+                    $( ".user-signed-in" ).removeClass( "hide" );
+                });
+                
+                //hide/show user menu
+                $(".user-signed-in").click(function(){
+                    if ($(".signed-in-nav").hasClass("open")) {
+                        $( ".signed-in-nav" ).removeClass( "open" );
+                        $( ".user-signed-in" ).removeClass( "open" );
+                    }else{
+                        $( ".signed-in-nav" ).addClass( "open" );
+                        $( ".user-signed-in" ).addClass( "open" );
+                    };
+                });
+                
+                //sign out
+                $("button.sign-out").click(function(){
+                    $( ".signed-in-nav" ).removeClass( "open" );
+                    $( ".user-signed-in" ).removeClass( "open" );
+                    $( ".user-signed-in" ).addClass( "hide" );
+                    $( ".sign-in-button" ).removeClass( "hide" );
+                });
+                
+                
             });
         </script>
 <!--end COMMON HEADER ------------- -->
