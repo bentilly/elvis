@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Finda</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/sanitize.css">
+        <link rel="stylesheet" href="css/flex.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/widgets.css">
+        
+        <!-- dont use in PROD-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    </head>
+    <body class="flexc">
+        
+<!--COMMON HEADER ------------- -->
+        <header class="blade fx-c ns">
+            <div class="blade-content flexr xc sb">
+
+                <img src="img/finda100.svg"></img>
+
+                <div class="fx-c g">    
+                    <form class="search-form flexr jc">
+                        <input class="location" value="Auckland" />
+                        <input class="context" placeholder="Find something" />
+                        <button class="fx-c ns"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            
+                <button class="search-toggle"><i class="fa fa-search"></i></button>
+
+                <div class="fx-c ns">
+                    <button class="sign-in-button pill outline pink">Sign in</button>
+                    
+                    <button class="user-signed-in flexr xc hide">
+                        <p>floydpepper@gmail.com</p>
+                        <img src="img/av.png"></img>
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                </div>
+        
+                <nav class="signed-in-nav flexc">
+                    <button type="button" class="dropdown-menu fx-c ns">Favourites</button>
+                    <button type="button" class="dropdown-menu fx-c ns">Reviews</button>
+                    <button type="button" class="dropdown-menu fx-c ns">Businesses</button>
+                    <button type="button" class="dropdown-menu sign-out fx-c ns">Sign out</button>
+                </nav>
+            
+            </div>
+        </header>
+    
+        <div class="toggle-search blade">
+            <form class="blade-content flexc">
+                <input class="location fx-c ns" value="Auckland" />
+                <div class="flexr fx-c ns">
+                    <input class="context fx-c g ns" placeholder="Find something" />
+                    <button class="fx-c ns"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+    
+        <!-- Header control-->
+        <script>
+            $(document).ready(function(){
+                //hide/show mobile search
+                $(".search-toggle").click(function(){
+                    if ($(".toggle-search").hasClass('open')) {
+                        $( ".toggle-search" ).removeClass( "open" );
+                    }else{
+                        $( ".toggle-search" ).addClass( "open" );
+                    };
+                });
+                
+                //hide/show sign in
+                $(".sign-in-button").click(function(){
+                    $( ".sign-in-button" ).addClass( "hide" );
+                    $( ".user-signed-in" ).removeClass( "hide" );
+                });
+                
+                //hide/show user menu
+                $(".user-signed-in").click(function(){
+                    if ($(".signed-in-nav").hasClass("open")) {
+                        $( ".signed-in-nav" ).removeClass( "open" );
+                        $( ".user-signed-in" ).removeClass( "open" );
+                    }else{
+                        $( ".signed-in-nav" ).addClass( "open" );
+                        $( ".user-signed-in" ).addClass( "open" );
+                    };
+                });
+                
+                //sign out
+                $("button.sign-out").click(function(){
+                    $( ".signed-in-nav" ).removeClass( "open" );
+                    $( ".user-signed-in" ).removeClass( "open" );
+                    $( ".user-signed-in" ).addClass( "hide" );
+                    $( ".sign-in-button" ).removeClass( "hide" );
+                });
+                
+                
+            });
+        </script>
+<!--end COMMON HEADER ------------- -->
+    
+        <main class="fx-c g">main</main>
+
+<!--COMMON FOOTER ------------- -->
+        <footer class="blade fx-c ns">
+            <div class="blade-content">
+                
+                <div class="footer-blocks flexr w"> <!-- change to <nav>-->
+                    <div class="footer-block green">
+                        <h6>Finda.co.nz</h6>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Site map</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="#">Add your business</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-block blue">
+                        <h6>MyFinda</h6>
+                        <ul>
+                            <li><a href="#">Sign in</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Forgot your password?</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-block pink">
+                        <h6>Business owners</h6>
+                        <ul>
+                            <li><a href="#">Add your business</a></li>
+                            <li><a href="#">Get more from Finda</a></li>
+                            <li><a href="#">Need help with Finda?</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-block green">
+                        <h6>Friends of Finda</h6>
+                        <ul>
+                            <li><a href="#">Wises</a></li>
+                            <li><a href="#">Menus</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-block blue">
+                        <h6>Connect with Finda</h6>
+                        <ul>
+                            <li><a href="#">Follow us on Twitter</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+                <div class="footer-sole flexr sb xe">
+                    <div class="footer-sole-terms flexr w">
+                        <p>COPYRIGHT&nbsp;015&nbsp;FINDA&nbsp;LIMITED</p>
+                        <p><a href="#">PRIVACY&nbsp;POLICY</a></p>
+                        <p><a href="#">TERMS&nbsp;OF&nbsp;USE</a></p>
+                        <p><a href="#">CONTACT&nbsp;FINDA</a></p>
+                    </div>
+                    
+                    <div class="footer-logo"><img src="img/finda100.svg"></img></div>
+                </div>
+                
+            </div>
+        </footer>
+<!--end COMMON FOOTER ------------- -->
+    </body>
+</html>

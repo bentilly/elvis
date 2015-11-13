@@ -1,0 +1,107 @@
+/* MODAL ------------------------------------------  */
+.finda-modal{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0,0,0,.5);
+}
+body.modal-open{
+    overflow: hidden;
+}
+/*resets and top level styles*/
+.finda-modal>div{
+    background:none;
+    border-radius: 5px;
+    box-shadow: 2px 4px 16px 0px rgba(0,0,0,0.50);
+}
+.finda-modal header,
+.finda-modal main,
+.finda-modal footer{
+    color: white;
+    background:none;
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+/*Modal Header------------*/
+.finda-modal header{
+    background: #191F21;
+    padding: 10px 15px 10px 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.finda-modal header h3{
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+/*button*/
+button.modal-close{
+    font-size: 20px
+}
+button.text-only.link{
+    border-radius: 0px;
+    padding: 0px;
+    text-decoration: underline;
+    font-size: 14px;
+    color: #1E8D93;
+    font-weight: 700;
+}
+.finda-modal main{
+    overflow-y: auto;
+}
+/*Modal Footer -------*/
+.finda-modal footer{
+    background: #E2E2E2;
+    padding: 10px 15px 10px 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/*button*/
+button.text-only.link{
+    border-radius: 0px;
+    padding: 0px;
+    text-decoration: underline;
+    font-size: 14px;
+    color: #1E8D93;
+    font-weight: 700;
+}
+.finda-modal footer button{
+    margin-right: 10px;
+}
+.finda-modal footer button:last-child{
+    margin-right: 0px;
+}
+/*Modal Main generic -------*/
+
+.finda-modal main{
+    background: white;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
