@@ -1,0 +1,75 @@
+/*BLADES ---------------------------------------------- */
+
+.blade{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.blade-content{
+    width: 90%;
+    max-width: 1200px
+}
+
+
+/*end BLADES ------------------------------------------ */
+/*FLEXBOX LAYOUT ---------------------------------------------- */
+
+/*PARENT CONTAINER*/
+
+/*Add flexbox to a parent element. Default to vertical layout*/
+.flexc{
+    display: flex;
+    flex-direction: column;
+}
+.flexr{
+    display: flex;
+    flex-direction: row;
+}
+
+/*Direction*/
+.flexc.cr{
+    flex-direction: column-reverse;
+}
+.flexr.rr{
+    flex-direction: row-reverse;
+}
+
+/*Justification along axis*/
+.flexc.js, .flexr.js{
+    justify-content: flex-start;
+}
+.flexc.jc, .flexr.jc{
+    justify-content: center;
+}
+.flexc.je, .flexr.je{
+    justify-content: flex-end;
+}
+
+/*Spacing and wrapping alnod axis*/
+.flexc.sb, .flexr.sb{
+    justify-content: space-between;
+}
+.flexc.w, .flexr.w{
+    flex-wrap: wrap;
+}
+
+/*Positioning across axis*/
+.flexc.xs, .flexr.xs
+{
+    align-items: flex-start;
+}
+.flexc.xc, .flexr.xc{
+    align-items: center;
+}
+.flexc.xe, .flexr.xe{
+    align-items: flex-end;
+}
+
+/*CHILD ELEMENTS*/
+.fx-c.ns{
+    flex-shrink: 0;
+}
+.fx-c.g{
+    flex-grow: 1;
+}
