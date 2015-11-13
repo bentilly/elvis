@@ -24,7 +24,7 @@ button.outline.fine{
 }
 
 /*.......... Colour .......... */
-
+/*pink*/
 button.outline.pink{
     color: #EE1556;
     border: 2px solid #EE1556;
@@ -32,6 +32,26 @@ button.outline.pink{
 button.outline.pink:hover{
     color: white;
     border-color: white;
+}
+/*white*/
+button.white{
+    background-color: #ffffff;
+    color: #26B4BC;
+}
+button.white:hover{
+    background-color: #26B4BC;
+    color: #ffffff; 
+}
+/*text only*/
+button.text-only{
+    font-size: 12px;
+    color: #26B4BC;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+button.text-only:hover{
+    color: #A5A88B;
 }
 
 /*END PILL BUTTONS ---------------------------------------------- */

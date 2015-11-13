@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Finda</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/sanitize.css">
+        <link rel="stylesheet" href="css/flex.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/widgets.css">
+        
+        <link rel="stylesheet" href="css/home.css">
+        
+        <!-- dont use in PROD-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    </head>
+    <body class="flexc">
+        
+<!--COMMON HEADER ------------- -->
+        <!--REMOVED-->
+<!--end COMMON HEADER ------------- -->
+    
+        <main class="fx-c g">
+            
+            <!--BLADE: Title Strip-->
+            <section class="title-strip fx-c ns">
+                <div class="blade-content flexr sb xc">
+                    <h1 class="fx-c ns">Latest reviews from <span>Blenheim</span></h1>
+                    <div class="content flexr xc fx-c ns">
+                        <p>Not in Blenheim?</p>
+                        <button class="change-button pill white">change area</button>
+                    </div>
+                </div>
+                
+                
+                <!-- Title strip control-->
+                <script>
+                    $(document).ready(function(){
+                        
+                        //Adjust the button text and style for narrow screens
+                        $(window).resize(function(){
+                            var current_width = $(window).width();
+                            if(current_width < 600){
+                                $( ".change-button" ).removeClass( "white" );
+                                $( ".change-button" ).addClass( "text-only" );
+                                $( ".change-button" ).text("change");
+                            }else{
+                                $( ".change-button" ).addClass( "white" );
+                                $( ".change-button" ).removeClass( "text-only" );
+                                $( ".change-button" ).text("change area");
+                            };
+                        });
+                        
+                    });
+                </script>
+            </section>
+            
+            
+            
+        </main>
+
+<!--COMMON FOOTER ------------- -->
+        <!--REMOVED-->
+<!--end COMMON FOOTER ------------- -->
+    </body>
+</html>
