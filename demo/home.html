@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/flex.css">
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/widgets.css">
-        
+        <link rel="stylesheet" href="css/list-item.css">
         <link rel="stylesheet" href="css/home.css">
         
         <!-- dont use in PROD-->
@@ -26,9 +26,9 @@
             <!--BLADE: Title Strip-->
             <section class="title-strip fx-c ns">
                 <div class="blade-content flexr sb xc">
-                    <h1 class="fx-c ns">Latest reviews from <span>Blenheim</span></h1>
+                    <h1 class="fx-c ns">Latest reviews from <span>Wellington</span></h1>
                     <div class="content flexr xc fx-c ns">
-                        <p>Not in Blenheim?</p>
+                        <p>Not in Wellington?</p>
                         <button class="change-button pill white">change area</button>
                     </div>
                 </div>
@@ -56,7 +56,88 @@
                 </script>
             </section>
             
+            <!--BLADE: Home map-->
+            <section class="home-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15230.390827847434!2d174.77545233477767!3d-41.289197754000135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snz!4v1447372946445" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                
+                <div class="pin-examples">
+                        
+                        <button type="button" class="flexchild ns map-pin low">2.4</button>
+                        <button type="button" class="flexchild ns map-pin med">6.8</button>
+                        <button type="button" class="flexchild ns map-pin high">8.5</button>
+                        <button type="button" class="flexchild ns map-pin med dim">6.8</button>
+                        <button type="button" class="flexchild ns map-pin high selected">8.5</button>
+                        <button type="button" class="flexchild ns map-pin small"></button>
+                        <button type="button" class="flexchild ns map-pin small dim"></button>
+                        <button type="button" class="flexchild ns map-pin small selected"></button>
+                        <button type="button" class="flexchild ns map-pin small selected dim"></button>
+                    
+                    </div>
+                
+            </section>
             
+            <!--BLADE: LIST-->
+            <section class="home-list">
+                <div class="blade-content flexc xc">
+                    
+<!-- This isnt exactly the correct usage for <article> but in the context of Finda: Home and SRP pages it nicely and semantically wraps a search result list item-->
+                    <article class="list-item flexr">
+                        <div class="img-container fx-c ns flexc xc jc"><img src="img/SIBIG.png"></img></div>
+                    
+                        <main class="flexr">
+                            <div class="flexc fx-c g">
+                                    
+                                <div class="li-text flexc fx-c g">
+                                    <h2>
+                                        <a href="#">Atomic coffee Roasters&nbsp;&nbsp;</a>
+                                        <button type="button" class="fav"><i class="fa fa-star-o"></i></button>
+                                    </h2>
+                                    <address>420 New North Road, Kingsland, Auckland</address>
+                                    <div class="li-body">
+                                        News Zealand’s finest roasters, puveyors of amazing coffee. Our cafe in Kingsland has now had a massive makeover and looks great.News Zealand’s finest roasters, puveyors of amazing coffee.
+                                    </div>
+                                </div>
+
+                                <nav class="flexr">
+                                    <button type="button" class="fbut labeled call">
+                                        <!--Add "active" class for alt state ^^-->
+                                        <i class="fa fa-phone"><span>09 6655443</span></i>
+                                        <p class="label">call</p>
+                                    </button>
+                                    <button type="button" class="fbut labeled website">
+                                        <i class="fa fa-external-link"></i>
+                                        <p class="label">website</p>
+                                    </button>
+                                    <button type="button" class="fbut labeled more">
+                                        <i class="fa fa-chevron-right"></i>
+                                        <p class="label">more</p>
+                                    </button>
+                                    <button type="button" class="fbut labeled pink">
+                                        <i class="fa fa-dollar"></i>
+                                        <p class="label">Coupons</p>
+                                    </button>
+                                </nav>
+                                
+                            </div>
+
+                            <aside class="flexc sb">
+                                <div class="badge rating low big">2.7</div>
+                                <img src="images/list-logo.png"></img>
+                            </aside>
+                            
+                        </main>
+                
+                        <div class="map-container fx-c ns">map </div>
+                    </article>
+                
+                </div>
+        
+                <!-- List control-->
+                <script>
+                    
+                </script>
+        
+            </section>
             
         </main>
 

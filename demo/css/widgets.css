@@ -54,7 +54,27 @@ button.text-only:hover{
     color: #A5A88B;
 }
 
-/*END PILL BUTTONS ---------------------------------------------- */
+/*ROUND BUTTON -------------------------------------------------*/
+
+/*default button. Blue with white icon*/
+button.fbut i{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 45px;/*default size*/
+    height: 45px;
+    border-radius: 100px; /* shouldnt need a badge bigger than this */
+    background: #26B4BC;/*default colours*/
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+button.fbut i:hover {
+     background-color: #A5A88B;
+}
+
 /*OTHER BUTTONS ---------------------------------------------- */
 
 /* .......... Signed in USER .......... */
@@ -81,6 +101,18 @@ button.user-signed-in i{
 }
 button.user-signed-in.open i{
     transform: rotate(180deg);
+}
+
+/* .......... Favourites star toggle .......... */
+button.fav{
+    color: #26B4BC;
+    font-size: 20px;
+}
+button.fav.selected i{
+    color: #EE1556;
+}
+button.fav:hover i{
+    color: #A5A88B;
 }
 
 /* .......... Dropdown menu .......... */
@@ -111,4 +143,43 @@ button.dropdown-menu.sign-out:hover{
     color: white;
 }
 
-/*END OTHER BUTTONS ---------------------------------------------- */
+/*MAP PINS ---------------------------------------------- */
+
+.map-pin{
+    background-image: url(../img/pins/map-pin-orange.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70px;
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    padding-bottom: 22px;
+    margin-top: 0px;
+    transition: all 0.2s;
+}
+.map-pin.low{
+    background-image: url(../img/pins/map-pin-red.svg);
+}
+.map-pin.med{
+    background-image: url(../img/pins/map-pin-orange.svg);
+}
+.map-pin.high{
+    background-image: url(../img/pins/map-pin-green.svg);
+}
+.map-pin.dim{
+    opacity: .4;
+}
+.map-pin.selected{
+    background-image: url(../img/pins/map-pin-blue.svg);
+}
+.map-pin.small{
+    background-image: url(../img/pins/grey-pin.svg);
+    height: 40px;
+    width: 30px;
+}
+.map-pin.small.selected{
+    background-image: url(../img/pins/blue-pin.svg);
+    height: 40px;
+    width: 30px;
+}
