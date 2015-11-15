@@ -1,0 +1,112 @@
+/*
+Styles needed for a search result list item. Includes Home page list item with review, Active map pin item and SRP list items
+*/
+
+article.list-item{
+    background: white;
+    width: 100%;
+    height: 230px;
+}
+article.list-item>.img-container{
+    background: #bada55;
+    width: 25%;
+    overflow: hidden;
+    height: 230px;
+}
+article.list-item>.img-container img{
+    height: 100%;
+    width: auto;
+}
+article.list-item>main{
+    overflow: hidden;
+    padding: 12px 20px 15px 20px;
+}
+article.list-item aside{
+    margin-left: 10px;
+}
+.list-item h2 a{
+    font-size: 21px;
+    color: #26B4BC;
+    font-weight: 700;
+}
+.list-item h2 a:hover{
+   color: #A5A88B;
+}
+.list-item address{
+    font-weight: 500;
+    font-size: 16px;
+    color: #787878;
+    height: 22px;
+    font-style: normal;
+}
+.li-body{
+    margin-top: 6px;
+    line-height: 17px;
+    max-height: 70px;
+    overflow: hidden;
+}
+/*nav - item actions*/
+article.list-item main nav button{
+    margin-right: 10px;
+}
+article.list-item main nav button:last-child{
+    margin-right: 0px;
+}
+
+/*map    */
+article.list-item>.map-container{
+    background: #eeeeee;
+    background-image: url("../img/MapPlaceholder.png");
+    background-position: center;
+    width: 20%;
+}
+article.list-item>.map-container button.map-pin{
+    margin-bottom: 20px;
+}
+
+
+/*MEDIA QUERY ############################################### */
+
+/* .......... Less than 1200px wide .......... */
+@media (max-width: 1200px) {
+    
+}
+/* .......... Less than 1000px wide .......... */
+@media (max-width: 1000px) {
+
+}
+/* .......... Less than 800px wide .......... */
+@media (max-width: 800px) {
+    article.list-item>.map-container{
+        display: none;
+    }
+}
+/* .......... Less than 600px wide .......... */
+@media (max-width: 600px) {
+    article.list-item{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .li-body{
+        max-height: none;
+        margin-bottom: 10px;
+    }
+    article.list-item>main{
+/*        height: auto;*/
+    }
+    article.list-item>.img-container{
+        width: 100%;
+        height: 200px;
+    }
+    article.list-item>.img-container img{
+        max-width:550px;
+        height: auto;
+    }
+    article.list-item aside>img{
+        width: 50px;
+        height: 50px;
+    }
+}
+    
+    
+}
