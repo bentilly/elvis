@@ -19,11 +19,10 @@ article.list-item>.img-container img{
 }
 article.list-item>main{
     overflow: hidden;
-    padding: 20px 20px 10px 20px;
+    padding: 12px 20px 15px 20px;
 }
-article.list-item>.map-container{
-    background: #123456;
-    width: 20%;
+article.list-item aside{
+    margin-left: 10px;
 }
 .list-item h2 a{
     font-size: 21px;
@@ -40,10 +39,30 @@ article.list-item>.map-container{
     height: 22px;
     font-style: normal;
 }
+.li-body{
+    margin-top: 6px;
+    line-height: 17px;
+    max-height: 70px;
+    overflow: hidden;
+}
+/*nav - item actions*/
+article.list-item main nav button{
+    margin-right: 10px;
+}
+article.list-item main nav button:last-child{
+    margin-right: 0px;
+}
 
-
-
-
+/*map    */
+article.list-item>.map-container{
+    background: #eeeeee;
+    background-image: url("../img/MapPlaceholder.png");
+    background-position: center;
+    width: 20%;
+}
+article.list-item>.map-container button.map-pin{
+    margin-bottom: 20px;
+}
 
 
 /*MEDIA QUERY ############################################### */
@@ -68,6 +87,10 @@ article.list-item>.map-container{
         flex-direction: column-reverse;
         height: auto;
     }
+    .li-body{
+        max-height: none;
+        margin-bottom: 10px;
+    }
     article.list-item>main{
 /*        height: auto;*/
     }
@@ -79,5 +102,11 @@ article.list-item>.map-container{
         max-width:550px;
         height: auto;
     }
+    article.list-item aside>img{
+        width: 50px;
+        height: 50px;
+    }
+}
+    
     
 }

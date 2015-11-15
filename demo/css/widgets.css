@@ -70,10 +70,88 @@ button.fbut i{
     font-weight: 400;
     font-size: 22px;
 }
-
 button.fbut i:hover {
      background-color: #A5A88B;
 }
+button.fbut i span{
+    flex-shrink: 0;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 10px;
+    display: none;
+}
+
+/*labels*/
+button.fbut.labeled{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+button.fbut.labeled p{
+    font-size: 10px;
+    font-weight: 700;
+    color: #7C7C7C;
+    text-transform: uppercase;
+    margin-top: 8px;
+    line-height: 12px;
+}
+
+/*active states*/
+button.fbut.active i{
+    background: #A5A88B !important;
+}
+button.fbut.info.active i{
+    width: auto;
+    padding: 0px 20px 0px 14px;
+}
+button.fbut.active span{
+    display: inline;
+}
+button.fbut.info.labeled.active{
+    align-items: flex-start;
+}
+button.fbut.labeled.active p{
+/*    ?? adjust*/
+    margin-left: 0px; 
+}
+button.fbut.active.hide-label{
+    margin-bottom: 20px;
+}
+button.fbut.active.hide-label p{
+    display: none;
+}
+
+/*other colours*/
+button.fbut.pink i{
+    padding-bottom: 1px;
+    background: #EE1556;
+}
+button.fbut.pink i:hover{
+    background: #A5A88B;
+}
+button.fbut.pink i.active{
+    background: #A5A88B;
+}
+
+/*adjustments*/
+/*A-Z*/
+button.fbut.call i      { padding-top: 1px; padding-right: 1px; }
+button.fbut.contact i   { padding-bottom: 2px;  padding-right: 1px; }
+button.fbut.edit i      { padding-left: 1px;    padding-top: 1px; }
+button.fbut.facebook i  { padding-right: 2px;   padding-top: 2px; }
+button.fbut.fax i       { padding-bottom: 1px;  padding-right: 1px; font-size: 20px; }
+button.fbut.gplus i     { padding-left: 3px;    padding-top: 3px; }
+button.fbut.left i      { padding-top: 2px;     padding-right: 4px; }
+button.fbut.linkedin i  { padding-left: 2px;    padding-bottom: 2px; }
+button.fbut.mobile i    { padding-right: 1px;   font-size: 30px;}
+button.fbut.more i      { padding-left: 4px;    padding-top: 1px; }
+button.fbut.right i     { padding-top: 2px;     padding-left: 3px; }
+button.fbut.twitter i   { padding-left: 2px;    padding-top: 2px; }
+button.fbut.view i      { padding-right: 1x;    padding-bottom: 2px; }
+button.fbut.website i   { padding-top: 1px;     padding-left: 3px; }
+
 
 /*OTHER BUTTONS ---------------------------------------------- */
 
@@ -183,3 +261,67 @@ button.dropdown-menu.sign-out:hover{
     height: 40px;
     width: 30px;
 }
+
+/*BADGE ---------------------------------------------- */
+/*not clickable - based on <div class="badge">*/
+
+.badge{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.badge .text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 65px;/*default size*/
+    height: 65px;
+    border-radius: 100px;
+    color: white;
+    font-weight: 400;
+    font-size: 28px;
+}
+.badge.big .text{
+    font-size: 34px;
+    width: 80px;
+    height: 80px;
+}
+.badge.small .text{
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    padding-bottom: 0px;
+}
+/*colours*/
+.badge.rating.low .text{
+    background: #FF5B4F;
+}
+.badge.rating.med .text{
+    background: #F5A623;
+}
+.badge.rating.high .text{
+    background: #bada55;
+}
+.badge .label{
+    text-align: center;
+    font-weight: 700;
+    font-size: 10px;
+    color: #7C7C7C;
+    letter-spacing: 0.41px;
+    line-height: 11px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+/* 3 REVIEWS: */
+font-family: Roboto-Bold;
+font-size: 10px;
+color: #7C7C7C;
+letter-spacing: 0.41px;
+line-height: 11px;
+
+
+
+

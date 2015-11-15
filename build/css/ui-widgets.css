@@ -197,10 +197,10 @@ button.fbut i{
 }
 
 button.fbut i:hover {
-
      background-color: #A5A88B;
 }
 
+/*Adjustments*/
 button.fbut.facebook i{
     padding-right: 2px;
     padding-top: 2px;

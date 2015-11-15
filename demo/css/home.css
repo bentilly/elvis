@@ -38,6 +38,13 @@ section.home-map{
 section.home-list{
     padding: 20px 0px 100px 0px;
 }
+section.home-list article{
+    margin-bottom: 20px;
+}
+section.home-list article:last-child{
+    margin-bottom: 0px;
+}
+
 
 /*MEDIA QUERY ############################################### */
 
