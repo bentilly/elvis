@@ -22,6 +22,26 @@ button.pill{
 button.outline.fine{
     border-width: 1px;
 }
+/*text only*/
+button.text-only{
+    font-size: 12px;
+    color: #26B4BC;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+button.text-only:hover{
+    color: #A5A88B;
+}
+/*end-icon*/
+button.end-icon{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 7px 5px 20px;
+}
+button.end-icon i{
+    font-size: 20px;
+    margin-left: 8px
+}
 
 /*.......... Colour .......... */
 /*pink*/
@@ -33,6 +53,15 @@ button.outline.pink:hover{
     color: white;
     border-color: white;
 }
+/*blue*/
+button.outline.blue{
+    color: #26B4BC;
+    border: 2px solid #26B4BC;
+}
+button.outline.blue:hover{
+    color: #A5A88B;
+    border-color: #A5A88B;
+}
 /*white*/
 button.white{
     background-color: #ffffff;
@@ -42,17 +71,22 @@ button.white:hover{
     background-color: #26B4BC;
     color: #ffffff; 
 }
-/*text only*/
-button.text-only{
-    font-size: 12px;
-    color: #26B4BC;
-    text-transform: uppercase;
-    font-weight: 700;
+/*black*/
+button.outline.black{
+    border-color: black;
+}
+button.outline.black:hover{
+    color: white;
+    border-color: white;
+}
+button.outline.black.selected{
+    color: white;
+    border-color: white;
 }
 
-button.text-only:hover{
-    color: #A5A88B;
-}
+
+
+
 
 /*ROUND BUTTON -------------------------------------------------*/
 
@@ -69,6 +103,7 @@ button.fbut i{
     color: white;
     font-weight: 400;
     font-size: 22px;
+    font-style: normal;
 }
 button.fbut i:hover {
      background-color: #A5A88B;
@@ -81,6 +116,24 @@ button.fbut i span{
     margin-left: 10px;
     display: none;
 }
+
+/*outline*/
+button.fbut.outline i{
+    border: 2px solid #26B4BC;
+    background: none;
+    color: #26B4BC;
+}
+button.fbut.outline i:hover{
+    border-color: #A5A88B;
+    background: none;
+    color: #A5A88B;
+}
+button.fbut.outline.active i{
+    border: none;
+    background: #A5A88B;
+    color: white;
+}
+
 
 /*labels*/
 button.fbut.labeled{
@@ -156,7 +209,6 @@ button.fbut.website i   { padding-top: 1px;     padding-left: 3px; }
 /*OTHER BUTTONS ---------------------------------------------- */
 
 /* .......... Signed in USER .......... */
-
 button.user-signed-in{
     color: #BABEC1; /* <<< ??  */
     font-size: 14px;
@@ -193,6 +245,17 @@ button.fav:hover i{
     color: #A5A88B;
 }
 
+
+/* .......... Close button .......... */
+button.close{
+    font-size: 20px;
+    padding: 0px 5px;
+    color: #4A4A4A;
+}
+button.close:hover{
+    color: #A5A88B;
+}
+
 /* .......... Dropdown menu .......... */
 button.dropdown-menu{
     background: white;
@@ -219,6 +282,21 @@ button.dropdown-menu:hover{
 button.dropdown-menu.sign-out:hover{
     background: #A5A88B;
     color: white;
+}
+
+/* .......... Open/close blade toggle .......... */
+button.open-blade-toggle{
+    color: white;
+    font-size: 18px;
+}
+button.open-blade-toggle i{
+    transition: all 0.3s;
+}
+button.open-blade-toggle.up i{
+    transform: rotate(180deg);
+}
+button.open-blade-toggle:hover{
+    color: black;
 }
 
 /*MAP PINS ---------------------------------------------- */
@@ -315,13 +393,24 @@ button.dropdown-menu.sign-out:hover{
     margin-top: 10px;
 }
 
-/* 3 REVIEWS: */
-font-family: Roboto-Bold;
-font-size: 10px;
-color: #7C7C7C;
-letter-spacing: 0.41px;
-line-height: 11px;
+/*AVATAR ---------------------------------------------- */
 
-
-
+.avatar{
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    flex-shrink: 0;
+}
+.avatar img{
+    width: 100%; /*images must be square*/
+}
+.avatar.large{
+    width: 80px;
+    height: 80px;
+}
+.avatar.tiny{
+    width: 40px;
+    height: 40px;
+}
 

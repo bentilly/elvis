@@ -6,6 +6,7 @@ article.list-item{
     background: white;
     width: 100%;
     height: 230px;
+    position: relative;
 }
 article.list-item>.img-container{
     background: #bada55;
@@ -23,6 +24,7 @@ article.list-item>main{
 }
 article.list-item aside{
     margin-left: 10px;
+    margin-right: 5px;
 }
 .list-item h2 a{
     font-size: 21px;
@@ -62,6 +64,29 @@ article.list-item>.map-container{
 }
 article.list-item>.map-container button.map-pin{
     margin-bottom: 20px;
+}
+
+/* .......... Reviews .......... */
+
+.li-body .avatar{
+    margin-right: 10px;
+}
+.li-body .review{
+    font-weight: 500;
+    color: black;
+}
+.li-body .review a{
+    color: #26B4BC;
+}
+.li-body .review span{
+    color: #9B9B9B;
+}
+
+/* .......... Close button on active list item on the map .......... */
+article.list-item>button.close{
+    position: absolute;
+    top: 0px;
+    right: 2px;
 }
 
 
@@ -106,7 +131,4 @@ article.list-item>.map-container button.map-pin{
         width: 50px;
         height: 50px;
     }
-}
-    
-    
 }

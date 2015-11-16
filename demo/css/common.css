@@ -253,8 +253,26 @@ footer.tiny .footer-sole{
 }
 
 
+/*TITLE STRIP ---------------------------------------------- */
 
-
+.title-strip{
+    background-color: #4A4A4A;
+    color: #ffffff;
+}
+.title-strip h1{
+    font-weight: 400;
+    font-size: 26px;
+    margin: 10px 0px 10px 0px;
+}
+.title-strip h1 span{
+    color: #BDDC05
+}
+.title-strip .content{
+    font-size: 22px;
+}
+.title-strip .content p{
+    margin-right: 10px;
+}
 
 
 
@@ -282,7 +300,7 @@ footer.tiny .footer-sole{
 }
 /* .......... Less than 800px wide .......... */
 @media (max-width: 800px) {
-/*    HEADER   */
+    /*header*/
     body>header{
         height: 60px;
     }
@@ -300,15 +318,30 @@ footer.tiny .footer-sole{
     .search-form input.context{
         padding-left: 10px !important;
     }
+    
+    /*title strip*/
+    .title-strip h1{
+        font-size: 22px;
+        margin: 8px 0px 8px 0px;
+    }
+    .title-strip p{
+        display: none;
+    }
 }
 /* .......... Less than 600px wide .......... */
 @media (max-width: 600px) {
-/*    HEADER   */
+    /*header*/
     header .search-form{
         display: none;
     }
     body>header button.search-toggle{
         display: block;
+    }
+    
+    /*title strip*/
+    .title-strip h1{
+        font-size: 18px;
+        margin: 6px 0px 6px 0px;
     }
 }
 

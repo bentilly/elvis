@@ -1,24 +1,3 @@
-/*TITLE STRIP ---------------------------------------------- */
-
-.title-strip{
-    background-color: #4A4A4A;
-    color: #ffffff;
-}
-.title-strip h1{
-    font-weight: 400;
-    font-size: 26px;
-    margin: 10px 0px 10px 0px;
-}
-.title-strip h1 span{
-    color: #BDDC05
-}
-.title-strip .content{
-    font-size: 22px;
-}
-.title-strip .content p{
-    margin-right: 10px;
-}
-
 /*HOME MAP ---------------------------------------------- */
 section.home-map{
     /*leave enough space for hint of lower content*/
@@ -26,12 +5,22 @@ section.home-map{
     /*but set minimum height*/
     min-height: 200px;
     position: relative;
+    transition: all 0.3s;
 }
 .pin-examples{
     position: absolute;
     top: 50px;
     left: 50px;
     background: none;
+}
+/*Active pin item*/
+.active-pin-item-container{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background: none;
+    background: rgba(255, 255, 255, .4);
 }
 
 /*HOME LIST ---------------------------------------------- */
@@ -58,18 +47,13 @@ section.home-list article:last-child{
 }
 /* .......... Less than 800px wide .......... */
 @media (max-width: 800px) {
-    .title-strip h1{
-        font-size: 22px;
-        margin: 8px 0px 8px 0px;
-    }
-    .title-strip p{
-        display: none;
-    }
+
 }
 /* .......... Less than 600px wide .......... */
 @media (max-width: 600px) {
-    .title-strip h1{
-        font-size: 18px;
-        margin: 6px 0px 6px 0px;
-    }
+    section.home-map.active-item{
+    /*if small screen and map pin is selected, make the map full screen*/
+    height: calc(100vh - 40px);
+/*    TODO: Calculate better, include header    */
+    
 }
