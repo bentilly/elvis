@@ -90,12 +90,15 @@ body>header .blade-content{
     color: #ffffff;
     width: 60px;
     font-size: 23px;
+    position: relative;
     transition: all 0.3s;
 }
 .search-form button i{
-    padding-bottom: 10px;
-    padding-right: 5px;
+    position: absolute;
+    top: 12px;
+    left: 18px;
     background: none;
+    transition: all 0.3s;
 }
 .search-form button:hover{
     background: #A5A88B;
@@ -121,7 +124,7 @@ body>header button.search-toggle:hover{
     font-weight: 500;
     font-size: 18px;
     color: #000000;
-    padding-top: 5px;
+/*    padding-top: 5px;*/
 }
 .toggle-search.open{
     height: 115px;
@@ -168,6 +171,25 @@ nav.signed-in-nav{
 nav.signed-in-nav.open{
     height: 180px;
 }
+
+/*.......... SKINNY header .......... */
+body>header.skinny{
+    height: 45px;
+}
+header.skinny .search-form input{
+    font-size: 16px;
+    height: 35px;
+}
+header.skinny .search-form button{
+    height: 35px;
+    width: 55px;
+    font-size: 23px;
+}
+header.skinny .search-form button i{
+    top: 5px;
+    left: 15px;
+}
+
 
 /*PAGE MAIN ---------------------------------------------- */
 
@@ -247,8 +269,8 @@ footer{
     margin-right: 15px
 }
 
-/*.......... Footer - Tiny .......... */
-footer.tiny .footer-sole{
+/*.......... Footer - Skinny .......... */
+footer.skinny .footer-sole{
     margin: 0px 0px 5px 0px;
 }
 
@@ -314,6 +336,17 @@ footer.tiny .footer-sole{
         height: 40px;
         width: 45px;
         font-size: 23px;
+    }
+    .search-form button i{
+        top: 7px;
+        left: 10px;
+    }
+    header.skinny .search-form button{
+        width: 45px;
+    }
+    header.skinny .search-form button i{
+/*        top: 7px;*/
+        left: 10px;
     }
     .search-form input.context{
         padding-left: 10px !important;

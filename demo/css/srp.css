@@ -20,13 +20,42 @@
 }
 .results-header aside{
     padding-top: 5px;
+    background: none;
 }
 .results-header aside p{
     margin-top: 5px;
     font-weight: 700;
     font-size: 16px;
     color: black;
+    text-transform: uppercase;
 }
+
+/* .......... MAP VIEW versions .......... */
+.results-header.map{
+    background: #4A4A4A;
+    color: white;
+    margin: 0px;
+    padding: 8px 0px 8px 0px;
+}
+.results-header.map h3{
+    color: white;
+    font-size: 16px;
+    margin: 0px 15px 0px 0px;
+    padding: 0px;
+}
+.results-header.map main p{
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px 0px 2px 0px;
+}
+.results-header.map aside{
+    margin: 0px;
+    padding: 0px;
+}
+
 
 /*SRP LIST ---------------------------------------------- */
 section.srp-list{
@@ -57,7 +86,7 @@ section.paginator button:last-child{
 /*REFINE SEARCH ---------------------------------------------- */
 section.refine-search{
     background: #9B9B9B;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 section.refine-search .blade-content{
     padding: 20px 30px 20px 0px;
@@ -115,8 +144,41 @@ section.refine-search.closed button.open-blade-toggle{
     top: 5px;
 }
 
+/*closed map*/
+section.refine-search.map.closed .blade-content{
+    height: 20px;
+/*  TODO:  needs to transition*/
+}
 
 
+
+/* SRP MAP ---------------------------------------------- */
+/* .......... Refine search .......... */
+section.refine-search.map{
+    margin-top: 0px;
+}
+section.refine-search.map .blade-content{
+    height: auto;
+}
+/* .......... Map .......... */
+section.srp-map{
+    position: relative;
+}
+section.srp-map .pin-examples{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+}
+/*Active pin item*/
+section.srp-map .active-pin-item-container{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background: none;
+    background: rgba(255, 255, 255, .4);
+}
 
 
 
@@ -157,6 +219,19 @@ section.refine-search.closed button.open-blade-toggle{
         padding-right: 0px;
         border-radius: 0px;
     }
+/*    map view*/
+    .results-header.map .blade-content{
+        flex-direction: row;
+    }
+    .results-header.map aside button{
+        padding-right: 0px;
+        margin-top: 22px;
+        border-radius: 0px;
+    }
+    .results-header.map main p{
+        font-size: 12px;
+    }
+    
 }
 
 

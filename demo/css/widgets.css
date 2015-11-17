@@ -43,6 +43,10 @@ button.end-icon i{
     margin-left: 8px
 }
 
+button.pill.skinny{
+    padding: 2px 20px 2px 20px;
+}
+
 /*.......... Colour .......... */
 /*pink*/
 button.outline.pink{
@@ -83,8 +87,19 @@ button.outline.black.selected{
     color: white;
     border-color: white;
 }
-
-
+/*.......... SPECIAL .......... */
+/*DLP NAV buttons*/
+button.dlp-nav{
+    color: #ffffff;
+    margin-right: 10px;
+}
+button.dlp-nav.active{
+    color: #000000;
+    border: 2px solid #000000;
+}
+button.dlp-nav:hover{
+    background-color: #777777;
+}
 
 
 
@@ -314,6 +329,16 @@ button.open-blade-toggle:hover{
     margin-top: 0px;
     transition: all 0.2s;
 }
+.map-pin.dim{
+    opacity: .4;
+}
+.map-pin.small{
+    height: 50px;
+    width: 40px;
+    font-size: 13px;
+    padding-bottom: 16px;
+}
+/*colours*/
 .map-pin.low{
     background-image: url(../img/pins/map-pin-red.svg);
 }
@@ -323,18 +348,30 @@ button.open-blade-toggle:hover{
 .map-pin.high{
     background-image: url(../img/pins/map-pin-green.svg);
 }
-.map-pin.dim{
-    opacity: .4;
-}
-.map-pin.selected{
-    background-image: url(../img/pins/map-pin-blue.svg);
-}
-.map-pin.small{
+.map-pin.no-rating{
     background-image: url(../img/pins/grey-pin.svg);
     height: 40px;
     width: 30px;
 }
+/*small*/
+.map-pin.small.low{
+    background-image: url(../img/pins/map-pin-red-small.svg);
+}
+.map-pin.small.med{
+    background-image: url(../img/pins/map-pin-orange-small.svg);
+}
+.map-pin.small.high{
+    background-image: url(../img/pins/map-pin-green-small.svg);
+}
+
+/*selected*/
+.map-pin.selected{
+    background-image: url(../img/pins/map-pin-blue.svg);
+}
 .map-pin.small.selected{
+    background-image: url(../img/pins/map-pin-blue-small.svg);
+}
+.map-pin.no-rating.selected{
     background-image: url(../img/pins/blue-pin.svg);
     height: 40px;
     width: 30px;
@@ -410,7 +447,7 @@ button.open-blade-toggle:hover{
     height: 80px;
 }
 .avatar.tiny{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 

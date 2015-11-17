@@ -1,0 +1,13 @@
+/*HERO IMAGE ---------------------------------------------- */
+.hero-image{
+    height: 50vh;
+    max-height: 450px;
+    overflow: hidden;
+}
+
+/*DLP NAV ---------------------------------------------- */
+
+main>nav{
+    padding: 5px 0px 5px 0px;
+    background-color: #666666;
+}
