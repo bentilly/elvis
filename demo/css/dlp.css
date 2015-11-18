@@ -8,6 +8,374 @@
 /*DLP NAV ---------------------------------------------- */
 
 main>nav{
-    padding: 5px 0px 5px 0px;
     background-color: #666666;
+}
+main>nav .blade-content{
+    padding: 5px 0px 5px 0px;
+    position: relative;
+}
+button.dlp-nav.share:after{
+    content: "share this business";
+}
+button.dlp-nav-menu-indicator{
+    color: white;
+    display: none;
+    transform: rotate(0deg);
+    transition: all 0.3s;
+}
+button.dlp-nav-menu-indicator i{
+    color: white;
+}
+button.dlp-nav-menu-indicator.open{
+    transform: rotate(180deg);
+}
+
+/*DLP DROPDOWN NAV ---------------------------------------------- */
+/*
+nav.dlp-dd-nav{
+    position: absolute;
+    right: 0px;
+    top: 35px;
+    overflow: hidden;
+    height: 0px;
+    transition: all 0.3s;
+}
+nav.dlp-dd-nav.open{
+    height: 290px;
+}
+*/
+
+/*HEADER ---------------------------------------------- */
+main>header{
+    background-color: white;
+    padding-top: 50px;
+}
+.dlp-business{
+    margin-right: 50px;
+}
+.dlp-business img.small{
+    width: 50px;
+    height: 50px;
+}
+main>header h1{
+    font-weight: 700;
+    font-size: 23px;
+    color: #4a4a4a;
+    margin-right: 10px;
+    vertical-align: bottom;
+}
+main>header h1 button{
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 0px 0px 1px 0px;
+}
+main>header address{
+    font-size: 17px;
+    color: #787878;
+    font-style: normal;
+    margin-bottom: 2px;
+}
+main>header .info{
+    margin-left: 20px;
+}
+main>header .logo{
+    margin-top: 4px;
+}
+main>header .rating{
+    margin-left: 30px;
+}
+main>header nav>button{
+    margin-left: 10px;
+}
+main>header nav>button:first-child{
+    margin-left: 0px;
+}
+
+/*ABOUT ---------------------------------------------- */
+.dlp-about{
+    background-color: #ffffff;
+    padding: 30px 0px 50px 0px;
+}
+h2.dlp-h{
+    color: #4A4A4A;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.dlp-about-text{
+    margin-right: 100px;
+
+}
+.dlp-about-text p{
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #000000;
+}
+/*OPENING HOURS ---------------------------------------------- */
+.dlp-opening{
+    max-width: 300px;
+}
+.dlp-opening dt{
+    font-size: 15px;
+    float: left;
+    width: 40%;
+    margin-bottom: 5px;
+    color: #000000;
+}
+.dlp-opening dd{
+    font-size: 15px;
+    float: left;
+    width: 60%;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #000000;
+}
+/*clear the floats*/
+.dlp-opening .opening-hrs::after{
+    content:"."; 
+    display:block; 
+    height:0px; 
+    clear:both; 
+    visibility:hidden; 
+}
+.dlp-opening .opening-hrs{
+    margin-bottom: 20px;
+}
+/*social icons*/
+.social-buttons button{
+    margin-right: 20px;
+}
+
+
+/*MAP / DIRECTIONS ---------------------------------------------- */
+.dlp-map{
+    height: 350px;
+    width: 100%;
+    position: relative;
+}
+.dlp-map>.map-pin{
+    position: absolute;
+    top: 190px;
+    left: 50vw;
+}
+.dlp-map>main{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: rgba(0,0,0,0.75);
+}
+.dlp-map .blade-content{
+    background: none;
+    color: white;
+    padding: 20px 0px 25px 0px;
+}
+.dlp-map h4{
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 30px;
+}
+/*............ directions form ............*/
+.dlp-directions-form input{
+    display: block;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    padding: 0px 10px 0px 15px;
+    height: 45px;
+}
+.dlp-directions-form .from-input{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+button.swap-from-to{
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    width:45px;
+    height: 45px;
+    border-left: 2px solid #D8D8D8;
+    border-right: 2px solid #D8D8D8;
+}
+button.swap-from-to i:hover{
+    color: #26B4BC;   
+}
+button.swap-from-to i.active{
+    color: #26B4BC;   
+}
+button.directions-button{
+    background-color: #26B4BC;
+    font-weight: 700;
+    font-size: 15px;
+    width:60px;
+    height: 45px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    text-transform: uppercase;
+}
+button.directions-button:hover{
+    background-color: #A5A88B;
+}
+button.directions-button.active{
+    background-color: #A5A88B;
+}
+/*............. map actions .............*/
+.map-actions{
+    margin-left: 20px;
+}
+.map-actions button{
+    margin: 0px 0px 0px 10px;
+}
+
+
+/*IMAGES CAROSEL - PLACEHOLDER ---------------------------------------------- */
+.dlp-images{
+    position: relative;
+    overflow: hidden;
+}
+.dlp-images button{
+    position: absolute;
+    top: 180px;
+}
+.dlp-images button.left{
+    left:3vw;
+}
+.dlp-images button.right{
+    right:3vw;
+}
+
+
+
+
+
+
+/*MEDIA QUERY ############################################### */
+
+/* .......... Less than 1200px wide .......... */
+@media (max-width: 1200px) {
+    /*DLP NAV*/
+    button.dlp-nav.claim{
+        display: none;
+    }
+    /* MAP/DIR */
+    .dlp-directions-form{
+        order: 2;
+        width: 100%;
+        margin: 15px 0px 0px 0px;
+    }
+}
+/* .......... Less than 1000px wide .......... */
+@media (max-width: 1000px) {
+    /*DLP NAV*/
+    button.dlp-nav,
+    button.review{
+        font-size: 12px;
+        padding: 2px 10px 2px 10px;
+    }
+    button.dlp-nav.share:after{
+        content: "share";
+    }
+    
+    /* HEADER */
+    main>header .blade-content{
+        flex-direction: column;
+    }
+    main>header nav{
+        margin-top: 20px;
+    }
+    .dlp-business{
+        margin-right: 0px;
+    }
+}
+/* .......... Less than 800px wide .......... */
+@media (max-width: 800px) {
+    /* OPENING HOURS */
+    section.dlp-about .blade-content{
+        flex-direction: column;
+    }
+    .dlp-about-text{
+        margin-right: 0px;
+    }
+    .dlp-opening{
+        margin-top: 20px;
+    }
+}
+/* .......... Less than 600px wide .......... */
+@media (max-width: 600px) {
+    /*DLP NAV*/
+    button.dlp-nav-menu-indicator{
+        display: block;
+    }
+    main>nav .blade-content{
+        align-items: flex-start;
+    }
+    main>nav .main-nav{
+        flex-direction: column;
+        overflow: hidden;
+        height: 25px;
+        transition: all 0.3s;
+    }
+    main>nav .main-nav.open{
+        height: 100px;
+    }
+    main>nav .extra-actions{
+        display: none;
+    }
+    button.dlp-nav,
+    button.dlp-nav.active{
+        display: block;
+        color: white;
+        border: none;
+        font-size: 14px;
+        border-radius: 0px;
+    }
+    
+    /* HEADER */
+    main>header .rating{
+        margin-left: 10px;
+    }
+    main>header .info{
+        margin-left: 10px;
+    }
+    
+    /* MAP / DIR */
+    .dlp-directions-form{
+        flex-direction: column;
+    }
+    .map-actions{
+        margin-left: 0px;
+    }
+    .map-actions button{
+        border: none !important;
+        background: none;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 6px;
+        font-size: 12px;
+    }
+    .map-actions button:hover{
+        border: none;
+        background: none;
+    }
+    .dlp-map-directions h4{
+        margin-right: 0px;
+    }
+    button.swap-from-to{
+        border: none;
+        width:60px;
+        height: 45px;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+    .dlp-directions-form .to-input{
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+        margin-top: 20px;
+    }
+    button.directions-button{
+        margin-top: 20px;
+    }
+    
 }

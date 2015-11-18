@@ -68,9 +68,9 @@ section, .blade{
 }
 
 /*CHILD ELEMENTS*/
-.fx-c.ns{
+.child.ns{
     flex-shrink: 0;
 }
-.fx-c.g{
+.child.g{
     flex-grow: 1;
 }
