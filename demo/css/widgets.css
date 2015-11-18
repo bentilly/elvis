@@ -18,6 +18,7 @@ button.pill{
     text-transform: uppercase;
     border-radius: 20px;
     padding: 5px 20px 5px 20px;
+    flex-shrink: 0;
 }
 button.outline.fine{
     border-width: 1px;
@@ -281,10 +282,12 @@ button.dropdown-menu{
     color: #26B4BC;
     border-bottom: 1px solid #DFE8EB
 }
+/*
 button.dropdown-menu:last-child,
 button.dropdown-menu:nth-last-child(2) {
     border-bottom:none;
 }
+*/
 button.dropdown-menu.sign-out{
     background: #26B4BC;
     color: white;

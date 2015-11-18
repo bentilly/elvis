@@ -21,7 +21,7 @@
         <!--REMOVED-->
 <!--end COMMON HEADER ------------- -->
     
-        <main class="fx-c g flexc">
+        <main class="child g flexc">
             
             <!-- IMAGE BLADE----------- -->
             <section class="hero-image flexc jc xc">
@@ -32,21 +32,240 @@
             <nav class="dlp-nav flexc xc"> 
             <!-- ^^ Add class 'stuck' to stick the nav to the top of the page-->
                <div class="blade-content flexr sb">
-                   <div class="dlp-page-links flexr xc">
+                   <div class="main-nav open">
                        <button class="pill dlp-nav outline active">about us</button>
                        <button class="pill dlp-nav">photos</button> 
                        <button class="pill dlp-nav">reviews</button>
                        <button class="pill dlp-nav">contact</button>
                    </div>
-                   <div class="dlp-page-links flexr xc">
+                   <div class="extra-actions flexr xc">
                        <button class="pill dlp-nav claim">claim this business</button>
-                       <button class="pill dlp-nav share">Share this business</button>
+                       <button class="pill dlp-nav share"></button>
                        <button class="pill white review">leave a review</button>
-                       <div class="dlp-nav-menu-indicator"><i class="fa fa-chevron-down"></i></div>
                    </div>
+                   
+                   <button class="dlp-nav-menu-indicator"><i class="fa fa-chevron-down"></i></button>
+                   
                 </div>
+                
+                <script>
+                    $(document).ready(function(){
+                        //hide/show dlp dropdown nav
+                        $(".dlp-nav-menu-indicator").click(function(){
+                            if ($(".dlp-nav-menu-indicator").hasClass('open')) {
+                                $( ".main-nav" ).removeClass( "open" );
+                                $( ".dlp-nav-menu-indicator" ).removeClass( "open" ); 
+                            }else{
+                                $( ".main-nav" ).addClass( "open" );
+                                $( ".dlp-nav-menu-indicator" ).addClass( "open" ); 
+                            };
+                        });
+                    });
+                
+                </script>
+                
+                
+                
             </nav>
         
+            <!-- DLP HEADER----------- -->
+            <header class="dlp-header blade">
+               <div class="blade-content flexr sb">
+                   
+                    <div class="dlp-business flexr xs child g">
+                        <img class="logo child ns" src="img/list-logo.png"></img>
+                        <div class="info child g">
+                            
+                            <h1>
+                                <a>Atomic coffee Roasters&nbsp;</a>
+                                <button type="button" class="fav"><i class="fa fa-star-o"></i></button>
+                            </h1>
+                            
+                            <address>420 New North Road, Kingsland, Auckland, 1071</address>
+                            <button class="switch-address text-only">show postal address</button>
+                        </div>
+                        <div class="badge rating med">
+                            <p class="text">6.7</p>
+                            <p class="label">13 reviews</p>
+                        </div>
+                    </div>
+                   
+                    <nav class="dlp-actions flexr child ns">
+
+                        <button type="button" class="fbut labeled call">
+                            <i class="fa fa-phone"><span>09 6655443</span></i>
+                            <p class="label">call</p>
+                        </button>
+                        <button type="button" class="fbut labeled mobile">
+                            <i class="fa fa-mobile"><span>09 6655443</span></i>
+                            <p class="label">mobile</p>
+                        </button>
+                        <button type="button" class="fbut labeled fax">
+                            <i class="fa fa-fax"><span>09 6655443</span></i>
+                            <p class="label">fax</p>
+                        </button>
+                        <button type="button" class="fbut labeled contact">
+                            <i class="fa fa-envelope-o"></i>
+                            <p class="label">contact</p>
+                        </button>
+                        <button type="button" class="fbut labeled website">
+                            <i class="fa fa-external-link"></i>
+                            <p class="label">website</p>
+                        </button>
+                        <button type="button" class="fbut labeled pink">
+                            <i class="fa fa-dollar"></i>
+                            <p class="label">Coupons</p>
+                        </button>
+
+                    </nav>
+                </div>
+        
+                <!-- HEADER control-->
+                <script>
+                    $(document).ready(function(){
+                        
+                        //adjust size of rating and logo
+                        $(window).resize(function(){
+                            var current_width = $(window).width();
+                            if(current_width < 600){
+                                $( ".logo" ).addClass( "small" );
+                                $( ".badge.rating" ).addClass( "small" );
+                            }else{
+                                $( ".logo" ).removeClass( "small" );
+                                $( ".badge.rating" ).removeClass( "small" );
+                            };
+                        });
+                        
+                    });
+                </script>
+        
+            </header>
+            
+            <!-- ABOUT and OPENING HOURS ----------- -->
+            <section class="dlp-about">
+                <div class="blade-content flexr">
+                    <div class="dlp-about-text child g">
+                        <h2 class="dlp-h">About us</h2>
+                        <p>News Zealand’s finest roasters, puveyors of amazing coffee. 
+    Our cafe in Kingsland has now had a massive makeover - its now bigger and better.</p>
+                        <p>Coffee roasted daily for quality and freshness, distrubuted nationwide. 
+    Visit our cafe on site for great cuisine to match. In the Cafe, trained Baristas are always on hand 
+    to make sure you get your espresso, exactly the way you want it.</p>
+                        <p>Almost without exception the world's finest Arabica coffee grows 
+    at high altitude. Almost without exception the world's finest Arabica coffee grows at high altitude. Coffee roasted daily for quality and freshness, distrubuted nationwide. 
+    Visit our cafe on site for great cuisine to match. We…</p>
+                        <button class="text-only">more</button>
+                    </div>
+
+                    <div class="dlp-opening child ns">
+                        <div class="opening-hrs">
+                            <h2 class="dlp-h">Opening Hours</h2>
+                            <dl>
+                                <dt>Monday</dt>
+                                <dd>Closed</dd>
+                                <dt>Tuesday</dt>
+                                <dd>Closed</dd>
+                                <dt>Wednesday</dt>
+                                <dd>9:00AM - 5:30PM</dd>
+                                <dt>Thursday</dt>
+                                <dd>9:00AM - 5:30PM</dd>
+                                <dt>Friday</dt>
+                                <dd>9:00AM - 5:30PM</dd>
+                                <dt>Saturday</dt>
+                                <dd>11:00AM - 5:30PM</dd>
+                                <dt>Sunday</dt>
+                                <dd>11:00AM - 2:30PM</dd>
+                            </dl>
+                        </div>
+                        <div class="social">
+                            <h2 class="dlp-h">Social</h2>
+                            <div class="social-buttons flexr">
+                                
+                                <button type="button" class="fbut facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </button>
+                                <button type="button" class="fbut twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </button>
+                                <button type="button" class="fbut linkedin">
+                                    <i class="fa fa-linkedin"></i>
+                                </button>
+                                <button type="button" class="fbut gplus">
+                                    <i class="fa fa-google-plus"></i>
+                                </button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- DLP MAP and DIRECTIONS ----------- -->
+            <section class="dlp-map child ns">
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15230.390827847434!2d174.77545233477767!3d-41.289197754000135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snz!4v1447372946445" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                
+                <button type="button" class="map-pin small selected"></button>
+                
+                <main class="flexc xc">
+                    <div class="blade-content flexr xc sb w">
+                        <h4 class="child ns">Find us</h4>
+                        
+                        <form class="dlp-directions-form child g flexr">
+                            <div class="flexr child g">
+                                <input class="from-input child g" value="23 Shaw Rd, Kingsland" />
+                                <button class="swap-from-to"><i class="fa fa-refresh"></i></button>
+                            </div>
+                            <div class="flexr child g">
+                                <input class="to-input child g" value="Atomic Coffee, Kingsland" />
+                                <button class="directions-button">Go</button>
+                            </div>
+                        </form>
+                        
+                        <div class="map-actions child ns">
+                            <button class="pill outline blue">All branches (8)</button>
+                            <button class="pill white">Show directions</button>
+                        </div>
+                        
+                    </div>
+
+                </main>
+            </section>
+    
+            <!-- IMAGES (placeholder - replace with carosel) ----------- -->
+            <section class="dlp-images flexr">
+
+                <img src="img/dlp-photos/pic1.png"></img>
+                <img src="img/dlp-photos/pic2.png"></img>
+                <img src="img/dlp-photos/pic4.png"></img>
+                <img src="img/dlp-photos/pic3.png"></img>
+
+                <button type="button" class="fbut left">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+                
+                <button type="button" class="fbut right">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+
+            </section>
+    
+            <!-- DETAILS (REVIEWS / INFO) ----------- -->
+            <section class="dlp-details">
+                <div class="blade-content flexr">
+                    
+                    <main class="dlp-reviews child g ns">
+                        <h2 class="dlp-h">Review Atomic Coffee Roasters</h2>
+                        
+                    </main>
+                    
+                    <aside class="dlp-info child ns">
+                        extra info stuff goes here
+                    </aside>
+
+                </div>
+            </section>
+            
             
         </main>
 
