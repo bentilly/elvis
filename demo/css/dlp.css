@@ -30,21 +30,6 @@ button.dlp-nav-menu-indicator.open{
     transform: rotate(180deg);
 }
 
-/*DLP DROPDOWN NAV ---------------------------------------------- */
-/*
-nav.dlp-dd-nav{
-    position: absolute;
-    right: 0px;
-    top: 35px;
-    overflow: hidden;
-    height: 0px;
-    transition: all 0.3s;
-}
-nav.dlp-dd-nav.open{
-    height: 290px;
-}
-*/
-
 /*HEADER ---------------------------------------------- */
 main>header{
     background-color: white;
@@ -246,8 +231,202 @@ button.directions-button.active{
     right:3vw;
 }
 
+/*REVIEWS ---------------------------------------------- */
+
+section.dlp-details{
+    margin-top: 50px
+}
+.leave-review{
+    margin-top: 30px;
+}
+.leave-review header{
+    position: relative;
+}
+.leave-review .avatar{
+    margin-right: 20px;
+}
+.leave-review h3{
+    font-size: 20px;
+    color: #787878;
+    font-weight: 500;
+}
+.leave-review nav>button{
+    margin-right: 5px;
+}
+.leave-review nav>button:last-child{
+    margin-right: 0px;
+}
+.leave-review-content h4{
+    font-size: 17px;
+    color: #787878;
+    font-weight: 500;
+    margin: 20px 0px 20px 0px;
+}
+.leave-review-content form textarea{
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.50);
+    border-radius: 5px;
+    padding: 15px
+}
+.leave-review-footer{
+    margin: 10px 0px 0px 0px;
+}
+.review-char-warning{
+    font-weight:500;
+    font-size: 13px;
+    color: #000000;
+}
+.review-guidelines{
+    color: #787878;
+    font-weight: 500;
+    font-size: 13px;
+}
+.review-guidelines a{
+    color: #F43269;
+}
+.review-guidelines a:hover{
+    text-decoration: underline;
+}
+.review-guidelines a.active{
+    text-decoration: underline;
+}
+
+/*A review ------*/
+.reviews{
+    margin: 50px 0px 0px 0px;
+}
+.reviews h4{
+    font-weight:500;
+    font-size: 17px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.review{
+    border-top: 1px solid #A39B9B;
+    padding: 30px 0px 40px 0px;
+}
+.review:last-child{
+    border-bottom: 1px solid #A39B9B;
+}
+.review header{
+    margin: 0px 0px 15px 0px;
+}
+.review-header-titles{
+    margin: 0px 0px 0px 20px;
+}
+.review h6{
+    font-weight:700;
+    font-size: 15px;
+    color: #26B4BC;
+}
+.review h6:hover{
+    color: #A5A88B;
+}
+.review h6.active{
+    color: #A5A88B;
+}
+.review p.date{
+    font-weight: 500;
+    color: #787878;
+    font-size: 13px;
+}
+.review p{
+    color: #9B9B9B;
+    font-size: 11px;
+}
+.review-body{
+    margin: 0px 70px 0px 80px;
+}
+.review-text{
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+.review-useful{
+    margin: 20px 0px 0px 0px;
+}
+.review-useful p{
+    color: #787878;
+    font-size: 13px;
+}
+.review-useful a{
+    color: #26B4BC;
+    font-weight: 500;
+    font-size: 13px;
+    margin-right: 20px;
+    text-decoration: underline;
+}
+.review-useful a:hover{
+    color: #A5A88B;
+}
+.review-useful a.active{
+    color: #A5A88B;
+}
 
 
+
+
+/*EXTRA INFORMATION ---------------------------------------------- */
+aside{
+    -webkit-column-count: 1;
+    width: 270px;
+    margin-left: 80px
+}
+.info-block{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.info-block h5{
+    font-weight: 700;
+    font-size: 14px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.info-block ul{
+    list-style: none;
+    font-size: 14px;
+    color: #787878;
+    line-height: 26px;
+}
+
+
+
+/*SECONDARY ACTIONS ---------------------------------------------- */
+.dlp-secondary-actions{
+    background: #ffffff;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.15);
+    margin-top: 50px
+}
+.contact-buttons>button{
+    margin-right: 30px
+}
+.dlp-secondary-actions .blade-content{
+    padding: 10px 0px 8px 0px;
+    height: 80px
+}
+.other-buttons div{
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.dlp-secondary-action .action-text{
+    font-size: 10px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+.dlp-secondary-action i{
+    color: #26B4BC;
+    font-size: 22px;
+}
+.dlp-secondary-action i:hover{
+    color: #A5A88B;
+}
+.dlp-secondary-action i.active{
+    color: #A5A88B;
+}
 
 
 
@@ -288,6 +467,18 @@ button.directions-button.active{
     .dlp-business{
         margin-right: 0px;
     }
+
+    /*DLP DETAILS*/
+    section.dlp-details .blade-content{
+        flex-direction: column-reverse;
+    }
+    
+    /*Extra Info*/
+    .dlp-details aside{
+        -webkit-column-count: 3;
+        width: 100%;
+        margin-left: 0px;
+    }
 }
 /* .......... Less than 800px wide .......... */
 @media (max-width: 800px) {
@@ -301,6 +492,13 @@ button.directions-button.active{
     .dlp-opening{
         margin-top: 20px;
     }
+    
+    /*Extra Info*/
+    .dlp-details aside{
+        -webkit-column-count: 2;
+    }
+    
+    
 }
 /* .......... Less than 600px wide .......... */
 @media (max-width: 600px) {
@@ -376,6 +574,33 @@ button.directions-button.active{
     }
     button.directions-button{
         margin-top: 20px;
+    }
+    
+    /*Extra Info*/
+    .dlp-details aside{
+        -webkit-column-count: 1;
+    }
+    
+    
+    /*REVIEWS*/
+    .leave-review-content{
+        margin-top: 65px;
+    }
+    .leave-review nav{
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .leave-review nav button{
+        margin-right: 0px;
+    }
+    .leave-review h3{
+        margin-top: 15px
+    }
+    .review-body{
+        margin: 0px 0px 0px 0px;
     }
     
 }

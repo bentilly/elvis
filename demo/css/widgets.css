@@ -166,6 +166,14 @@ button.fbut.labeled p{
     margin-top: 8px;
     line-height: 12px;
 }
+button.fbut.labeled.beside{
+    flex-direction: row;
+}
+button.fbut.labeled.beside p{
+    margin: 0px 0px 0px 10px;
+    color: black;
+    font-size: 12px;
+}
 
 /*active states*/
 button.fbut.active i{
@@ -317,6 +325,34 @@ button.open-blade-toggle:hover{
     color: black;
 }
 
+/* .......... Rating: 0-10 selector buttons .......... */
+button.pickrate{
+    width: 35px;
+    height: 35px;
+    background: #BDDC05;
+    border-radius: 50px;
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+}
+button.pickrate.small{
+    width: 28px;
+    height: 28px;
+    font-size: 15px;
+}
+button.pickrate.low{
+    background: #FF5B4F;
+}
+button.pickrate.med{
+    background: #F5A623;
+}
+button.pickrate.high{
+    background: #BDDC05;
+}
+button.pickrate:hover{
+    background: #26B4BC;
+}
+
 /*MAP PINS ---------------------------------------------- */
 
 .map-pin{
@@ -420,7 +456,7 @@ button.open-blade-toggle:hover{
     background: #F5A623;
 }
 .badge.rating.high .text{
-    background: #bada55;
+/*    background: #bada55;*/
 }
 .badge .label{
     text-align: center;
