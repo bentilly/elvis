@@ -208,10 +208,14 @@ footer{
 /*.......... Footer blocks .......... */
 .footer-blocks{
     margin-bottom: 40px;
+    -webkit-column-count:4;
+    -webkit-column-gap: 50px;
 }
 .footer-block{
+    display: inline-block;
     border-top: 2px solid;
     margin: 30px 59px 0px 0px;
+    width: 100%
 }
 .footer-block:last-child{
     margin-right: 0px;
@@ -320,7 +324,7 @@ footer.skinny .footer-sole{
     color: #BDDC05;
 }
 .newsletter-signup-text{
-
+    padding-top: 5px;
 }
 .newsletter-signup-form{
     width: 100%
@@ -390,6 +394,10 @@ footer.skinny .footer-sole{
     button.user-signed-in p{
         display: none;
     }
+/*    footer*/
+    .footer-blocks{
+        -webkit-column-count:3;
+    }
 
 }
 /* .......... Less than 800px wide .......... */
@@ -448,7 +456,10 @@ footer.skinny .footer-sole{
         margin-top: 30px;
         max-width: 500px;
     }
-    
+    /*    footer*/
+    .footer-blocks{
+        -webkit-column-count:2;
+    }
     
 }
 /* .......... Less than 600px wide .......... */
@@ -465,6 +476,11 @@ footer.skinny .footer-sole{
     .title-strip h1{
         font-size: 18px;
         margin: 6px 0px 6px 0px;
+    }
+    
+    /*    footer*/
+    .footer-blocks{
+        -webkit-column-count:1;
     }
 }
 
