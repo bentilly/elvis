@@ -1,0 +1,246 @@
+/*RESULTS HEADER ---------------------------------------------- */
+.results-header{
+    padding: 20px 0px 0px 0px;
+}
+.results-header main h3{
+    font-weight: 500;
+    font-size: 22px;
+    color: #4A4A4A;
+    margin-bottom: 10px
+}
+.results-header main span,
+.results-header main a{
+    color: #26B4BC;
+}
+.results-header main>div{
+    /* Unless you meant a c: */
+    font-weight: 500;
+    font-size: 16px;
+    color: #4A4A4A;
+}
+.results-header aside{
+    padding-top: 5px;
+    background: none;
+}
+.results-header aside p{
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+}
+
+/* .......... MAP VIEW versions .......... */
+.results-header.map{
+    background: #4A4A4A;
+    color: white;
+    margin: 0px;
+    padding: 8px 0px 8px 0px;
+}
+.results-header.map h3{
+    color: white;
+    font-size: 16px;
+    margin: 0px 15px 0px 0px;
+    padding: 0px;
+}
+.results-header.map main p{
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px 0px 2px 0px;
+}
+.results-header.map aside{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*SRP LIST ---------------------------------------------- */
+section.srp-list{
+    padding: 20px 0px 20px 0px;
+}
+section.srp-list article{
+    margin-bottom: 20px;
+}
+section.srp-list article:last-child{
+    margin-bottom: 0px;
+}
+
+/*PAGINATOR ---------------------------------------------- */
+section.paginator{
+    margin-top: 10px;
+}
+
+section.paginator button{
+    margin: 0px 2px;
+}
+section.paginator button:first-child{
+    margin-right: 15px;
+}
+section.paginator button:last-child{
+   margin-left: 15px;
+}
+
+/*REFINE SEARCH ---------------------------------------------- */
+section.refine-search{
+    background: #9B9B9B;
+    margin-top: 30px;
+}
+section.refine-search .blade-content{
+    padding: 20px 30px 20px 0px;
+    position: relative;
+    overflow: hidden;
+    /* Only used to demo transition. Breaks responsive-ness.
+    TODO: do properly*/
+    height: 200px;
+    transition: all .3s;
+}
+section.refine-search .blade-content nav>button{
+    margin-right: 8px;
+    margin-bottom: 10px
+}
+section.refine-search .blade-content nav>button:last-child{
+    margin-right: 0px;
+}
+section.refine-search button.open-blade-toggle{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    transition: all .3s;
+}
+section.refine-search h6{
+    font-size: 17px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    transition: all .3s;
+}
+/*setup for transitions*/
+section.refine-search .sorting{
+    opacity: 1;
+    transition: all .3s;
+}
+section.refine-search nav{
+    margin-top: 0px;
+    transition: all .3s;
+}
+/*closed*/
+section.refine-search.closed .blade-content{
+    height: 40px;
+}
+section.refine-search.closed nav{
+   opacity: 0;
+}
+section.refine-search.closed h6{
+    margin-top: -12px
+}
+section.refine-search.closed .sorting h6{
+     opacity: 0;
+}
+section.refine-search.closed button.open-blade-toggle{
+    top: 5px;
+}
+
+/*closed map*/
+section.refine-search.map.closed .blade-content{
+    height: 20px;
+/*  TODO:  needs to transition*/
+}
+
+
+
+/* SRP MAP ---------------------------------------------- */
+/* .......... Refine search .......... */
+section.refine-search.map{
+    margin-top: 0px;
+}
+section.refine-search.map .blade-content{
+    height: auto;
+}
+/* .......... Map .......... */
+section.srp-map{
+    position: relative;
+}
+section.srp-map .pin-examples{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+}
+/*Active pin item*/
+section.srp-map .active-pin-item-container{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background: none;
+    background: rgba(255, 255, 255, .4);
+}
+
+
+
+/*MEDIA QUERY ############################################### */
+
+/* .......... Less than 1200px wide .......... */
+@media (max-width: 1200px) {
+    
+}
+/* .......... Less than 1000px wide .......... */
+@media (max-width: 1000px) {
+
+}
+/* .......... Less than 800px wide .......... */
+@media (max-width: 800px) {
+    section.refine-search .blade-content{
+        flex-direction: column;
+    }
+    section.refine-search .sorting{
+        margin-top: 10px;
+    }
+    section.refine-search .sorting nav{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+/* .......... Less than 600px wide .......... */
+@media (max-width: 600px) {
+    .results-header .blade-content{
+        flex-direction: column;
+    }
+    .results-header aside{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 0px;
+    }
+    .results-header aside button{
+        padding-right: 0px;
+        border-radius: 0px;
+    }
+/*    map view*/
+    .results-header.map .blade-content{
+        flex-direction: row;
+    }
+    .results-header.map aside button{
+        padding-right: 0px;
+        margin-top: 22px;
+        border-radius: 0px;
+    }
+    .results-header.map main p{
+        font-size: 12px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+

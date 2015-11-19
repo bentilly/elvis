@@ -22,9 +22,33 @@ button.pill{
 button.outline.fine{
     border-width: 1px;
 }
+/*text only*/
+button.text-only{
+    font-size: 12px;
+    color: #26B4BC;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+button.text-only:hover{
+    color: #A5A88B;
+}
+/*end-icon*/
+button.end-icon{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 7px 5px 20px;
+}
+button.end-icon i{
+    font-size: 20px;
+    margin-left: 8px
+}
+
+button.pill.skinny{
+    padding: 2px 20px 2px 20px;
+}
 
 /*.......... Colour .......... */
-
+/*pink*/
 button.outline.pink{
     color: #EE1556;
     border: 2px solid #EE1556;
@@ -33,12 +57,173 @@ button.outline.pink:hover{
     color: white;
     border-color: white;
 }
+/*blue*/
+button.outline.blue{
+    color: #26B4BC;
+    border: 2px solid #26B4BC;
+}
+button.outline.blue:hover{
+    color: #A5A88B;
+    border-color: #A5A88B;
+}
+/*white*/
+button.white{
+    background-color: #ffffff;
+    color: #26B4BC;
+}
+button.white:hover{
+    background-color: #26B4BC;
+    color: #ffffff; 
+}
+/*black*/
+button.outline.black{
+    border-color: black;
+}
+button.outline.black:hover{
+    color: white;
+    border-color: white;
+}
+button.outline.black.selected{
+    color: white;
+    border-color: white;
+}
+/*.......... SPECIAL .......... */
+/*DLP NAV buttons*/
+button.dlp-nav{
+    color: #ffffff;
+    margin-right: 10px;
+}
+button.dlp-nav.active{
+    color: #000000;
+    border: 2px solid #000000;
+}
+button.dlp-nav:hover{
+    background-color: #777777;
+}
 
-/*END PILL BUTTONS ---------------------------------------------- */
+
+
+/*ROUND BUTTON -------------------------------------------------*/
+
+/*default button. Blue with white icon*/
+button.fbut i{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 45px;/*default size*/
+    height: 45px;
+    border-radius: 100px; /* shouldnt need a badge bigger than this */
+    background: #26B4BC;/*default colours*/
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+    font-style: normal;
+}
+button.fbut i:hover {
+     background-color: #A5A88B;
+}
+button.fbut i span{
+    flex-shrink: 0;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 10px;
+    display: none;
+}
+
+/*outline*/
+button.fbut.outline i{
+    border: 2px solid #26B4BC;
+    background: none;
+    color: #26B4BC;
+}
+button.fbut.outline i:hover{
+    border-color: #A5A88B;
+    background: none;
+    color: #A5A88B;
+}
+button.fbut.outline.active i{
+    border: none;
+    background: #A5A88B;
+    color: white;
+}
+
+
+/*labels*/
+button.fbut.labeled{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+button.fbut.labeled p{
+    font-size: 10px;
+    font-weight: 700;
+    color: #7C7C7C;
+    text-transform: uppercase;
+    margin-top: 8px;
+    line-height: 12px;
+}
+
+/*active states*/
+button.fbut.active i{
+    background: #A5A88B !important;
+}
+button.fbut.info.active i{
+    width: auto;
+    padding: 0px 20px 0px 14px;
+}
+button.fbut.active span{
+    display: inline;
+}
+button.fbut.info.labeled.active{
+    align-items: flex-start;
+}
+button.fbut.labeled.active p{
+/*    ?? adjust*/
+    margin-left: 0px; 
+}
+button.fbut.active.hide-label{
+    margin-bottom: 20px;
+}
+button.fbut.active.hide-label p{
+    display: none;
+}
+
+/*other colours*/
+button.fbut.pink i{
+    padding-bottom: 1px;
+    background: #EE1556;
+}
+button.fbut.pink i:hover{
+    background: #A5A88B;
+}
+button.fbut.pink i.active{
+    background: #A5A88B;
+}
+
+/*adjustments*/
+/*A-Z*/
+button.fbut.call i      { padding-top: 1px; padding-right: 1px; }
+button.fbut.contact i   { padding-bottom: 2px;  padding-right: 1px; }
+button.fbut.edit i      { padding-left: 1px;    padding-top: 1px; }
+button.fbut.facebook i  { padding-right: 2px;   padding-top: 2px; }
+button.fbut.fax i       { padding-bottom: 1px;  padding-right: 1px; font-size: 20px; }
+button.fbut.gplus i     { padding-left: 3px;    padding-top: 3px; }
+button.fbut.left i      { padding-top: 2px;     padding-right: 4px; }
+button.fbut.linkedin i  { padding-left: 2px;    padding-bottom: 2px; }
+button.fbut.mobile i    { padding-right: 1px;   font-size: 30px;}
+button.fbut.more i      { padding-left: 4px;    padding-top: 1px; }
+button.fbut.right i     { padding-top: 2px;     padding-left: 3px; }
+button.fbut.twitter i   { padding-left: 2px;    padding-top: 2px; }
+button.fbut.view i      { padding-right: 1x;    padding-bottom: 2px; }
+button.fbut.website i   { padding-top: 1px;     padding-left: 3px; }
+
+
 /*OTHER BUTTONS ---------------------------------------------- */
 
 /* .......... Signed in USER .......... */
-
 button.user-signed-in{
     color: #BABEC1; /* <<< ??  */
     font-size: 14px;
@@ -61,6 +246,29 @@ button.user-signed-in i{
 }
 button.user-signed-in.open i{
     transform: rotate(180deg);
+}
+
+/* .......... Favourites star toggle .......... */
+button.fav{
+    color: #26B4BC;
+    font-size: 20px;
+}
+button.fav.selected i{
+    color: #EE1556;
+}
+button.fav:hover i{
+    color: #A5A88B;
+}
+
+
+/* .......... Close button .......... */
+button.close{
+    font-size: 20px;
+    padding: 0px 5px;
+    color: #4A4A4A;
+}
+button.close:hover{
+    color: #A5A88B;
 }
 
 /* .......... Dropdown menu .......... */
@@ -91,4 +299,155 @@ button.dropdown-menu.sign-out:hover{
     color: white;
 }
 
-/*END OTHER BUTTONS ---------------------------------------------- */
+/* .......... Open/close blade toggle .......... */
+button.open-blade-toggle{
+    color: white;
+    font-size: 18px;
+}
+button.open-blade-toggle i{
+    transition: all 0.3s;
+}
+button.open-blade-toggle.up i{
+    transform: rotate(180deg);
+}
+button.open-blade-toggle:hover{
+    color: black;
+}
+
+/*MAP PINS ---------------------------------------------- */
+
+.map-pin{
+    background-image: url(../img/pins/map-pin-orange.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70px;
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    padding-bottom: 22px;
+    margin-top: 0px;
+    transition: all 0.2s;
+}
+.map-pin.dim{
+    opacity: .4;
+}
+.map-pin.small{
+    height: 50px;
+    width: 40px;
+    font-size: 13px;
+    padding-bottom: 16px;
+}
+/*colours*/
+.map-pin.low{
+    background-image: url(../img/pins/map-pin-red.svg);
+}
+.map-pin.med{
+    background-image: url(../img/pins/map-pin-orange.svg);
+}
+.map-pin.high{
+    background-image: url(../img/pins/map-pin-green.svg);
+}
+.map-pin.no-rating{
+    background-image: url(../img/pins/grey-pin.svg);
+    height: 40px;
+    width: 30px;
+}
+/*small*/
+.map-pin.small.low{
+    background-image: url(../img/pins/map-pin-red-small.svg);
+}
+.map-pin.small.med{
+    background-image: url(../img/pins/map-pin-orange-small.svg);
+}
+.map-pin.small.high{
+    background-image: url(../img/pins/map-pin-green-small.svg);
+}
+
+/*selected*/
+.map-pin.selected{
+    background-image: url(../img/pins/map-pin-blue.svg);
+}
+.map-pin.small.selected{
+    background-image: url(../img/pins/map-pin-blue-small.svg);
+}
+.map-pin.no-rating.selected{
+    background-image: url(../img/pins/blue-pin.svg);
+    height: 40px;
+    width: 30px;
+}
+
+/*BADGE ---------------------------------------------- */
+/*not clickable - based on <div class="badge">*/
+
+.badge{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.badge .text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 65px;/*default size*/
+    height: 65px;
+    border-radius: 100px;
+    color: white;
+    font-weight: 400;
+    font-size: 28px;
+}
+.badge.big .text{
+    font-size: 34px;
+    width: 80px;
+    height: 80px;
+}
+.badge.small .text{
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    padding-bottom: 0px;
+}
+/*colours*/
+.badge.rating.low .text{
+    background: #FF5B4F;
+}
+.badge.rating.med .text{
+    background: #F5A623;
+}
+.badge.rating.high .text{
+    background: #bada55;
+}
+.badge .label{
+    text-align: center;
+    font-weight: 700;
+    font-size: 10px;
+    color: #7C7C7C;
+    letter-spacing: 0.41px;
+    line-height: 11px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+/*AVATAR ---------------------------------------------- */
+
+.avatar{
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    flex-shrink: 0;
+}
+.avatar img{
+    width: 100%; /*images must be square*/
+}
+.avatar.large{
+    width: 80px;
+    height: 80px;
+}
+.avatar.tiny{
+    width: 30px;
+    height: 30px;
+}
+

@@ -46,7 +46,6 @@ button:hover{
 nav{
     background: none;
 }
-
 /*PAGE HEADER ---------------------------------------------- */
 
 body>header{
@@ -91,12 +90,15 @@ body>header .blade-content{
     color: #ffffff;
     width: 60px;
     font-size: 23px;
+    position: relative;
     transition: all 0.3s;
 }
 .search-form button i{
-    padding-bottom: 10px;
-    padding-right: 5px;
+    position: absolute;
+    top: 12px;
+    left: 18px;
     background: none;
+    transition: all 0.3s;
 }
 .search-form button:hover{
     background: #A5A88B;
@@ -122,7 +124,7 @@ body>header button.search-toggle:hover{
     font-weight: 500;
     font-size: 18px;
     color: #000000;
-    padding-top: 5px;
+/*    padding-top: 5px;*/
 }
 .toggle-search.open{
     height: 115px;
@@ -169,6 +171,25 @@ nav.signed-in-nav{
 nav.signed-in-nav.open{
     height: 180px;
 }
+
+/*.......... SKINNY header .......... */
+body>header.skinny{
+    height: 45px;
+}
+header.skinny .search-form input{
+    font-size: 16px;
+    height: 35px;
+}
+header.skinny .search-form button{
+    height: 35px;
+    width: 55px;
+    font-size: 23px;
+}
+header.skinny .search-form button i{
+    top: 5px;
+    left: 15px;
+}
+
 
 /*PAGE MAIN ---------------------------------------------- */
 
@@ -248,14 +269,32 @@ footer{
     margin-right: 15px
 }
 
-/*.......... Footer - Tiny .......... */
-footer.tiny .footer-sole{
+/*.......... Footer - Skinny .......... */
+footer.skinny .footer-sole{
     margin: 0px 0px 5px 0px;
 }
 
 
+/*TITLE STRIP ---------------------------------------------- */
 
-
+.title-strip{
+    background-color: #4A4A4A;
+    color: #ffffff;
+}
+.title-strip h1{
+    font-weight: 400;
+    font-size: 26px;
+    margin: 10px 0px 10px 0px;
+}
+.title-strip h1 span{
+    color: #BDDC05
+}
+.title-strip .content{
+    font-size: 22px;
+}
+.title-strip .content p{
+    margin-right: 10px;
+}
 
 
 
@@ -283,7 +322,7 @@ footer.tiny .footer-sole{
 }
 /* .......... Less than 800px wide .......... */
 @media (max-width: 800px) {
-/*    HEADER   */
+    /*header*/
     body>header{
         height: 60px;
     }
@@ -298,18 +337,44 @@ footer.tiny .footer-sole{
         width: 45px;
         font-size: 23px;
     }
+    .search-form button i{
+        top: 7px;
+        left: 10px;
+    }
+    header.skinny .search-form button{
+        width: 45px;
+    }
+    header.skinny .search-form button i{
+/*        top: 7px;*/
+        left: 10px;
+    }
     .search-form input.context{
         padding-left: 10px !important;
+    }
+    
+    /*title strip*/
+    .title-strip h1{
+        font-size: 22px;
+        margin: 8px 0px 8px 0px;
+    }
+    .title-strip p{
+        display: none;
     }
 }
 /* .......... Less than 600px wide .......... */
 @media (max-width: 600px) {
-/*    HEADER   */
+    /*header*/
     header .search-form{
         display: none;
     }
     body>header button.search-toggle{
         display: block;
+    }
+    
+    /*title strip*/
+    .title-strip h1{
+        font-size: 18px;
+        margin: 6px 0px 6px 0px;
     }
 }
 

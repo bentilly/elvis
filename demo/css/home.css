@@ -1,0 +1,59 @@
+/*HOME MAP ---------------------------------------------- */
+section.home-map{
+    /*leave enough space for hint of lower content*/
+    height: calc(100vh - 450px);
+    /*but set minimum height*/
+    min-height: 200px;
+    position: relative;
+    transition: all 0.3s;
+}
+.pin-examples{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: none;
+}
+/*Active pin item*/
+.active-pin-item-container{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background: none;
+    background: rgba(255, 255, 255, .4);
+}
+
+/*HOME LIST ---------------------------------------------- */
+section.home-list{
+    padding: 20px 0px 100px 0px;
+}
+section.home-list article{
+    margin-bottom: 20px;
+}
+section.home-list article:last-child{
+    margin-bottom: 0px;
+}
+
+
+/*MEDIA QUERY ############################################### */
+
+/* .......... Less than 1200px wide .......... */
+@media (max-width: 1200px) {
+    
+}
+/* .......... Less than 1000px wide .......... */
+@media (max-width: 1000px) {
+
+}
+/* .......... Less than 800px wide .......... */
+@media (max-width: 800px) {
+
+}
+/* .......... Less than 600px wide .......... */
+@media (max-width: 600px) {
+    section.home-map.active-item{
+    /*if small screen and map pin is selected, make the map full screen*/
+    height: calc(100vh - 40px);
+/*    TODO: Calculate better, include header    */
+    
+}
