@@ -1,6 +1,9 @@
 /*
 Styles needed for a search result list item. Includes Home page list item with review, Active map pin item and SRP list items
 */
+article{
+    display: block; 
+}
 
 article.list-item{
     background: white;

@@ -31,7 +31,7 @@ html{
     height: 100%;
 }
 body {
-    height: 100%;
+    min-height: 100%;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #444444;
@@ -196,6 +196,7 @@ header.skinny .search-form button i{
 body>main{
     width: 100%;
     background-color: #E2E2E2;
+    flex: 1;
 }
 
 /*PAGE FOOTER ------------------------------------------ */
@@ -203,6 +204,7 @@ body>main{
 footer{
     background-color: #000000;
     color: #9B9B9B;
+    bottom:0;
 }
 
 /*.......... Footer blocks .......... */
@@ -300,13 +302,17 @@ footer.skinny .footer-sole{
 
 /*NEWSLETTER SUBSCRIBE --------------------------------------- */
 .newsletter-signup{
-    padding: 40px 0px 40px 0px;
+    padding: 40px 0px;
     background-color: #4A4A4A;
     color: #BABEC1;
+
+
 }
 .newsletter-signup .blade-content{
     -webkit-column-count:3;
     -webkit-column-gap: 50px;
+    flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
 }
 .c-block{
     display: inline-block;
@@ -435,8 +441,14 @@ footer.skinny .footer-sole{
     }
     
     /*Newsletter*/
+    .newsletter-signup{
+        text-align:center;
+    }
+
     .newsletter-signup .blade-content{
         -webkit-column-count:1;
+        flex-flow: row-reverse wrap;
+  -webkit-flex-flow: row-reverse wrap;
     }
     .newsletter-signup h3{
         max-width: 500px;
