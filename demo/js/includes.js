@@ -1,4 +1,4 @@
-﻿$(document).ready(function () {
+$(document).ready(function () {
 
     //the following are includes to assist in common elements for mockup
     //these elements should be removed and templated
@@ -44,13 +44,24 @@
     });
     //### END HEADER
 
+    //### START MOBILE SEARCH
+    $("#common-include-msearch").load("includes/mobile-search.html");    
+    //### END MOBILE SEARCH
 
     //### START FOOTER
     $("#common-include-footer").load("includes/footer.html");
     //### END FOOTER
 
+    //### START NEWSLETTER
+    $("#common-include-newslettter").load("includes/newsletter.html");
+    //### END NEWSLETTER
+    
+    
+    //### START SRP TEMPLATE
+    $(".common-include-srptemplate").load("includes/srp-template.html");
+    //### END SRP TEMPLATE
 
-
+    
 
     //end include elements
     //remove all elements up to here

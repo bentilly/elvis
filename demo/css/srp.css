@@ -215,9 +215,11 @@ section.srp-map .active-pin-item-container{
         justify-content: space-between;
         margin-top: 0px;
     }
-    .results-header aside button{
+    .results-header aside button.outline{
         padding-right: 0px;
-        border-radius: 0px;
+        font-size: 12px;
+        border: 0px solid #26B4BC;
+        
     }
 /*    map view*/
     .results-header.map .blade-content{

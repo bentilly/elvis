@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Finda</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/sanitize.css">
+        <link rel="stylesheet" href="css/flex.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/widgets.css">
+        
+        <link rel="stylesheet" href="css/srp-template.css">
+        <link rel="stylesheet" href="css/srp.css">
+        
+        <!-- dont use in PROD-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="js/includes.js"></script>
+        <!--<script src="js/header.js"></script>-->
+
+        
+    </head>
+    <body class="flexc">
+        
+        <!--HEADER-->
+        <header id="common-include-header" class="blade child ns"></header>
+        <!--HEADER-->
+
+        <!--MOBILE SEARCH-->
+        <section id="common-include-msearch"  class="toggle-search child ns"></section>
+        <!--MOBILE SEARCH-->
+
+        <main class="child g">
+
+            <!--BLADE: SEARCH RESULTS HEADER-->
+            <section class="results-header">
+                <div class="blade-content flexr sb">
+                    <main>
+                        <h3>You searched <span>Cafes</span> in <span>Kingsland</span></h3>
+                        <div>Unless you meant a company with <a>'Cafes'</a> in their name?</div>
+                    </main>
+                    <aside class="flexc xe child ns">
+                        <button type="button" class="pill outline blue">Switch to map view</button>
+                        <p>67 matches</p>
+                    </aside>
+                </div>
+            </section>
+            <!--BLADE: SEARCH RESULTS HEADER-->
+            
+            <!--BLADE: LIST-->
+            <section class="srp-list">
+                <div class="blade-content flexc xc">
+                    
+                    <article class="common-include-srptemplate list-item flexr"></article>                    
+                    <article class="common-include-srptemplate list-item flexr"></article>                    
+                    <article class="common-include-srptemplate list-item flexr"></article>                    
+                    <article class="common-include-srptemplate list-item flexr"></article>
+<!-- This isnt exactly the correct usage for <article> but in the context of Finda: Home and SRP pages it nicely and semantically wraps a search result list item-->
+    
+                </div>
+        
+            </section>
+
+            
+            
+        </main>
+
+        <!--NEWSLETTER-->
+        <section id="common-include-newslettter" class="newsletter-signup child ns"></section>
+        <!--NEWSLETTER-->
+
+        <!--FOOTER-->
+        <footer id="common-include-footer" class="blade child ns"></footer>
+        <!--FOOTER-->
+    </body>
+</html>

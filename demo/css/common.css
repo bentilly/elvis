@@ -210,18 +210,19 @@ footer{
     margin-bottom: 40px;
 }
 .footer-block{
-    border-top: 2px solid;
-    margin: 30px 59px 0px 0px;
+    padding: 30px 20px 0 0;
 }
 .footer-block:last-child{
-    margin-right: 0px;
+    padding-right: 0px;
 }
 .footer-block h6{
+    border-top: 2px solid;
     text-transform: uppercase;
     font-weight: 500;
     color: white;
     font-size: 14px;
-    margin: 10px 0px 10px 0px;
+    margin: 0 0 10px 0;
+    padding-top: 10px;
 }
 .footer-block ul{
     list-style: none;
@@ -238,13 +239,13 @@ footer{
 .footer-block ul li a:hover{
     color: white;
 }
-.footer-block.green{
+.footer-block.green h6{
     border-top-color: #BDDC05;
 }
-.footer-block.blue{
+.footer-block.blue h6{
     border-top-color: #26B4BC;
 }
-.footer-block.pink{
+.footer-block.pink h6{
     border-top-color: #EE1556;
 }
 
@@ -466,8 +467,27 @@ footer.skinny .footer-sole{
         font-size: 18px;
         margin: 6px 0px 6px 0px;
     }
+    
 }
 
+/* .......... Less than 667px wide .......... */
+@media (max-width: 667px) {
+    .footer-block{
+        width:50%;
+    }
+}
+/* .......... Less than 568px wide .......... */
+
+@media (max-width: 568px) {
+
+}
+/* .......... Less than 480px wide .......... */
+@media (max-width: 480px) {
+    .footer-block{
+        width:100%;
+        padding-right: 0;
+    }
+}
 
 
 
