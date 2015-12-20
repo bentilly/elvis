@@ -132,38 +132,42 @@
         <!--MODALs ------------- -->
         <!--        MODAL EXAMPLE    -->
         <div class="finda-modal flexr xc jc">
-            <div class="m-register modal-window child g flexc xc">
+            <div class="m-changearea modal-window child g flexc xc">
                 <form>
                     
                     <header class="flexr xc sb">
-                        <h3>Register</h3>
+                        <h3>Change area</h3>
                         <button type="button" class="modal-close"><i class="fa fa-times-circle"></i></button>
                     </header>
                 
                     <main class="child ns g">
                         <section class="flexc">
-                            <label>full name</label>
-                            <input type="text" />
-                            <label>email / screen name</label>
-                            <input type="text"/>
-                            <label>password</label>
-                            <input type="password" />
+                            <label>Where?</label>
+                            <div class="big-search flexr">
+                                <input class="location child g" placeholder="Please type a location" />
+                                <button class="child ns"><i class="fa fa-search"></i></button>
+                            </div>
                         </section>
                         
-                        <section class="reg-actions flexr xs">
-                            <div class="check">
-                                <input type="checkbox" id="check1" checked/>
-                                <label class="check-text flexr" for="check1">
-                                    <span class="child ns"></span>
-                                    <p>I agree that Finda <a href="#">Now Owns My Sole</a>, even if I already sold it to Facebook.</p>
-                                </label>
-                            </div>
-                            <button type="button" class="pill solid blue">Register</button>
+                        <section class="flexc grey">
+                            <label>Or select one of these locations</label>
+                            <nav class="location-list">
+                                <button type="button" class="pill outline blue">A location</button>
+                                <button type="button" class="pill outline blue">Palmeston North</button>
+                                <button type="button" class="pill outline blue">A location</button>
+                                <button type="button" class="pill outline blue">A location</button>
+                                <button type="button" class="pill outline blue">A location</button>
+                                <button type="button" class="pill outline blue">A location</button>
+                                <button type="button" class="pill outline blue">A location</button>
+                                <button type="button" class="pill outline blue">A location</button>
+                                <button type="button" class="pill outline blue">A location</button>
+                                <button type="button" class="pill outline blue">A location</button>
+                            </nav>
                         </section>
                     </main>
 
-                    <footer  class="child ns flexr jc">
-                        <button type="button" class="pill outline blue">Back to sign in</button>
+                    <footer  class="child ns">
+                        
                     </footer>
                     
                 <form> 

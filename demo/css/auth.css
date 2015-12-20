@@ -1,0 +1,228 @@
+main.auth-body{
+    background: white;
+    margin-top: 40px
+}
+
+
+/*COMMON AUTH ELEMENTS ------------------------------------------- */
+
+/*.......... Header elements .......... */
+h2{
+    font-weight: 500;
+    font-size: 21px;
+    color: #4A4A4A;
+}
+
+/*.......... Standard text and labels .......... */
+section.auth{
+    border-top: 1px solid #DFE8EB;
+    padding: 10px 0px 40px 0px;
+    flex-direction: column;
+}
+section.auth.no-border{
+    border-top: none;
+}
+section.auth h3{
+    color: #4A4A4A;
+    font-size: 21px;
+    font-weight: 700;
+}
+section.auth dt{
+    color: #9B9B9B;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 20px
+}
+section.auth dd{
+    color: black;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 19px;
+}
+section.auth dd p{
+    margin-bottom: 10px;
+}
+section.auth span.note{
+    font-size: 12px;
+    color: #9B9B9B;
+}
+section.auth dd img{
+    max-height: 150px;
+    height: auto;
+}
+section.auth a{
+    color: #27C0C8;
+}
+section.auth a:hover{
+    text-decoration: underline; 
+}
+section.auth button{
+    margin-top: 50px;
+    width: 100px;
+}
+
+/*.......... Buttons .......... */
+button.auth-header-button{
+    font-weight:700;
+    font-size: 11px;
+    color: #7C7C7C;
+    text-transform: uppercase;
+    height: 34px;
+    margin-left: 5px;
+
+}
+button.auth-header-button i{
+    color: #26B4BC;
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+    padding: 0px 0px 2px 0px;
+}
+
+button.auth-header-button i:hover{
+    color: #A5A88B;
+}
+
+
+
+
+
+
+/*FAVOURITES ------------------------------------------- */
+/*LIST --------------------------------------------  */
+.auth-list .item{
+    border-bottom: 1px solid #DFE8EB;
+    padding: 20px 0px 20px 0px;
+}
+.auth-list .item:first-child{
+    padding-top: 0px;
+}
+.auth-list .item h3 a{
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 16px;
+    color: #26B4BC;
+}
+.auth-list .item h3 a:hover{
+    color: #A5A88B;  
+}
+
+.auth-list .item img{
+    height: 70px;
+    width: 70px;
+}
+.item-content{
+    padding: 0px 15px 0px 15px;
+}
+
+.item-content address{
+    font-weight: 500;
+    font-size: 16px;
+    color: #787878;
+    font-style: normal;
+}
+.item-content .pill-tag{
+    margin-top: 10px;
+}
+.auth-list-footer{
+    background: none;
+    padding: 20px 0px 20px 0px;
+}
+
+
+
+
+
+
+
+
+/*NAVIGATION AND PROFILE ------------------------------------------- */
+
+/*.......... User menu and nav .......... */
+.user-menu{
+    margin-right: 50px;
+}
+.user-info img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.user-info a{
+    color: #26B4BC;
+    font-weight: 500;
+    font-size: 13px;
+    margin-top: 15px;
+}
+.user-info a:hover{
+    text-decoration: underline;
+}
+.user-info .user-name{
+    color: #4A4A4A;
+    font-weight: 700;
+    font-size: 21px;
+    margin-top: 10px;
+}
+.user-info .user-email{
+    color: #787878;
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-top: 10px;
+}
+nav.auth-nav{
+    margin-top: 20px;
+}
+/*.......... Buttons .......... */
+button.green{
+    color: #26B4BC;
+}
+button.green.list{
+    height: 40px;
+    width: 200px;
+    text-align: left;
+    border-radius: 0px;
+    border-bottom: 1px solid #DFE8EB;
+}
+button.green.active{
+    background: #A5A88B;
+    color: white;
+    border-radius: 40px;
+    border-bottom: none;
+}
+nav.auth-nav button:first-child{
+    border-top: 1px solid #DFE8EB;
+}
+button.green.list:hover{
+    color:#A5A88B;
+}
+button.green.list.active:hover{
+    color: white;
+}
+nav.auth-nav button.active:first-child{
+    border-top: none;
+}
+nav.auth-nav button.pre-active{
+    border-bottom: none;
+}
+
+
+
+
+
+
+
+/*MEDIA QUERY ############################################### */
+
+/* .......... Less than 800px wide .......... */
+@media (max-width: 800px) {
+    main.auth-body{
+        flex-direction: column;
+    }
+    .user-menu{
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    .auth-nav{
+        display: none;
+    }
+}
