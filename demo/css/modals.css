@@ -1,0 +1,243 @@
+/* MODAL FRAME ------------------------------------------  */
+.finda-modal{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0,0,0,.5);
+}
+body.noscroll{
+    overflow: hidden;
+}
+/*resets and top level styles*/
+.modal-window{
+    background:none;
+    border-radius: 5px;
+    box-shadow: 2px 4px 16px 0px rgba(0,0,0,0.50);
+    margin: 10px;
+}
+.modal-window>form{
+    width: 100%;
+    height: 100%;
+}
+.finda-modal header,
+.finda-modal main,
+.finda-modal footer{
+    color: white;
+    background:none;
+    margin: 0px;
+    padding: 0px;
+}
+/*Modal Header------------*/
+.finda-modal header{
+    background: #191F21;
+    padding: 10px 15px 10px 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.finda-modal header h3{
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.finda-modal main{
+    overflow-y: auto;
+}
+/*Modal Footer -------*/
+.finda-modal footer{
+    background: #E2E2E2;
+    padding: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/*button*/
+
+.finda-modal footer button{
+    margin-right: 20px;
+}
+.finda-modal footer button:last-child{
+    margin-right: 0px;
+}
+
+/*Modal Main*/
+.finda-modal main{
+    background: white;
+    color: black;
+    overflow: auto;
+    max-height: calc(100vh - 140px);
+}
+.finda-modal main section{
+    padding: 20px;
+}
+.finda-modal section.grey{
+    background: #E2E2E2;
+}
+
+/*MODAL - FORMS -----------------------------------*/
+/*label*/
+.finda-modal label{
+    font-weight: 700;
+    font-size: 13px;
+    color: #9B9B9B;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+/*inputs*/
+.finda-modal input,
+.finda-modal textarea
+{
+    outline: none;
+    margin-bottom: 10px;
+}
+.finda-modal input[type=text],
+.finda-modal input[type=password],
+.finda-modal textarea{
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    width: 100%;
+    padding: 10px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.50);
+    border-radius: 6px;
+    border: 1px solid white;
+}
+.finda-modal input[type=text]:focus,
+.finda-modal input[type=password]:focus{
+    border: 1px solid #979797;
+    box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.50);
+    
+}
+.finda-modal input.pre{
+    width: 80px;
+    margin-right: 10px;
+}
+
+/*Checkbox*/
+.finda-modal .check-text{
+    font-weight: 500;
+    font-size: 13px;
+    color: #4A4A4A;
+    text-transform: none;
+}
+.finda-modal .check-text a{
+    color: #26B4BC;
+    text-decoration: underline;
+}
+.finda-modal .check-text.caps{
+    text-transform: uppercase;
+}
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label{
+    cursor:pointer;
+}
+input[type="checkbox"] + label span{
+    display:block;
+    width:21px;
+    height:21px;
+    margin: 0px 8px 0px 0px;
+    background:url("../img/check_sprites.png") left top no-repeat;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background:url("../img/check_sprites.png") -21px top no-repeat;
+}
+
+/*Big search*/
+.big-search input{
+    border: 1px #9B9B9B solid;
+    font-size: 18px;
+    color: #9B9B9B;
+    padding-left: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    height: 50px;
+    border-right: none;
+}
+.big-search button{
+    background: #26B4BC;
+    height: 50px;
+    width: 70px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.big-search button i{
+    color: white;
+    font-size: 22px;
+}
+
+
+
+/*MODALs - LAYOUT -----------------------------------*/
+
+/*.............. Sign in ...................*/
+.m-signin{
+    max-width: 400px;
+}
+.m-signin .forgot{
+    padding-top: 5px;
+}
+
+
+/*.............. Register ...................*/
+
+.m-register{
+    max-width: 400px;
+}
+.m-register .reg-actions{
+    padding-top: 5px;
+}
+.m-register .reg-actions button{
+    margin-left: 20px;
+}
+
+
+/*.............. Change Area ...................*/
+.m-changearea{
+    max-width: 600px;
+}
+.m-changearea nav.location-list{
+    -webkit-column-count: 3;
+    margin-top: 15px;
+    margin-bottom: -10px;
+}
+.m-changearea nav.location-list button{
+    width: 100%;
+    margin-bottom: 6px;
+}
+.m-changearea footer{
+    height: 10px;
+    padding: 0px;
+}
+
+/*.............. Contact ...................*/
+.m-contact{
+    max-width: 450px;
+}
+
+
+
+
+
+/*MEDIA QUERY ############################################### */
+
+/* .......... Less than 640px wide .......... */
+@media (max-width: 640px) {
+    .m-changearea nav.location-list{
+        -webkit-column-count: 2;
+    }
+}
+/* .......... Less than 400px wide .......... */
+@media (max-width: 450px) {
+    .m-changearea nav.location-list{
+        -webkit-column-count: 1;
+    }
+}
+

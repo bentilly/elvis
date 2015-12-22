@@ -67,6 +67,13 @@ button.outline.blue:hover{
     color: #A5A88B;
     border-color: #A5A88B;
 }
+button.solid.blue{
+    color: white;
+    background: #26B4BC;
+}
+button.solid.blue:hover{
+    background: #A5A88B;
+}
 /*white*/
 button.white{
     background-color: #ffffff;
@@ -270,7 +277,7 @@ button.fav:hover i{
 }
 
 
-/* .......... Close button .......... */
+/* .......... Close buttons .......... */
 button.close{
     font-size: 20px;
     padding: 0px 5px;
@@ -278,6 +285,13 @@ button.close{
 }
 button.close:hover{
     color: #A5A88B;
+}
+
+button.modal-close{
+    font-size: 20px
+}
+button.modal-close:hover{
+    color: #26B4BC;
 }
 
 /* .......... Dropdown menu .......... */
@@ -290,12 +304,6 @@ button.dropdown-menu{
     color: #26B4BC;
     border-bottom: 1px solid #DFE8EB
 }
-/*
-button.dropdown-menu:last-child,
-button.dropdown-menu:nth-last-child(2) {
-    border-bottom:none;
-}
-*/
 button.dropdown-menu.sign-out{
     background: #26B4BC;
     color: white;
@@ -352,6 +360,20 @@ button.pickrate.high{
 button.pickrate:hover{
     background: #26B4BC;
 }
+
+/*.......... Text-Link button (used in modal).......... */
+button.text-only.link{
+    border-radius: 0px;
+    padding: 0px;
+    text-decoration: underline;
+    font-size: 14px;
+    color: #1E8D93;
+    font-weight: 700;
+}
+button.text-only.link:hover{
+    color: #A5A88B;
+}
+
 
 /*MAP PINS ---------------------------------------------- */
 

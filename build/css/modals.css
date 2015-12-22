@@ -7,7 +7,7 @@
     bottom: 0px;
     background: rgba(0,0,0,.5);
 }
-body.modal-open{
+body.noscroll{
     overflow: hidden;
 }
 /*resets and top level styles*/
